@@ -405,7 +405,7 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="1-MySQL的下载"><a href="#1-MySQL的下载" class="headerlink" title="1. MySQL的下载"></a>1. MySQL的下载</h1><p>1.我们可以进入官网进行下载：</p>
+                <h2 id="一、-MySQL的下载"><a href="#一、-MySQL的下载" class="headerlink" title="一、 MySQL的下载"></a>一、 MySQL的下载</h2><p>1.我们可以进入官网进行下载：</p>
 <p><a target="_blank" rel="noopener" href="https://dev.mysql.com/downloads/mysql/">https://dev.mysql.com/downloads/mysql/</a></p>
 <p>2.进入官网之后就根据所需要的版本来选择下载。</p>
 <p><img src="/images/MySQL%E7%9A%84%E4%B8%8B%E8%BD%BD%E3%80%81%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AE/image-20210130091115319.png" alt="image-20210130091115319"></p>
@@ -413,7 +413,7 @@
 <p><img src="/images/MySQL%E7%9A%84%E4%B8%8B%E8%BD%BD%E3%80%81%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AE/image-20210130091231356.png" alt="image-20210130091231356"></p>
 <p>4.下载之后是一个压缩包，直接解压到当前文件夹。</p>
 <p><img src="/images/MySQL%E7%9A%84%E4%B8%8B%E8%BD%BD%E3%80%81%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AE/image-20210130091447202.png" alt="image-20210130091447202"></p>
-<h1 id="2-文件配置"><a href="#2-文件配置" class="headerlink" title="2.文件配置"></a>2.文件配置</h1><p>添加 my.ini 文件</p>
+<h2 id="二、文件配置"><a href="#二、文件配置" class="headerlink" title="二、文件配置"></a>二、文件配置</h2><p>添加 my.ini 文件</p>
 <p>首先要新建一个文本文档（txt格式的那种），然后在文档中添加下面的配置代码。</p>
 <p>注意：需要根据注释中的提示来相应的修改自己的地址，不要以为直接复制粘贴就完成了。</p>
 <figure class="highlight txt"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">[client]</span><br><span class="line"># 设置mysql客户端默认字符集</span><br><span class="line">default-character-set=utf8</span><br><span class="line"> </span><br><span class="line">[mysqld]</span><br><span class="line"># 设置3306端口</span><br><span class="line">port = 3306</span><br><span class="line"># 设置mysql的安装目录</span><br><span class="line">basedir=D:\02-install\02-install\02-mysql\mysql-8.0.23-winx64</span><br><span class="line"># 设置 mysql数据库的数据的存放目录，MySQL 8+ 不需要以下配置，系统自己生成即可，否则有可能报错</span><br><span class="line"># datadir=D:\02-install\02-install\02-mysql\mysql-8.0.23-winx64</span><br><span class="line"># 允许最大连接数</span><br><span class="line">max_connections=20</span><br><span class="line"># 服务端使用的字符集默认为8比特编码的latin1字符集</span><br><span class="line">character-set-server=utf8</span><br><span class="line"># 创建新表时将使用的默认存储引擎</span><br><span class="line">default-storage-engine=INNODB</span><br></pre></td></tr></table></figure>
@@ -424,21 +424,21 @@
 <p>这里有可能会有警告弹出，不用管它，点“是”就行。</p>
 <p><img src="/images/MySQL%E7%9A%84%E4%B8%8B%E8%BD%BD%E3%80%81%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AE/image-20210130092245295.png" alt="image-20210130092245295"></p>
 <p><strong>到这里，我们的文件就基本齐全啦~</strong></p>
-<h1 id="3-初始密码的修改"><a href="#3-初始密码的修改" class="headerlink" title="3.初始密码的修改"></a>3.初始密码的修改</h1><h2 id="1-以管理员的身份打开命令提示符。"><a href="#1-以管理员的身份打开命令提示符。" class="headerlink" title="1.以管理员的身份打开命令提示符。"></a>1.以管理员的身份打开命令提示符。</h2><p><img src="/images/MySQL%E7%9A%84%E4%B8%8B%E8%BD%BD%E3%80%81%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AE/image-20210130092514293.png" alt="image-20210130092514293"></p>
-<h2 id="2-切换到相应的目录下"><a href="#2-切换到相应的目录下" class="headerlink" title="2.切换到相应的目录下"></a>2.切换到相应的目录下</h2><p>注意，要切换到相应的bin的目录下。</p>
-<h2 id="3-然后初始化数据库。"><a href="#3-然后初始化数据库。" class="headerlink" title="3.然后初始化数据库。"></a>3.然后初始化数据库。</h2><p><img src="/images/MySQL%E7%9A%84%E4%B8%8B%E8%BD%BD%E3%80%81%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AE/image-20210130092619128.png" alt="image-20210130092619128"></p>
+<h2 id="三、初始密码的修改"><a href="#三、初始密码的修改" class="headerlink" title="三、初始密码的修改"></a>三、初始密码的修改</h2><h3 id="1-以管理员的身份打开命令提示符。"><a href="#1-以管理员的身份打开命令提示符。" class="headerlink" title="1.以管理员的身份打开命令提示符。"></a>1.以管理员的身份打开命令提示符。</h3><p><img src="/images/MySQL%E7%9A%84%E4%B8%8B%E8%BD%BD%E3%80%81%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AE/image-20210130092514293.png" alt="image-20210130092514293"></p>
+<h3 id="2-切换到相应的目录下"><a href="#2-切换到相应的目录下" class="headerlink" title="2.切换到相应的目录下"></a>2.切换到相应的目录下</h3><p>注意，要切换到相应的bin的目录下。</p>
+<h3 id="3-然后初始化数据库。"><a href="#3-然后初始化数据库。" class="headerlink" title="3.然后初始化数据库。"></a>3.然后初始化数据库。</h3><p><img src="/images/MySQL%E7%9A%84%E4%B8%8B%E8%BD%BD%E3%80%81%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AE/image-20210130092619128.png" alt="image-20210130092619128"></p>
 <p>命令：</p>
 <figure class="highlight txt"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mysqld --initialize --console</span><br></pre></td></tr></table></figure>
 <p>在这里会生成初始的密码，像是我的初始密码就是：Y6h_gPKl(_r)</p>
 <p>不用怀疑，确实带着特殊符号，有括号是正常的。</p>
 <p><img src="/images/MySQL%E7%9A%84%E4%B8%8B%E8%BD%BD%E3%80%81%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AE/image-20210130092809753.png" alt="image-20210130092809753"></p>
-<h2 id="4-进行安装"><a href="#4-进行安装" class="headerlink" title="4.进行安装"></a>4.进行安装</h2><p><img src="/images/MySQL%E7%9A%84%E4%B8%8B%E8%BD%BD%E3%80%81%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AE/image-20210130093011228.png" alt="image-20210130093011228"></p>
+<h3 id="4-进行安装"><a href="#4-进行安装" class="headerlink" title="4.进行安装"></a>4.进行安装</h3><p><img src="/images/MySQL%E7%9A%84%E4%B8%8B%E8%BD%BD%E3%80%81%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AE/image-20210130093011228.png" alt="image-20210130093011228"></p>
 <p>命令：</p>
 <figure class="highlight txt"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mysqld install</span><br></pre></td></tr></table></figure>
-<h2 id="5-启动"><a href="#5-启动" class="headerlink" title="5.启动"></a>5.启动</h2><p><img src="/images/MySQL%E7%9A%84%E4%B8%8B%E8%BD%BD%E3%80%81%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AE/image-20210130093056153.png" alt="image-20210130093056153"></p>
+<h3 id="5-启动"><a href="#5-启动" class="headerlink" title="5.启动"></a>5.启动</h3><p><img src="/images/MySQL%E7%9A%84%E4%B8%8B%E8%BD%BD%E3%80%81%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AE/image-20210130093056153.png" alt="image-20210130093056153"></p>
 <p>命令：</p>
 <figure class="highlight txt"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">net start mysql</span><br></pre></td></tr></table></figure>
-<h2 id="6-登录"><a href="#6-登录" class="headerlink" title="6.登录"></a>6.登录</h2><p><img src="/images/MySQL%E7%9A%84%E4%B8%8B%E8%BD%BD%E3%80%81%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AE/image-20210130093148393.png" alt="image-20210130093148393"></p>
+<h3 id="6-登录"><a href="#6-登录" class="headerlink" title="6.登录"></a>6.登录</h3><p><img src="/images/MySQL%E7%9A%84%E4%B8%8B%E8%BD%BD%E3%80%81%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AE/image-20210130093148393.png" alt="image-20210130093148393"></p>
 <p>命令：</p>
 <figure class="highlight txt"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mysql -h 主机名 -u 用户名 -p</span><br></pre></td></tr></table></figure>
 <p>说明：</p>
@@ -447,20 +447,20 @@
 <p>3） -p 指的是 password ，后面写你的密码。</p>
 <p>所以最后我需要输入的命令就可以简化成下面这样（不要忘记修改你自己的密码哦~）</p>
 <figure class="highlight txt"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mysql -uroot –pY6h_gPKl(_r)</span><br></pre></td></tr></table></figure>
-<h2 id="7-修改密码"><a href="#7-修改密码" class="headerlink" title="7.修改密码"></a>7.修改密码</h2><p>在退出 MySQL 命令环境的情况下输入命令即可修改，我把我的密码修改成 123456 了。</p>
+<h3 id="7-修改密码"><a href="#7-修改密码" class="headerlink" title="7.修改密码"></a>7.修改密码</h3><p>在退出 MySQL 命令环境的情况下输入命令即可修改，我把我的密码修改成 123456 了。</p>
 <p>命令：</p>
 <figure class="highlight txt"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mysqladmin -uroot –pY6h_gPKl(_r) password 123456</span><br></pre></td></tr></table></figure>
 <p><img src="/images/MySQL%E7%9A%84%E4%B8%8B%E8%BD%BD%E3%80%81%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AE/image-20210130094528123.png" alt="image-20210130094528123"></p>
-<h2 id="8-登录验证"><a href="#8-登录验证" class="headerlink" title="8.登录验证"></a>8.登录验证</h2><p><img src="/images/MySQL%E7%9A%84%E4%B8%8B%E8%BD%BD%E3%80%81%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AE/image-20210130094550171.png" alt="image-20210130094550171"></p>
+<h3 id="8-登录验证"><a href="#8-登录验证" class="headerlink" title="8.登录验证"></a>8.登录验证</h3><p><img src="/images/MySQL%E7%9A%84%E4%B8%8B%E8%BD%BD%E3%80%81%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AE/image-20210130094550171.png" alt="image-20210130094550171"></p>
 <p>这样，我们的 <strong>MySQL 就可以用啦！</strong></p>
-<h1 id="4-配置环境变量"><a href="#4-配置环境变量" class="headerlink" title="4.配置环境变量"></a>4.配置环境变量</h1><h2 id="1-找到“高级系统配置”"><a href="#1-找到“高级系统配置”" class="headerlink" title="1.找到“高级系统配置”"></a>1.找到“高级系统配置”</h2><p><img src="/images/MySQL%E7%9A%84%E4%B8%8B%E8%BD%BD%E3%80%81%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AE/image-20210130094722227.png" alt="image-20210130094722227"></p>
-<h2 id="2-找到“环境变量”"><a href="#2-找到“环境变量”" class="headerlink" title="2.找到“环境变量”"></a>2.找到“环境变量”</h2><p><img src="/images/MySQL%E7%9A%84%E4%B8%8B%E8%BD%BD%E3%80%81%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AE/image-20210130094744406.png" alt="image-20210130094744406"></p>
+<h2 id="四、配置环境变量"><a href="#四、配置环境变量" class="headerlink" title="四、配置环境变量"></a>四、配置环境变量</h2><h3 id="1-找到“高级系统配置”"><a href="#1-找到“高级系统配置”" class="headerlink" title="1.找到“高级系统配置”"></a>1.找到“高级系统配置”</h3><p><img src="/images/MySQL%E7%9A%84%E4%B8%8B%E8%BD%BD%E3%80%81%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AE/image-20210130094722227.png" alt="image-20210130094722227"></p>
+<h3 id="2-找到“环境变量”"><a href="#2-找到“环境变量”" class="headerlink" title="2.找到“环境变量”"></a>2.找到“环境变量”</h3><p><img src="/images/MySQL%E7%9A%84%E4%B8%8B%E8%BD%BD%E3%80%81%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AE/image-20210130094744406.png" alt="image-20210130094744406"></p>
 <p>3.添加变量</p>
 <p>在“系统变量”中点击“新建”，然后添加下面的内容，变量值就是 MySQL 的地址。</p>
 <p><img src="/images/MySQL%E7%9A%84%E4%B8%8B%E8%BD%BD%E3%80%81%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AE/image-20210130094833350.png" alt="image-20210130094833350"></p>
-<h2 id="3-编辑Path"><a href="#3-编辑Path" class="headerlink" title="3.编辑Path"></a>3.编辑Path</h2><p><img src="/images/MySQL%E7%9A%84%E4%B8%8B%E8%BD%BD%E3%80%81%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AE/image-20210130095016975.png" alt="image-20210130095016975"></p>
-<h2 id="4-新建路径"><a href="#4-新建路径" class="headerlink" title="4.新建路径"></a>4.新建路径</h2><p><img src="/images/MySQL%E7%9A%84%E4%B8%8B%E8%BD%BD%E3%80%81%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AE/image-20210130095059016.png" alt="image-20210130095059016"></p>
-<h2 id="5-验证"><a href="#5-验证" class="headerlink" title="5.验证"></a>5.验证</h2><p>注意：要在根目录下验证哦~</p>
+<h3 id="3-编辑Path"><a href="#3-编辑Path" class="headerlink" title="3.编辑Path"></a>3.编辑Path</h3><p><img src="/images/MySQL%E7%9A%84%E4%B8%8B%E8%BD%BD%E3%80%81%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AE/image-20210130095016975.png" alt="image-20210130095016975"></p>
+<h3 id="4-新建路径"><a href="#4-新建路径" class="headerlink" title="4.新建路径"></a>4.新建路径</h3><p><img src="/images/MySQL%E7%9A%84%E4%B8%8B%E8%BD%BD%E3%80%81%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AE/image-20210130095059016.png" alt="image-20210130095059016"></p>
+<h3 id="5-验证"><a href="#5-验证" class="headerlink" title="5.验证"></a>5.验证</h3><p>注意：要在根目录下验证哦~</p>
 <p><img src="/images/MySQL%E7%9A%84%E4%B8%8B%E8%BD%BD%E3%80%81%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AE/image-20210130095120471.png" alt="image-20210130095120471"></p>
 <p>这样，我们的<strong>MySQl就全部配置完成啦！</strong></p>
 
