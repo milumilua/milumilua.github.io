@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>win10关闭防火墙</title>
+      <link href="2021/02/03/win10-guan-bi-fang-huo-qiang/"/>
+      <url>2021/02/03/win10-guan-bi-fang-huo-qiang/</url>
+      
+        <content type="html"><![CDATA[<h2 id="一、杀毒"><a href="#一、杀毒" class="headerlink" title="一、杀毒"></a>一、杀毒</h2><p>打开设置</p><p><img src="/images/win10%E5%85%B3%E9%97%AD%E9%98%B2%E7%81%AB%E5%A2%99/clip_image001.png" alt="img"></p><p>更新和安全</p><p><img src="/images/win10%E5%85%B3%E9%97%AD%E9%98%B2%E7%81%AB%E5%A2%99/clip_image003.jpg" alt="img"></p><p>Windows安全中心–&gt;病毒和防护</p><p><img src="/images/win10%E5%85%B3%E9%97%AD%E9%98%B2%E7%81%AB%E5%A2%99/clip_image005.jpg" alt="img"></p><h2 id="二、防火墙"><a href="#二、防火墙" class="headerlink" title="二、防火墙"></a>二、防火墙</h2><p>控制面板</p><p><img src="/images/win10%E5%85%B3%E9%97%AD%E9%98%B2%E7%81%AB%E5%A2%99/clip_image006.png" alt="img"></p><p>系统和安全</p><p><img src="/images/win10%E5%85%B3%E9%97%AD%E9%98%B2%E7%81%AB%E5%A2%99/clip_image008.jpg" alt="img"></p><p>Windows Defender防火墙</p><p><img src="/images/win10%E5%85%B3%E9%97%AD%E9%98%B2%E7%81%AB%E5%A2%99/clip_image010.jpg" alt="img"></p><p>左侧的启动和关闭</p><p><img src="/images/win10%E5%85%B3%E9%97%AD%E9%98%B2%E7%81%AB%E5%A2%99/clip_image012.jpg" alt="img"></p><p>在这里设置开启或者关闭就好</p><p><img src="/images/win10%E5%85%B3%E9%97%AD%E9%98%B2%E7%81%AB%E5%A2%99/clip_image014.jpg" alt="img"></p><p>最后要点”确定“。</p><p><strong>完成。</strong></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> win10、防火墙、杀毒 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Linux下的mysql相关总结</title>
       <link href="2021/02/03/linux-xia-de-mysql-xiang-guan-zong-jie/"/>
       <url>2021/02/03/linux-xia-de-mysql-xiang-guan-zong-jie/</url>
