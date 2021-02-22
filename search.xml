@@ -237,11 +237,11 @@
       
         <tags>
             
+            <tag> win10 </tag>
+            
             <tag> 下载 </tag>
             
             <tag> 安装 </tag>
-            
-            <tag> win10 </tag>
             
             <tag> idea </tag>
             
@@ -264,11 +264,11 @@
       
         <tags>
             
+            <tag> win10 </tag>
+            
             <tag> 下载 </tag>
             
             <tag> 配置 </tag>
-            
-            <tag> win10 </tag>
             
             <tag> MySQL </tag>
             
@@ -289,11 +289,11 @@
       
         <tags>
             
+            <tag> win10 </tag>
+            
             <tag> 安装 </tag>
             
             <tag> 配置 </tag>
-            
-            <tag> win10 </tag>
             
             <tag> JDK </tag>
             
@@ -316,13 +316,13 @@
             
             <tag> Git </tag>
             
-            <tag> win10 </tag>
-            
             <tag> 克隆 </tag>
             
             <tag> 推送（Push） </tag>
             
             <tag> 拉取（Pull） </tag>
+            
+            <tag> win10 </tag>
             
         </tags>
       
@@ -341,11 +341,11 @@
       
         <tags>
             
+            <tag> win10 </tag>
+            
             <tag> 下载 </tag>
             
             <tag> 安装 </tag>
-            
-            <tag> win10 </tag>
             
             <tag> TortoiseGit </tag>
             
@@ -368,13 +368,13 @@
             
             <tag> Git </tag>
             
+            <tag> win10 </tag>
+            
             <tag> 下载 </tag>
             
             <tag> 安装 </tag>
             
             <tag> 配置 </tag>
-            
-            <tag> win10 </tag>
             
         </tags>
       
@@ -395,9 +395,9 @@
             
             <tag> Git </tag>
             
-            <tag> win10 </tag>
-            
             <tag> 拉取（Pull） </tag>
+            
+            <tag> win10 </tag>
             
             <tag> HBuilder </tag>
             
