@@ -4,6 +4,166 @@
   
     
     <entry>
+      <title>请注意您的文档的部分内容可能包含文档检查器无法删除的个人信息</title>
+      <link href="2021/02/22/qing-zhu-yi-nin-de-wen-dang-de-bu-fen-nei-rong-ke-neng-bao-han-wen-dang-jian-cha-qi-wu-fa-shan-chu-de-ge-ren-xin-xi/"/>
+      <url>2021/02/22/qing-zhu-yi-nin-de-wen-dang-de-bu-fen-nei-rong-ke-neng-bao-han-wen-dang-jian-cha-qi-wu-fa-shan-chu-de-ge-ren-xin-xi/</url>
+      
+        <content type="html"><![CDATA[<h2 id="一、问题描述："><a href="#一、问题描述：" class="headerlink" title="一、问题描述："></a>一、问题描述：</h2><p>当在Excel表格中需要保存的时候出现下面的警告</p><p><img src="/images/%E8%AF%B7%E6%B3%A8%E6%84%8F%E6%82%A8%E7%9A%84%E6%96%87%E6%A1%A3%E7%9A%84%E9%83%A8%E5%88%86%E5%86%85%E5%AE%B9%E5%8F%AF%E8%83%BD%E5%8C%85%E5%90%AB%E6%96%87%E6%A1%A3%E6%A3%80%E6%9F%A5%E5%99%A8%E6%97%A0%E6%B3%95%E5%88%A0%E9%99%A4%E7%9A%84%E4%B8%AA%E4%BA%BA%E4%BF%A1%E6%81%AF/QQ%E6%88%AA%E5%9B%BE20210222094751.png" alt="QQ截图20210222094751"></p><h2 id="二、出现原因"><a href="#二、出现原因" class="headerlink" title="二、出现原因"></a>二、出现原因</h2><p>由于工作簿包含宏、ActiveX控件等内容，而Excel被设置为在保存文件时自动删除文件属性中的个人信息，因而出现该对话框。</p><h2 id="三、解决方式"><a href="#三、解决方式" class="headerlink" title="三、解决方式"></a>三、解决方式</h2><h3 id="1-文件-gt-选项"><a href="#1-文件-gt-选项" class="headerlink" title="1.文件->选项"></a>1.文件-&gt;选项</h3><p><img src="/images/%E8%AF%B7%E6%B3%A8%E6%84%8F%E6%82%A8%E7%9A%84%E6%96%87%E6%A1%A3%E7%9A%84%E9%83%A8%E5%88%86%E5%86%85%E5%AE%B9%E5%8F%AF%E8%83%BD%E5%8C%85%E5%90%AB%E6%96%87%E6%A1%A3%E6%A3%80%E6%9F%A5%E5%99%A8%E6%97%A0%E6%B3%95%E5%88%A0%E9%99%A4%E7%9A%84%E4%B8%AA%E4%BA%BA%E4%BF%A1%E6%81%AF/image-20210222153315155.png" alt="image-20210222153315155"></p><h3 id="2-信任中心-gt-信任中心设置"><a href="#2-信任中心-gt-信任中心设置" class="headerlink" title="2.信任中心->信任中心设置"></a>2.信任中心-&gt;信任中心设置</h3><p><img src="/images/%E8%AF%B7%E6%B3%A8%E6%84%8F%E6%82%A8%E7%9A%84%E6%96%87%E6%A1%A3%E7%9A%84%E9%83%A8%E5%88%86%E5%86%85%E5%AE%B9%E5%8F%AF%E8%83%BD%E5%8C%85%E5%90%AB%E6%96%87%E6%A1%A3%E6%A3%80%E6%9F%A5%E5%99%A8%E6%97%A0%E6%B3%95%E5%88%A0%E9%99%A4%E7%9A%84%E4%B8%AA%E4%BA%BA%E4%BF%A1%E6%81%AF/image-20210222153423928.png" alt="image-20210222153423928"></p><h3 id="3-隐私选项-gt-文档检查器"><a href="#3-隐私选项-gt-文档检查器" class="headerlink" title="3.隐私选项->文档检查器"></a>3.隐私选项-&gt;文档检查器</h3><p><img src="/images/%E8%AF%B7%E6%B3%A8%E6%84%8F%E6%82%A8%E7%9A%84%E6%96%87%E6%A1%A3%E7%9A%84%E9%83%A8%E5%88%86%E5%86%85%E5%AE%B9%E5%8F%AF%E8%83%BD%E5%8C%85%E5%90%AB%E6%96%87%E6%A1%A3%E6%A3%80%E6%9F%A5%E5%99%A8%E6%97%A0%E6%B3%95%E5%88%A0%E9%99%A4%E7%9A%84%E4%B8%AA%E4%BA%BA%E4%BF%A1%E6%81%AF/image-20210222153555240.png" alt="image-20210222153555240"></p><h3 id="4-将”文档属性和个人信息“取消掉"><a href="#4-将”文档属性和个人信息“取消掉" class="headerlink" title="4.将”文档属性和个人信息“取消掉"></a>4.将”文档属性和个人信息“取消掉</h3><p><img src="/images/%E8%AF%B7%E6%B3%A8%E6%84%8F%E6%82%A8%E7%9A%84%E6%96%87%E6%A1%A3%E7%9A%84%E9%83%A8%E5%88%86%E5%86%85%E5%AE%B9%E5%8F%AF%E8%83%BD%E5%8C%85%E5%90%AB%E6%96%87%E6%A1%A3%E6%A3%80%E6%9F%A5%E5%99%A8%E6%97%A0%E6%B3%95%E5%88%A0%E9%99%A4%E7%9A%84%E4%B8%AA%E4%BA%BA%E4%BF%A1%E6%81%AF/image-20210222153723253.png" alt="image-20210222153723253"></p><h3 id="5-然后点”检查“，一直点”完成“就可以保存了"><a href="#5-然后点”检查“，一直点”完成“就可以保存了" class="headerlink" title="5.然后点”检查“，一直点”完成“就可以保存了"></a>5.然后点”检查“，一直点”完成“就可以保存了</h3>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> Excel </tag>
+            
+            <tag> ERROR </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Excel总结——快捷操作总结1</title>
+      <link href="2021/02/22/excel-zong-jie-kuai-jie-cao-zuo-zong-jie-1/"/>
+      <url>2021/02/22/excel-zong-jie-kuai-jie-cao-zuo-zong-jie-1/</url>
+      
+        <content type="html"><![CDATA[<h2 id="一、一键求和"><a href="#一、一键求和" class="headerlink" title="一、一键求和"></a>一、一键求和</h2><p>选中</p><p><img src="/images/Excel%E6%80%BB%E7%BB%93%E2%80%94%E2%80%94%E5%BF%AB%E6%8D%B7%E6%93%8D%E4%BD%9C%E6%80%BB%E7%BB%931/clip_image001.png" alt="img"></p><p>选中下一行利用快捷键：Alt+=</p><p>直接出结果</p><p><img src="/images/Excel%E6%80%BB%E7%BB%93%E2%80%94%E2%80%94%E5%BF%AB%E6%8D%B7%E6%93%8D%E4%BD%9C%E6%80%BB%E7%BB%931/clip_image002.png" alt="img"></p><h2 id="二、一键插入柱形图"><a href="#二、一键插入柱形图" class="headerlink" title="二、一键插入柱形图"></a>二、一键插入柱形图</h2><p><img src="/images/Excel%E6%80%BB%E7%BB%93%E2%80%94%E2%80%94%E5%BF%AB%E6%8D%B7%E6%93%8D%E4%BD%9C%E6%80%BB%E7%BB%931/clip_image004.jpg" alt="img"></p><p>Alt+F1（有些可能是Fn+Alt+F1）</p><h2 id="三、一键美化表格"><a href="#三、一键美化表格" class="headerlink" title="三、一键美化表格"></a>三、一键美化表格</h2><p><img src="/images/Excel%E6%80%BB%E7%BB%93%E2%80%94%E2%80%94%E5%BF%AB%E6%8D%B7%E6%93%8D%E4%BD%9C%E6%80%BB%E7%BB%931/image-20210222131655710.png" alt="image-20210222131655710"></p><p>Ctrl+T</p><p>相当于添加表格</p><p><img src="/images/Excel%E6%80%BB%E7%BB%93%E2%80%94%E2%80%94%E5%BF%AB%E6%8D%B7%E6%93%8D%E4%BD%9C%E6%80%BB%E7%BB%931/image-20210222131731224.png" alt="image-20210222131731224"></p><p><img src="/images/Excel%E6%80%BB%E7%BB%93%E2%80%94%E2%80%94%E5%BF%AB%E6%8D%B7%E6%93%8D%E4%BD%9C%E6%80%BB%E7%BB%931/image-20210222132040041.png" alt="image-20210222132040041"></p><h2 id="四、生成下拉菜单"><a href="#四、生成下拉菜单" class="headerlink" title="四、生成下拉菜单"></a>四、生成下拉菜单</h2><p><img src="/images/Excel%E6%80%BB%E7%BB%93%E2%80%94%E2%80%94%E5%BF%AB%E6%8D%B7%E6%93%8D%E4%BD%9C%E6%80%BB%E7%BB%931/clip_image006.png" alt="img"></p><p>Alt+向下箭头</p><h2 id="五、单元格内强制换行"><a href="#五、单元格内强制换行" class="headerlink" title="五、单元格内强制换行"></a>五、单元格内强制换行</h2><p>Alt+Enter</p><p><img src="/images/Excel%E6%80%BB%E7%BB%93%E2%80%94%E2%80%94%E5%BF%AB%E6%8D%B7%E6%93%8D%E4%BD%9C%E6%80%BB%E7%BB%931/clip_image005.png" alt="img"></p><h2 id="六、小写金额转换成大写金额"><a href="#六、小写金额转换成大写金额" class="headerlink" title="六、小写金额转换成大写金额"></a>六、小写金额转换成大写金额</h2><p>选中金额</p><p><img src="/images/Excel%E6%80%BB%E7%BB%93%E2%80%94%E2%80%94%E5%BF%AB%E6%8D%B7%E6%93%8D%E4%BD%9C%E6%80%BB%E7%BB%931/clip_image013.png" alt="img"></p><p>再开始菜单中找到数字，点红箭头</p><p><img src="/images/Excel%E6%80%BB%E7%BB%93%E2%80%94%E2%80%94%E5%BF%AB%E6%8D%B7%E6%93%8D%E4%BD%9C%E6%80%BB%E7%BB%931/clip_image014.png" alt="img"></p><p>在“数字”下找到“特殊”，选中“中文大写数字” </p><p><img src="/images/Excel%E6%80%BB%E7%BB%93%E2%80%94%E2%80%94%E5%BF%AB%E6%8D%B7%E6%93%8D%E4%BD%9C%E6%80%BB%E7%BB%931/clip_image016.jpg" alt="img"></p><p>点击“确定“后得到下面的结果</p><p><img src="/images/Excel%E6%80%BB%E7%BB%93%E2%80%94%E2%80%94%E5%BF%AB%E6%8D%B7%E6%93%8D%E4%BD%9C%E6%80%BB%E7%BB%931/clip_image018.jpg" alt="img"></p><h2 id="七、快速输入√和×"><a href="#七、快速输入√和×" class="headerlink" title="七、快速输入√和×"></a>七、快速输入√和×</h2><p><img src="/images/Excel%E6%80%BB%E7%BB%93%E2%80%94%E2%80%94%E5%BF%AB%E6%8D%B7%E6%93%8D%E4%BD%9C%E6%80%BB%E7%BB%931/clip_image019.png" alt="img"></p><p>首先选中目标表格</p><p><img src="/images/Excel%E6%80%BB%E7%BB%93%E2%80%94%E2%80%94%E5%BF%AB%E6%8D%B7%E6%93%8D%E4%BD%9C%E6%80%BB%E7%BB%931/clip_image020.png" alt="img"></p><p>将字体设置成Wingdings2</p><p><img src="/images/Excel%E6%80%BB%E7%BB%93%E2%80%94%E2%80%94%E5%BF%AB%E6%8D%B7%E6%93%8D%E4%BD%9C%E6%80%BB%E7%BB%931/clip_image021.png" alt="img"></p><p>按照对应的字母输入会得到如下样式</p><p><img src="/images/Excel%E6%80%BB%E7%BB%93%E2%80%94%E2%80%94%E5%BF%AB%E6%8D%B7%E6%93%8D%E4%BD%9C%E6%80%BB%E7%BB%931/clip_image022.png" alt="img"></p><h2 id="八、批量添加下划线"><a href="#八、批量添加下划线" class="headerlink" title="八、批量添加下划线"></a>八、批量添加下划线</h2><p>选中区域</p><p><img src="/images/Excel%E6%80%BB%E7%BB%93%E2%80%94%E2%80%94%E5%BF%AB%E6%8D%B7%E6%93%8D%E4%BD%9C%E6%80%BB%E7%BB%931/clip_image023.png" alt="img"></p><p>右键“设置单元格格式”</p><p><img src="/images/Excel%E6%80%BB%E7%BB%93%E2%80%94%E2%80%94%E5%BF%AB%E6%8D%B7%E6%93%8D%E4%BD%9C%E6%80%BB%E7%BB%931/clip_image024.png" alt="img"></p><p>在“自定义”中输入“@*_”</p><p><img src="/images/Excel%E6%80%BB%E7%BB%93%E2%80%94%E2%80%94%E5%BF%AB%E6%8D%B7%E6%93%8D%E4%BD%9C%E6%80%BB%E7%BB%931/clip_image026.jpg" alt="img"></p><p>得到效果如下图</p><p><img src="/images/Excel%E6%80%BB%E7%BB%93%E2%80%94%E2%80%94%E5%BF%AB%E6%8D%B7%E6%93%8D%E4%BD%9C%E6%80%BB%E7%BB%931/clip_image027.png" alt="img"></p><h2 id="九、设置单元格文字随着单元格的大小而变化"><a href="#九、设置单元格文字随着单元格的大小而变化" class="headerlink" title="九、设置单元格文字随着单元格的大小而变化"></a>九、设置单元格文字随着单元格的大小而变化</h2><p>选中单元格，右键-&gt;“设置单元格格式”</p><p><img src="/images/Excel%E6%80%BB%E7%BB%93%E2%80%94%E2%80%94%E5%BF%AB%E6%8D%B7%E6%93%8D%E4%BD%9C%E6%80%BB%E7%BB%931/clip_image029.jpg" alt="img"></p><p>在“对齐”中选中“缩小字体填充”，确定后得到效果如下</p><p><img src="/images/Excel%E6%80%BB%E7%BB%93%E2%80%94%E2%80%94%E5%BF%AB%E6%8D%B7%E6%93%8D%E4%BD%9C%E6%80%BB%E7%BB%931/clip_image030.png" alt="img"></p><h2 id="十、图片随单元格的变化而自动调整大小"><a href="#十、图片随单元格的变化而自动调整大小" class="headerlink" title="十、图片随单元格的变化而自动调整大小"></a>十、图片随单元格的变化而自动调整大小</h2><p>点击一张图片，然后Ctrl+A可以实现全选图片</p><p><img src="/images/Excel%E6%80%BB%E7%BB%93%E2%80%94%E2%80%94%E5%BF%AB%E6%8D%B7%E6%93%8D%E4%BD%9C%E6%80%BB%E7%BB%931/clip_image031.png" alt="img"></p><p>右键，选择“大小和属性“</p><p><img src="/images/Excel%E6%80%BB%E7%BB%93%E2%80%94%E2%80%94%E5%BF%AB%E6%8D%B7%E6%93%8D%E4%BD%9C%E6%80%BB%E7%BB%931/clip_image032.png" alt="img"></p><p>在“属性“中，选择”大小和位置随单元格而变“</p><p><img src="/images/Excel%E6%80%BB%E7%BB%93%E2%80%94%E2%80%94%E5%BF%AB%E6%8D%B7%E6%93%8D%E4%BD%9C%E6%80%BB%E7%BB%931/clip_image033.png" alt="img"></p><p>然后再调整过单元格大小后会得到如下效果</p><p><img src="/images/Excel%E6%80%BB%E7%BB%93%E2%80%94%E2%80%94%E5%BF%AB%E6%8D%B7%E6%93%8D%E4%BD%9C%E6%80%BB%E7%BB%931/clip_image034.png" alt="img"></p><h2 id="十一、快速输入当前的日期和时间"><a href="#十一、快速输入当前的日期和时间" class="headerlink" title="十一、快速输入当前的日期和时间"></a>十一、快速输入当前的日期和时间</h2><table><thead><tr><th>快速输入日期和时间</th><th></th><th></th></tr></thead><tbody><tr><td>Ctrl+；</td><td>2021/2/22</td><td>日期</td></tr><tr><td>Ctrl+Shift+；</td><td>0:12</td><td>时间</td></tr><tr><td>Ctrl+；空格Ctrl+Shift+；</td><td>2021/2/22 0:13</td><td>日期和时间</td></tr></tbody></table><p><img src="/images/Excel%E6%80%BB%E7%BB%93%E2%80%94%E2%80%94%E5%BF%AB%E6%8D%B7%E6%93%8D%E4%BD%9C%E6%80%BB%E7%BB%931/clip_image072.jpg" alt="img"></p><h2 id="十二、对齐名字数据"><a href="#十二、对齐名字数据" class="headerlink" title="十二、对齐名字数据"></a>十二、对齐名字数据</h2><p>选择单元格数据，右键-&gt;“设置单元格格式“</p><p><img src="/images/Excel%E6%80%BB%E7%BB%93%E2%80%94%E2%80%94%E5%BF%AB%E6%8D%B7%E6%93%8D%E4%BD%9C%E6%80%BB%E7%BB%931/clip_image041.png" alt="img"></p><p><img src="/images/Excel%E6%80%BB%E7%BB%93%E2%80%94%E2%80%94%E5%BF%AB%E6%8D%B7%E6%93%8D%E4%BD%9C%E6%80%BB%E7%BB%931/clip_image043.jpg" alt="img"></p><p>得到的结果如下</p><p><img src="/images/Excel%E6%80%BB%E7%BB%93%E2%80%94%E2%80%94%E5%BF%AB%E6%8D%B7%E6%93%8D%E4%BD%9C%E6%80%BB%E7%BB%931/clip_image044.png" alt="img"></p><h2 id="十三、将横向的表格变为纵向的表格"><a href="#十三、将横向的表格变为纵向的表格" class="headerlink" title="十三、将横向的表格变为纵向的表格"></a>十三、将横向的表格变为纵向的表格</h2><p>选中，右键复制</p><p><img src="/images/Excel%E6%80%BB%E7%BB%93%E2%80%94%E2%80%94%E5%BF%AB%E6%8D%B7%E6%93%8D%E4%BD%9C%E6%80%BB%E7%BB%931/clip_image045.png" alt="img"></p><p>右键，转置粘贴</p><p><img src="/images/Excel%E6%80%BB%E7%BB%93%E2%80%94%E2%80%94%E5%BF%AB%E6%8D%B7%E6%93%8D%E4%BD%9C%E6%80%BB%E7%BB%931/clip_image047.jpg" alt="img"></p><h2 id="十四、删除表格中的空行"><a href="#十四、删除表格中的空行" class="headerlink" title="十四、删除表格中的空行"></a>十四、删除表格中的空行</h2><p>先按F5选择“定位条件“</p><p><img src="/images/Excel%E6%80%BB%E7%BB%93%E2%80%94%E2%80%94%E5%BF%AB%E6%8D%B7%E6%93%8D%E4%BD%9C%E6%80%BB%E7%BB%931/clip_image048.png" alt="img"></p><p>选择“空值“</p><p><img src="/images/Excel%E6%80%BB%E7%BB%93%E2%80%94%E2%80%94%E5%BF%AB%E6%8D%B7%E6%93%8D%E4%BD%9C%E6%80%BB%E7%BB%931/clip_image049.png" alt="img"></p><p><img src="/images/Excel%E6%80%BB%E7%BB%93%E2%80%94%E2%80%94%E5%BF%AB%E6%8D%B7%E6%93%8D%E4%BD%9C%E6%80%BB%E7%BB%931/clip_image051.jpg" alt="img"></p><p>右键删除</p><p><img src="/images/Excel%E6%80%BB%E7%BB%93%E2%80%94%E2%80%94%E5%BF%AB%E6%8D%B7%E6%93%8D%E4%BD%9C%E6%80%BB%E7%BB%931/clip_image052.png" alt="img"></p><p>选择“下方单元格上移“</p><p><img src="/images/Excel%E6%80%BB%E7%BB%93%E2%80%94%E2%80%94%E5%BF%AB%E6%8D%B7%E6%93%8D%E4%BD%9C%E6%80%BB%E7%BB%931/clip_image053.png" alt="img"></p><p>效果如下</p><p><img src="/images/Excel%E6%80%BB%E7%BB%93%E2%80%94%E2%80%94%E5%BF%AB%E6%8D%B7%E6%93%8D%E4%BD%9C%E6%80%BB%E7%BB%931/clip_image055.jpg" alt="img"></p><h2 id="十五、快速找出两列的不同"><a href="#十五、快速找出两列的不同" class="headerlink" title="十五、快速找出两列的不同"></a>十五、快速找出两列的不同</h2><p>首先选中两列数据</p><p><img src="/images/Excel%E6%80%BB%E7%BB%93%E2%80%94%E2%80%94%E5%BF%AB%E6%8D%B7%E6%93%8D%E4%BD%9C%E6%80%BB%E7%BB%931/clip_image068.png" alt="img"></p><p>然后利用Ctrl+\来进行比较</p><p><img src="/images/Excel%E6%80%BB%E7%BB%93%E2%80%94%E2%80%94%E5%BF%AB%E6%8D%B7%E6%93%8D%E4%BD%9C%E6%80%BB%E7%BB%931/clip_image069.png" alt="img"></p><p>添加背景色有助于区分</p><p><img src="/images/Excel%E6%80%BB%E7%BB%93%E2%80%94%E2%80%94%E5%BF%AB%E6%8D%B7%E6%93%8D%E4%BD%9C%E6%80%BB%E7%BB%931/clip_image070.png" alt="img"></p><h2 id="十六、制作下拉列表"><a href="#十六、制作下拉列表" class="headerlink" title="十六、制作下拉列表"></a>十六、制作下拉列表</h2><p>选择单元格</p><p><img src="/images/Excel%E6%80%BB%E7%BB%93%E2%80%94%E2%80%94%E5%BF%AB%E6%8D%B7%E6%93%8D%E4%BD%9C%E6%80%BB%E7%BB%931/clip_image063.png" alt="img"></p><p>再上方“数据“中的”数据工具“中选择”数据验证“</p><p><img src="/images/Excel%E6%80%BB%E7%BB%93%E2%80%94%E2%80%94%E5%BF%AB%E6%8D%B7%E6%93%8D%E4%BD%9C%E6%80%BB%E7%BB%931/clip_image065.jpg" alt="img"></p><p>允许中选择“序列“，再来源中填入所需要的数据，中间用<strong>英文</strong>的逗号隔开。</p><p><img src="/images/Excel%E6%80%BB%E7%BB%93%E2%80%94%E2%80%94%E5%BF%AB%E6%8D%B7%E6%93%8D%E4%BD%9C%E6%80%BB%E7%BB%931/clip_image066.png" alt="img"></p><p>效果如下：</p><p><img src="/images/Excel%E6%80%BB%E7%BB%93%E2%80%94%E2%80%94%E5%BF%AB%E6%8D%B7%E6%93%8D%E4%BD%9C%E6%80%BB%E7%BB%931/clip_image067.png" alt="img"></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> Excel </tag>
+            
+            <tag> 技巧 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Excel总结——表格自动添加边框</title>
+      <link href="2021/02/22/excel-zong-jie-biao-ge-zi-dong-tian-jia-bian-kuang/"/>
+      <url>2021/02/22/excel-zong-jie-biao-ge-zi-dong-tian-jia-bian-kuang/</url>
+      
+        <content type="html"><![CDATA[<h2 id="表格自动添加边框"><a href="#表格自动添加边框" class="headerlink" title="表格自动添加边框"></a>表格自动添加边框</h2><h3 id="1-选择区域"><a href="#1-选择区域" class="headerlink" title="1.选择区域"></a>1.选择区域</h3><p><img src="/images/Excel%E6%80%BB%E7%BB%93%E2%80%94%E2%80%94%E8%A1%A8%E6%A0%BC%E8%87%AA%E5%8A%A8%E6%B7%BB%E5%8A%A0%E8%BE%B9%E6%A1%86/image-20210222125602963.png" alt="image-20210222125602963"></p><h3 id="2-开始-gt-样式-gt-条件格式-gt-新建规则"><a href="#2-开始-gt-样式-gt-条件格式-gt-新建规则" class="headerlink" title="2.开始->样式->条件格式->新建规则"></a>2.开始-&gt;样式-&gt;条件格式-&gt;新建规则</h3><p><img src="/images/Excel%E6%80%BB%E7%BB%93%E2%80%94%E2%80%94%E8%A1%A8%E6%A0%BC%E8%87%AA%E5%8A%A8%E6%B7%BB%E5%8A%A0%E8%BE%B9%E6%A1%86/image-20210222125649015.png" alt="image-20210222125649015"></p><h3 id="3-选择组后这一条"><a href="#3-选择组后这一条" class="headerlink" title="3.选择组后这一条"></a>3.选择组后这一条</h3><p><img src="/images/Excel%E6%80%BB%E7%BB%93%E2%80%94%E2%80%94%E8%A1%A8%E6%A0%BC%E8%87%AA%E5%8A%A8%E6%B7%BB%E5%8A%A0%E8%BE%B9%E6%A1%86/image-20210222125852923.png" alt="image-20210222125852923"></p><h3 id="4-在下方输入”-“，然后点一个单元格就得到下方的这个结果：-D-85"><a href="#4-在下方输入”-“，然后点一个单元格就得到下方的这个结果：-D-85" class="headerlink" title="4.在下方输入”=“，然后点一个单元格就得到下方的这个结果：=$D$85"></a>4.在下方输入”=“，然后点一个单元格就得到下方的这个结果：=$D$85</h3><p><img src="/images/Excel%E6%80%BB%E7%BB%93%E2%80%94%E2%80%94%E8%A1%A8%E6%A0%BC%E8%87%AA%E5%8A%A8%E6%B7%BB%E5%8A%A0%E8%BE%B9%E6%A1%86/image-20210222130217445.png" alt="image-20210222130217445"></p><h3 id="5-删掉后面的一个-符号，然后输入：-lt-gt-””"><a href="#5-删掉后面的一个-符号，然后输入：-lt-gt-””" class="headerlink" title="5.删掉后面的一个$符号，然后输入：<>””"></a>5.删掉后面的一个$符号，然后输入：&lt;&gt;””</h3><p>意思是内容不为空的时候付给它一个格式，然后点击格式来设定格式</p><p><img src="/images/Excel%E6%80%BB%E7%BB%93%E2%80%94%E2%80%94%E8%A1%A8%E6%A0%BC%E8%87%AA%E5%8A%A8%E6%B7%BB%E5%8A%A0%E8%BE%B9%E6%A1%86/image-20210222131030574.png" alt="image-20210222131030574"></p><h3 id="6-选择格式"><a href="#6-选择格式" class="headerlink" title="6.选择格式"></a>6.选择格式</h3><p><img src="/images/Excel%E6%80%BB%E7%BB%93%E2%80%94%E2%80%94%E8%A1%A8%E6%A0%BC%E8%87%AA%E5%8A%A8%E6%B7%BB%E5%8A%A0%E8%BE%B9%E6%A1%86/image-20210222130540960.png" alt="image-20210222130540960"></p><p>确定之后得到如下效果</p><p><img src="/images/Excel%E6%80%BB%E7%BB%93%E2%80%94%E2%80%94%E8%A1%A8%E6%A0%BC%E8%87%AA%E5%8A%A8%E6%B7%BB%E5%8A%A0%E8%BE%B9%E6%A1%86/image-20210222130613964.png" alt="image-20210222130613964"></p><p>添加：</p><p><img src="/images/Excel%E6%80%BB%E7%BB%93%E2%80%94%E2%80%94%E8%A1%A8%E6%A0%BC%E8%87%AA%E5%8A%A8%E6%B7%BB%E5%8A%A0%E8%BE%B9%E6%A1%86/image-20210222130744683.png" alt="image-20210222130744683"></p><p>删除：</p><p><img src="/images/Excel%E6%80%BB%E7%BB%93%E2%80%94%E2%80%94%E8%A1%A8%E6%A0%BC%E8%87%AA%E5%8A%A8%E6%B7%BB%E5%8A%A0%E8%BE%B9%E6%A1%86/image-20210222130823326.png" alt="image-20210222130823326"></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> Excel </tag>
+            
+            <tag> 技巧 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Excel总结——制作二维码</title>
+      <link href="2021/02/22/excel-zong-jie-zhi-zuo-er-wei-ma/"/>
+      <url>2021/02/22/excel-zong-jie-zhi-zuo-er-wei-ma/</url>
+      
+        <content type="html"><![CDATA[<h2 id="定制专属二维码"><a href="#定制专属二维码" class="headerlink" title="定制专属二维码"></a>定制专属二维码</h2><p><strong>在这里建议内容是英文</strong></p><h3 id="1-在文件中找到“选项”"><a href="#1-在文件中找到“选项”" class="headerlink" title="1.在文件中找到“选项”"></a>1.在文件中找到“选项”</h3><p><img src="/images/Excel%E6%80%BB%E7%BB%93%E2%80%94%E2%80%94%E5%88%B6%E4%BD%9C%E4%BA%8C%E7%BB%B4%E7%A0%81/image-20210222092830846.png" alt="image-20210222092830846"></p><h3 id="2-在“自定义功能区”勾选“开发工具”"><a href="#2-在“自定义功能区”勾选“开发工具”" class="headerlink" title="2.在“自定义功能区”勾选“开发工具”"></a>2.在“自定义功能区”勾选“开发工具”</h3><p><img src="/images/Excel%E6%80%BB%E7%BB%93%E2%80%94%E2%80%94%E5%88%B6%E4%BD%9C%E4%BA%8C%E7%BB%B4%E7%A0%81/image-20210222092950179.png" alt="image-20210222092950179"></p><h3 id="3-在单元格中输入内容"><a href="#3-在单元格中输入内容" class="headerlink" title="3.在单元格中输入内容"></a>3.在单元格中输入内容</h3><p><img src="/images/Excel%E6%80%BB%E7%BB%93%E2%80%94%E2%80%94%E5%88%B6%E4%BD%9C%E4%BA%8C%E7%BB%B4%E7%A0%81/image-20210222093121757.png" alt="image-20210222093121757"></p><h3 id="4-在“开发工具”中选择“其它工具”"><a href="#4-在“开发工具”中选择“其它工具”" class="headerlink" title="4.在“开发工具”中选择“其它工具”"></a>4.在“开发工具”中选择“其它工具”</h3><p><img src="/images/Excel%E6%80%BB%E7%BB%93%E2%80%94%E2%80%94%E5%88%B6%E4%BD%9C%E4%BA%8C%E7%BB%B4%E7%A0%81/image-20210222093302971.png" alt="image-20210222093302971"></p><h3 id="5-选择红框内的选项"><a href="#5-选择红框内的选项" class="headerlink" title="5.选择红框内的选项"></a>5.选择红框内的选项</h3><p><img src="/images/Excel%E6%80%BB%E7%BB%93%E2%80%94%E2%80%94%E5%88%B6%E4%BD%9C%E4%BA%8C%E7%BB%B4%E7%A0%81/image-20210222093419582.png" alt="image-20210222093419582"></p><h3 id="6-鼠标左键拖拽出图形"><a href="#6-鼠标左键拖拽出图形" class="headerlink" title="6.鼠标左键拖拽出图形"></a>6.鼠标左键拖拽出图形</h3><p><img src="/images/Excel%E6%80%BB%E7%BB%93%E2%80%94%E2%80%94%E5%88%B6%E4%BD%9C%E4%BA%8C%E7%BB%B4%E7%A0%81/image-20210222093521100.png" alt="image-20210222093521100"></p><h3 id="7-右键选择刚刚选择的属性，将样式选择第11项"><a href="#7-右键选择刚刚选择的属性，将样式选择第11项" class="headerlink" title="7.右键选择刚刚选择的属性，将样式选择第11项"></a>7.右键选择刚刚选择的属性，将样式选择第11项</h3><p><img src="/images/Excel%E6%80%BB%E7%BB%93%E2%80%94%E2%80%94%E5%88%B6%E4%BD%9C%E4%BA%8C%E7%BB%B4%E7%A0%81/image-20210222093706749.png" alt="image-20210222093706749"></p><p>确定之后效果如下：</p><p><img src="/images/Excel%E6%80%BB%E7%BB%93%E2%80%94%E2%80%94%E5%88%B6%E4%BD%9C%E4%BA%8C%E7%BB%B4%E7%A0%81/image-20210222093758719.png" alt="image-20210222093758719"></p><h3 id="8-右键“属性”，输入单元格的位置"><a href="#8-右键“属性”，输入单元格的位置" class="headerlink" title="8.右键“属性”，输入单元格的位置"></a>8.右键“属性”，输入单元格的位置</h3><p><img src="/images/Excel%E6%80%BB%E7%BB%93%E2%80%94%E2%80%94%E5%88%B6%E4%BD%9C%E4%BA%8C%E7%BB%B4%E7%A0%81/image-20210222093958290.png" alt="image-20210222093958290"></p><p>之后直接关闭就可以实现了</p><h3 id="9-常见错误"><a href="#9-常见错误" class="headerlink" title="9.常见错误"></a>9.常见错误</h3><p><strong>但是</strong>我发现我失败了，他变空白了。</p><p>如下图：</p><p><img src="/images/Excel%E6%80%BB%E7%BB%93%E2%80%94%E2%80%94%E5%88%B6%E4%BD%9C%E4%BA%8C%E7%BB%B4%E7%A0%81/image-20210222100035537.png" alt="image-20210222100035537"></p><p>经过多次的尝试，最后发现字母数字和特殊字符是可以的。</p><p><img src="/images/Excel%E6%80%BB%E7%BB%93%E2%80%94%E2%80%94%E5%88%B6%E4%BD%9C%E4%BA%8C%E7%BB%B4%E7%A0%81/image-20210222100539869.png" alt="image-20210222100539869"></p><p><img src="/images/Excel%E6%80%BB%E7%BB%93%E2%80%94%E2%80%94%E5%88%B6%E4%BD%9C%E4%BA%8C%E7%BB%B4%E7%A0%81/image-20210222100611246.png" alt="image-20210222100611246"></p><p>上图是手机扫描出来的结果。</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> Excel </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Excel总结——制作斜线表头</title>
+      <link href="2021/02/22/excel-zong-jie-zhi-zuo-xie-xian-biao-tou/"/>
+      <url>2021/02/22/excel-zong-jie-zhi-zuo-xie-xian-biao-tou/</url>
+      
+        <content type="html"><![CDATA[<h2 id="制作斜线表头"><a href="#制作斜线表头" class="headerlink" title="制作斜线表头"></a>制作斜线表头</h2><h3 id="1-原始样子"><a href="#1-原始样子" class="headerlink" title="1.原始样子"></a>1.原始样子</h3><p><img src="/images/Excel%E6%80%BB%E7%BB%93%E2%80%94%E2%80%94%E5%88%B6%E4%BD%9C%E6%96%9C%E7%BA%BF%E8%A1%A8%E5%A4%B4/clip_image073.png" alt="img"></p><h3 id="2-在开始菜单中找到”字体“，点击红箭头的单位"><a href="#2-在开始菜单中找到”字体“，点击红箭头的单位" class="headerlink" title="2.在开始菜单中找到”字体“，点击红箭头的单位"></a>2.在开始菜单中找到”字体“，点击红箭头的单位</h3><p><img src="/images/Excel%E6%80%BB%E7%BB%93%E2%80%94%E2%80%94%E5%88%B6%E4%BD%9C%E6%96%9C%E7%BA%BF%E8%A1%A8%E5%A4%B4/clip_image074.png" alt="img"></p><h3 id="3-将”姓名“设置为下标，将”成绩“设置为上标"><a href="#3-将”姓名“设置为下标，将”成绩“设置为上标" class="headerlink" title="3.将”姓名“设置为下标，将”成绩“设置为上标"></a>3.将”姓名“设置为下标，将”成绩“设置为上标</h3><p><img src="/images/Excel%E6%80%BB%E7%BB%93%E2%80%94%E2%80%94%E5%88%B6%E4%BD%9C%E6%96%9C%E7%BA%BF%E8%A1%A8%E5%A4%B4/image-20210222092023988.png" alt="image-20210222092023988"></p><p>得到的效果如下</p><p><img src="/images/Excel%E6%80%BB%E7%BB%93%E2%80%94%E2%80%94%E5%88%B6%E4%BD%9C%E6%96%9C%E7%BA%BF%E8%A1%A8%E5%A4%B4/image-20210222092050090.png" alt="image-20210222092050090"></p><h3 id="4-选中单元格"><a href="#4-选中单元格" class="headerlink" title="4.选中单元格"></a>4.选中单元格</h3><p><img src="/images/Excel%E6%80%BB%E7%BB%93%E2%80%94%E2%80%94%E5%88%B6%E4%BD%9C%E6%96%9C%E7%BA%BF%E8%A1%A8%E5%A4%B4/image-20210222092212266.png" alt="image-20210222092212266"></p><h3 id="5-右键设置单元格格式"><a href="#5-右键设置单元格格式" class="headerlink" title="5.右键设置单元格格式"></a>5.右键设置单元格格式</h3><p>在”边框“中选中斜线</p><p><img src="/images/Excel%E6%80%BB%E7%BB%93%E2%80%94%E2%80%94%E5%88%B6%E4%BD%9C%E6%96%9C%E7%BA%BF%E8%A1%A8%E5%A4%B4/image-20210222092303568.png" alt="image-20210222092303568"></p><p>确定后，效果如下：</p><p><img src="/images/Excel%E6%80%BB%E7%BB%93%E2%80%94%E2%80%94%E5%88%B6%E4%BD%9C%E6%96%9C%E7%BA%BF%E8%A1%A8%E5%A4%B4/image-20210222092341629.png" alt="image-20210222092341629"></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> Excel </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Excel总结——改变图片背景颜色</title>
+      <link href="2021/02/22/excel-zong-jie-gai-bian-tu-pian-bei-jing-yan-se/"/>
+      <url>2021/02/22/excel-zong-jie-gai-bian-tu-pian-bei-jing-yan-se/</url>
+      
+        <content type="html"><![CDATA[<h2 id="改变图片背景颜色"><a href="#改变图片背景颜色" class="headerlink" title="改变图片背景颜色"></a>改变图片背景颜色</h2><p>由于图片背景是白色的，所以为了更好的观察颜色的变化所以将底色改为绿色</p><p><img src="/images/Excel%E6%80%BB%E7%BB%93%E2%80%94%E2%80%94%E6%94%B9%E5%8F%98%E5%9B%BE%E7%89%87%E8%83%8C%E6%99%AF%E9%A2%9C%E8%89%B2/clip_image056.png" alt="img"></p><h3 id="1-双击图片，选择“删除背景“"><a href="#1-双击图片，选择“删除背景“" class="headerlink" title="1.双击图片，选择“删除背景“"></a>1.双击图片，选择“删除背景“</h3><p><img src="/images/Excel%E6%80%BB%E7%BB%93%E2%80%94%E2%80%94%E6%94%B9%E5%8F%98%E5%9B%BE%E7%89%87%E8%83%8C%E6%99%AF%E9%A2%9C%E8%89%B2/clip_image057.png" alt="img"></p><p>效果如下</p><p><img src="/images/Excel%E6%80%BB%E7%BB%93%E2%80%94%E2%80%94%E6%94%B9%E5%8F%98%E5%9B%BE%E7%89%87%E8%83%8C%E6%99%AF%E9%A2%9C%E8%89%B2/clip_image058.png" alt="img"></p><h3 id="2-然后根据上方这些来调整保留或者删除位置"><a href="#2-然后根据上方这些来调整保留或者删除位置" class="headerlink" title="2.然后根据上方这些来调整保留或者删除位置"></a>2.然后根据上方这些来调整保留或者删除位置</h3><p><img src="/images/Excel%E6%80%BB%E7%BB%93%E2%80%94%E2%80%94%E6%94%B9%E5%8F%98%E5%9B%BE%E7%89%87%E8%83%8C%E6%99%AF%E9%A2%9C%E8%89%B2/clip_image059.png" alt="img"></p><p>效果如下</p><p><img src="/images/Excel%E6%80%BB%E7%BB%93%E2%80%94%E2%80%94%E6%94%B9%E5%8F%98%E5%9B%BE%E7%89%87%E8%83%8C%E6%99%AF%E9%A2%9C%E8%89%B2/clip_image060.png" alt="img"></p><h3 id="3-再开始中直接填充颜色"><a href="#3-再开始中直接填充颜色" class="headerlink" title="3.再开始中直接填充颜色"></a>3.再开始中直接填充颜色</h3><p><img src="/images/Excel%E6%80%BB%E7%BB%93%E2%80%94%E2%80%94%E6%94%B9%E5%8F%98%E5%9B%BE%E7%89%87%E8%83%8C%E6%99%AF%E9%A2%9C%E8%89%B2/clip_image061.png" alt="img"></p><p>效果如下</p><p><img src="/images/Excel%E6%80%BB%E7%BB%93%E2%80%94%E2%80%94%E6%94%B9%E5%8F%98%E5%9B%BE%E7%89%87%E8%83%8C%E6%99%AF%E9%A2%9C%E8%89%B2/clip_image062.png" alt="img"></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> Excel </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Excel总结——含单位求和</title>
+      <link href="2021/02/22/excel-zong-jie-han-dan-wei-qiu-he/"/>
+      <url>2021/02/22/excel-zong-jie-han-dan-wei-qiu-he/</url>
+      
+        <content type="html"><![CDATA[<h2 id="计算有单位的数量"><a href="#计算有单位的数量" class="headerlink" title="计算有单位的数量"></a>计算有单位的数量</h2><p><img src="/images/Excel%E6%80%BB%E7%BB%93%E2%80%94%E2%80%94%E5%90%AB%E5%8D%95%E4%BD%8D%E6%B1%82%E5%92%8C/clip_image007.png" alt="img"></p><h3 id="1-先设一个替代的数字Q然后将数量相加等式输入"><a href="#1-先设一个替代的数字Q然后将数量相加等式输入" class="headerlink" title="1.先设一个替代的数字Q然后将数量相加等式输入"></a>1.先设一个替代的数字Q然后将数量相加等式输入</h3><p><img src="/images/Excel%E6%80%BB%E7%BB%93%E2%80%94%E2%80%94%E5%90%AB%E5%8D%95%E4%BD%8D%E6%B1%82%E5%92%8C/clip_image008.png" alt="img"></p><h3 id="2-选中下一行利用快捷键："><a href="#2-选中下一行利用快捷键：" class="headerlink" title="2.选中下一行利用快捷键："></a>2.选中下一行利用快捷键：</h3><p>Ctrl+E来提取所有的数据</p><p><img src="/images/Excel%E6%80%BB%E7%BB%93%E2%80%94%E2%80%94%E5%90%AB%E5%8D%95%E4%BD%8D%E6%B1%82%E5%92%8C/clip_image009.png" alt="img"></p><h3 id="3-然后快捷键：Ctrl-H查找和替换"><a href="#3-然后快捷键：Ctrl-H查找和替换" class="headerlink" title="3.然后快捷键：Ctrl+H查找和替换"></a>3.然后快捷键：Ctrl+H查找和替换</h3><p>将查找的内容设置成之前设的Q将替换结果设为空，点击全部替换。</p><p><img src="/images/Excel%E6%80%BB%E7%BB%93%E2%80%94%E2%80%94%E5%90%AB%E5%8D%95%E4%BD%8D%E6%B1%82%E5%92%8C/clip_image010.png" alt="img"></p><h3 id="4-得到如下提示"><a href="#4-得到如下提示" class="headerlink" title="4.得到如下提示"></a>4.得到如下提示</h3><p><img src="/images/Excel%E6%80%BB%E7%BB%93%E2%80%94%E2%80%94%E5%90%AB%E5%8D%95%E4%BD%8D%E6%B1%82%E5%92%8C/clip_image011.png" alt="img"></p><p>点确定之后得到如下结果</p><p><img src="/images/Excel%E6%80%BB%E7%BB%93%E2%80%94%E2%80%94%E5%90%AB%E5%8D%95%E4%BD%8D%E6%B1%82%E5%92%8C/clip_image012.png" alt="img"></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> Excel </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Excel总结——Ctrl+E的三大用法</title>
+      <link href="2021/02/22/excel-zong-jie-ctrl-e-de-san-da-yong-fa/"/>
+      <url>2021/02/22/excel-zong-jie-ctrl-e-de-san-da-yong-fa/</url>
+      
+        <content type="html"><![CDATA[<h2 id="Ctrl-E的三大用法"><a href="#Ctrl-E的三大用法" class="headerlink" title="Ctrl+E的三大用法"></a>Ctrl+E的三大用法</h2><h3 id="①提取数据"><a href="#①提取数据" class="headerlink" title="①提取数据"></a>①提取数据</h3><p>先提取一行</p><p><img src="/images/Excel%E6%80%BB%E7%BB%93%E2%80%94%E2%80%94Ctrl-E%E7%9A%84%E4%B8%89%E5%A4%A7%E7%94%A8%E6%B3%95/clip_image035.png" alt="img"></p><p>然后用Ctrl+E提取全部</p><p><img src="/images/Excel%E6%80%BB%E7%BB%93%E2%80%94%E2%80%94Ctrl-E%E7%9A%84%E4%B8%89%E5%A4%A7%E7%94%A8%E6%B3%95/clip_image036.png" alt="img"></p><h3 id="②拆分数据"><a href="#②拆分数据" class="headerlink" title="②拆分数据"></a>②拆分数据</h3><p>先拆分一行</p><p><img src="/images/Excel%E6%80%BB%E7%BB%93%E2%80%94%E2%80%94Ctrl-E%E7%9A%84%E4%B8%89%E5%A4%A7%E7%94%A8%E6%B3%95/clip_image037.png" alt="img"></p><p>然后用Ctrl+E拆分全部</p><p><img src="/images/Excel%E6%80%BB%E7%BB%93%E2%80%94%E2%80%94Ctrl-E%E7%9A%84%E4%B8%89%E5%A4%A7%E7%94%A8%E6%B3%95/clip_image038.png" alt="img"></p><h3 id="③合并数据"><a href="#③合并数据" class="headerlink" title="③合并数据"></a>③合并数据</h3><p>先合并一行</p><p><img src="/images/Excel%E6%80%BB%E7%BB%93%E2%80%94%E2%80%94Ctrl-E%E7%9A%84%E4%B8%89%E5%A4%A7%E7%94%A8%E6%B3%95/clip_image039.png" alt="img"></p><p>然后用Ctrl+E合并全部</p><p><img src="/images/Excel%E6%80%BB%E7%BB%93%E2%80%94%E2%80%94Ctrl-E%E7%9A%84%E4%B8%89%E5%A4%A7%E7%94%A8%E6%B3%95/clip_image040.png" alt="img"></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> Excel </tag>
+            
+            <tag> 技巧 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Hello World</title>
       <link href="2021/02/04/hello-world/"/>
       <url>2021/02/04/hello-world/</url>
@@ -33,7 +193,11 @@
       
         <tags>
             
-            <tag> win10、防火墙、杀毒 </tag>
+            <tag> win10 </tag>
+            
+            <tag> 防火墙 </tag>
+            
+            <tag> 杀毒 </tag>
             
         </tags>
       
@@ -52,7 +216,9 @@
       
         <tags>
             
-            <tag> Linux、MySQL </tag>
+            <tag> MySQL </tag>
+            
+            <tag> Linux </tag>
             
         </tags>
       
@@ -71,7 +237,15 @@
       
         <tags>
             
-            <tag> idea下载、安装、破解 </tag>
+            <tag> 下载 </tag>
+            
+            <tag> 安装 </tag>
+            
+            <tag> win10 </tag>
+            
+            <tag> idea </tag>
+            
+            <tag> 破解 </tag>
             
         </tags>
       
@@ -90,7 +264,13 @@
       
         <tags>
             
-            <tag> MySQL的下载、配置 </tag>
+            <tag> 下载 </tag>
+            
+            <tag> 配置 </tag>
+            
+            <tag> win10 </tag>
+            
+            <tag> MySQL </tag>
             
         </tags>
       
@@ -109,7 +289,13 @@
       
         <tags>
             
-            <tag> JDK的安装、配置 </tag>
+            <tag> 安装 </tag>
+            
+            <tag> 配置 </tag>
+            
+            <tag> win10 </tag>
+            
+            <tag> JDK </tag>
             
         </tags>
       
@@ -128,7 +314,15 @@
       
         <tags>
             
-            <tag> Git克隆，推送（Push），拉取（Pull） </tag>
+            <tag> Git </tag>
+            
+            <tag> win10 </tag>
+            
+            <tag> 克隆 </tag>
+            
+            <tag> 推送（Push） </tag>
+            
+            <tag> 拉取（Pull） </tag>
             
         </tags>
       
@@ -147,7 +341,13 @@
       
         <tags>
             
-            <tag> TortoiseGit的下载和安装 </tag>
+            <tag> 下载 </tag>
+            
+            <tag> 安装 </tag>
+            
+            <tag> win10 </tag>
+            
+            <tag> TortoiseGit </tag>
             
         </tags>
       
@@ -166,7 +366,15 @@
       
         <tags>
             
-            <tag> Git的下载、安装、配置 </tag>
+            <tag> Git </tag>
+            
+            <tag> 下载 </tag>
+            
+            <tag> 安装 </tag>
+            
+            <tag> 配置 </tag>
+            
+            <tag> win10 </tag>
             
         </tags>
       
@@ -185,7 +393,15 @@
       
         <tags>
             
-            <tag> 利用HBuilder中的git导入、拉取 </tag>
+            <tag> Git </tag>
+            
+            <tag> win10 </tag>
+            
+            <tag> 拉取（Pull） </tag>
+            
+            <tag> HBuilder </tag>
+            
+            <tag> 导入 </tag>
             
         </tags>
       
