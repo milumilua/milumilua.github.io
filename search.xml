@@ -216,8 +216,6 @@
       
         <tags>
             
-            <tag> win10 </tag>
-            
             <tag> 防火墙 </tag>
             
             <tag> 杀毒 </tag>
@@ -264,8 +262,6 @@
             
             <tag> 安装 </tag>
             
-            <tag> win10 </tag>
-            
             <tag> idea </tag>
             
             <tag> 破解 </tag>
@@ -291,8 +287,6 @@
             
             <tag> 配置 </tag>
             
-            <tag> win10 </tag>
-            
             <tag> MySQL </tag>
             
         </tags>
@@ -316,8 +310,6 @@
             
             <tag> 配置 </tag>
             
-            <tag> win10 </tag>
-            
             <tag> JDK </tag>
             
         </tags>
@@ -338,8 +330,6 @@
         <tags>
             
             <tag> Git </tag>
-            
-            <tag> win10 </tag>
             
             <tag> 克隆 </tag>
             
@@ -368,8 +358,6 @@
             
             <tag> 安装 </tag>
             
-            <tag> win10 </tag>
-            
             <tag> TortoiseGit </tag>
             
         </tags>
@@ -397,8 +385,6 @@
             
             <tag> 配置 </tag>
             
-            <tag> win10 </tag>
-            
         </tags>
       
     </entry>
@@ -417,8 +403,6 @@
         <tags>
             
             <tag> Git </tag>
-            
-            <tag> win10 </tag>
             
             <tag> 拉取（Pull） </tag>
             
