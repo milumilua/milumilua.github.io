@@ -4,6 +4,29 @@
   
     
     <entry>
+      <title>wechat-devtools下载及安装</title>
+      <link href="2021/03/03/wechat-devtools-xia-zai-ji-an-zhuang/"/>
+      <url>2021/03/03/wechat-devtools-xia-zai-ji-an-zhuang/</url>
+      
+        <content type="html"><![CDATA[<h2 id="一、下载"><a href="#一、下载" class="headerlink" title="一、下载"></a>一、下载</h2><h3 id="1-官网地址"><a href="#1-官网地址" class="headerlink" title="1.官网地址"></a>1.官网地址</h3><p><a href="https://developers.weixin.qq.com/miniprogram/dev/devtools/download.html">https://developers.weixin.qq.com/miniprogram/dev/devtools/download.html</a></p><h3 id="2-推荐下载稳定版本"><a href="#2-推荐下载稳定版本" class="headerlink" title="2.推荐下载稳定版本"></a>2.推荐下载稳定版本</h3><p><img src="/images/wechat-devtools%E4%B8%8B%E8%BD%BD%E5%8F%8A%E5%AE%89%E8%A3%85/image-20210303193317867.png" alt="image-20210303193317867"></p><h3 id="3-下载过后得到如下安装包"><a href="#3-下载过后得到如下安装包" class="headerlink" title="3.下载过后得到如下安装包"></a>3.下载过后得到如下安装包</h3><p><img src="/images/wechat-devtools%E4%B8%8B%E8%BD%BD%E5%8F%8A%E5%AE%89%E8%A3%85/image-20210303193530403.png" alt="image-20210303193530403"></p><h2 id="二、安装"><a href="#二、安装" class="headerlink" title="二、安装"></a>二、安装</h2><h3 id="1-双击安装包，点击“下一步”"><a href="#1-双击安装包，点击“下一步”" class="headerlink" title="1.双击安装包，点击“下一步”"></a>1.双击安装包，点击“下一步”</h3><p><img src="/images/wechat-devtools%E4%B8%8B%E8%BD%BD%E5%8F%8A%E5%AE%89%E8%A3%85/clip_image002.jpg" alt="img"></p><h3 id="2-选择“我接受”"><a href="#2-选择“我接受”" class="headerlink" title="2.选择“我接受”"></a>2.选择“我接受”</h3><p><img src="/images/wechat-devtools%E4%B8%8B%E8%BD%BD%E5%8F%8A%E5%AE%89%E8%A3%85/clip_image004.jpg" alt="img"></p><h3 id="3-更改自己的目标文件夹，点击“安装”"><a href="#3-更改自己的目标文件夹，点击“安装”" class="headerlink" title="3.更改自己的目标文件夹，点击“安装”"></a>3.更改自己的目标文件夹，点击“安装”</h3><p><img src="/images/wechat-devtools%E4%B8%8B%E8%BD%BD%E5%8F%8A%E5%AE%89%E8%A3%85/clip_image006.jpg" alt="img"></p><h3 id="4-接下来它就可以自己安装啦"><a href="#4-接下来它就可以自己安装啦" class="headerlink" title="4.接下来它就可以自己安装啦"></a>4.接下来它就可以自己安装啦</h3><p><img src="/images/wechat-devtools%E4%B8%8B%E8%BD%BD%E5%8F%8A%E5%AE%89%E8%A3%85/clip_image008.jpg" alt="img"></p><h3 id="5-安装完成之后可以选择现在运行，也可以选择稍后安装（只要取消勾选就好），之后点击“完成”"><a href="#5-安装完成之后可以选择现在运行，也可以选择稍后安装（只要取消勾选就好），之后点击“完成”" class="headerlink" title="5.安装完成之后可以选择现在运行，也可以选择稍后安装（只要取消勾选就好），之后点击“完成”"></a>5.安装完成之后可以选择现在运行，也可以选择稍后安装（只要取消勾选就好），之后点击“完成”</h3><p><img src="/images/wechat-devtools%E4%B8%8B%E8%BD%BD%E5%8F%8A%E5%AE%89%E8%A3%85/clip_image010.jpg" alt="img"></p><h3 id="6-如果选择现在运行的话，防火墙可能会询问是否允许访问，这个没关系，直接点击“允许访问”就好。"><a href="#6-如果选择现在运行的话，防火墙可能会询问是否允许访问，这个没关系，直接点击“允许访问”就好。" class="headerlink" title="6.如果选择现在运行的话，防火墙可能会询问是否允许访问，这个没关系，直接点击“允许访问”就好。"></a>6.如果选择现在运行的话，防火墙可能会询问是否允许访问，这个没关系，直接点击“允许访问”就好。</h3><p><img src="/images/wechat-devtools%E4%B8%8B%E8%BD%BD%E5%8F%8A%E5%AE%89%E8%A3%85/clip_image012.jpg" alt="img"></p><h3 id="7-运行之后会弹出一个二维码，可以用微信扫码来登录。"><a href="#7-运行之后会弹出一个二维码，可以用微信扫码来登录。" class="headerlink" title="7.运行之后会弹出一个二维码，可以用微信扫码来登录。"></a>7.运行之后会弹出一个二维码，可以用微信扫码来登录。</h3><p><img src="/images/wechat-devtools%E4%B8%8B%E8%BD%BD%E5%8F%8A%E5%AE%89%E8%A3%85/clip_image014.jpg" alt="img"></p><h3 id="8-手机中通过认证"><a href="#8-手机中通过认证" class="headerlink" title="8.手机中通过认证"></a>8.手机中通过认证</h3><p><img src="/images/wechat-devtools%E4%B8%8B%E8%BD%BD%E5%8F%8A%E5%AE%89%E8%A3%85/clip_image016.jpg" alt="img"></p><h3 id="9-登陆成功之后电脑会显示扫描成功"><a href="#9-登陆成功之后电脑会显示扫描成功" class="headerlink" title="9.登陆成功之后电脑会显示扫描成功"></a>9.登陆成功之后电脑会显示扫描成功</h3><p><img src="/images/wechat-devtools%E4%B8%8B%E8%BD%BD%E5%8F%8A%E5%AE%89%E8%A3%85/clip_image018.jpg" alt="img"></p><h3 id="10-登陆成功后出现下面这个页面就成功了！"><a href="#10-登陆成功后出现下面这个页面就成功了！" class="headerlink" title="10.登陆成功后出现下面这个页面就成功了！"></a>10.登陆成功后出现下面这个页面就成功了！</h3><p><img src="/images/wechat-devtools%E4%B8%8B%E8%BD%BD%E5%8F%8A%E5%AE%89%E8%A3%85/clip_image020.jpg" alt="img"></p><p><strong>安装完成！</strong></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 下载 </tag>
+            
+            <tag> 安装 </tag>
+            
+            <tag> wechat-devtools </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>VSCode的安装</title>
       <link href="2021/03/03/vscode-de-an-zhuang/"/>
       <url>2021/03/03/vscode-de-an-zhuang/</url>
