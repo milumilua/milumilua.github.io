@@ -4,6 +4,27 @@
   
     
     <entry>
+      <title>VSCode的安装</title>
+      <link href="2021/03/03/vscode-de-an-zhuang/"/>
+      <url>2021/03/03/vscode-de-an-zhuang/</url>
+      
+        <content type="html"><![CDATA[<h2 id="一、下载"><a href="#一、下载" class="headerlink" title="一、下载"></a>一、下载</h2><p>官网：<a href="https://code.visualstudio.com/">https://code.visualstudio.com/</a></p><p>打开官网之后选择自己所需要的版本下载得到安装包。</p><p><img src="/images/VSCode%E7%9A%84%E5%AE%89%E8%A3%85/clip_image002.jpg" alt="img"></p><h2 id="二、安装"><a href="#二、安装" class="headerlink" title="二、安装"></a>二、安装</h2><h3 id="1-双击安装包后点击“同意”之后才可以点击“下一步”"><a href="#1-双击安装包后点击“同意”之后才可以点击“下一步”" class="headerlink" title="1.双击安装包后点击“同意”之后才可以点击“下一步”"></a>1.双击安装包后点击“同意”之后才可以点击“下一步”</h3><p><img src="/images/VSCode%E7%9A%84%E5%AE%89%E8%A3%85/clip_image004.jpg" alt="img"></p><h3 id="2-在这里选择想要安装的目标文件夹，然后“下一步”"><a href="#2-在这里选择想要安装的目标文件夹，然后“下一步”" class="headerlink" title="2.在这里选择想要安装的目标文件夹，然后“下一步”"></a>2.在这里选择想要安装的目标文件夹，然后“下一步”</h3><p><img src="/images/VSCode%E7%9A%84%E5%AE%89%E8%A3%85/clip_image006.jpg" alt="img"></p><h3 id="3-这里不需要修改，直接“下一步”就好"><a href="#3-这里不需要修改，直接“下一步”就好" class="headerlink" title="3.这里不需要修改，直接“下一步”就好"></a>3.这里不需要修改，直接“下一步”就好</h3><p><img src="/images/VSCode%E7%9A%84%E5%AE%89%E8%A3%85/clip_image008.jpg" alt="img"></p><h3 id="4-在这里建议选择下面两个"><a href="#4-在这里建议选择下面两个" class="headerlink" title="4.在这里建议选择下面两个"></a>4.在这里建议选择下面两个</h3><p><img src="/images/VSCode%E7%9A%84%E5%AE%89%E8%A3%85/clip_image010.jpg" alt="img"></p><h3 id="5-再次确认，安装"><a href="#5-再次确认，安装" class="headerlink" title="5.再次确认，安装"></a>5.再次确认，安装</h3><p><img src="/images/VSCode%E7%9A%84%E5%AE%89%E8%A3%85/clip_image012.jpg" alt="img"></p><h3 id="6-下面它就会自己安装啦"><a href="#6-下面它就会自己安装啦" class="headerlink" title="6.下面它就会自己安装啦"></a>6.下面它就会自己安装啦</h3><p><img src="/images/VSCode%E7%9A%84%E5%AE%89%E8%A3%85/clip_image014.jpg" alt="img"></p><h3 id="7-安装完成之后可以直接运行，也可以稍后运行（取消勾选就好）"><a href="#7-安装完成之后可以直接运行，也可以稍后运行（取消勾选就好）" class="headerlink" title="7.安装完成之后可以直接运行，也可以稍后运行（取消勾选就好）"></a>7.安装完成之后可以直接运行，也可以稍后运行（取消勾选就好）</h3><p><img src="/images/VSCode%E7%9A%84%E5%AE%89%E8%A3%85/clip_image016.jpg" alt="img"></p><h3 id="8-初次运行，长下面这个样子"><a href="#8-初次运行，长下面这个样子" class="headerlink" title="8.初次运行，长下面这个样子"></a>8.初次运行，长下面这个样子</h3><p><img src="/images/VSCode%E7%9A%84%E5%AE%89%E8%A3%85/clip_image018.jpg" alt="img"></p><p><strong>安装完成啦！</strong></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 安装 </tag>
+            
+            <tag> VSCode </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>请注意您的文档的部分内容可能包含文档检查器无法删除的个人信息</title>
       <link href="2021/02/22/qing-zhu-yi-nin-de-wen-dang-de-bu-fen-nei-rong-ke-neng-bao-han-wen-dang-jian-cha-qi-wu-fa-shan-chu-de-ge-ren-xin-xi/"/>
       <url>2021/02/22/qing-zhu-yi-nin-de-wen-dang-de-bu-fen-nei-rong-ke-neng-bao-han-wen-dang-jian-cha-qi-wu-fa-shan-chu-de-ge-ren-xin-xi/</url>
