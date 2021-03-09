@@ -4,6 +4,27 @@
   
     
     <entry>
+      <title>select被覆盖的问题</title>
+      <link href="2021/03/09/select-bei-fu-gai-de-wen-ti/"/>
+      <url>2021/03/09/select-bei-fu-gai-de-wen-ti/</url>
+      
+        <content type="html"><![CDATA[<h2 id="一、问题描述"><a href="#一、问题描述" class="headerlink" title="一、问题描述"></a>一、问题描述</h2><p>如下图所示，select下拉栏被下方的文本框遮挡住了，怎么调都调不出来。</p><p><img src="/images/select%E8%A2%AB%E8%A6%86%E7%9B%96%E7%9A%84%E9%97%AE%E9%A2%98/1.png" alt="1"></p><h2 id="二、问题分析"><a href="#二、问题分析" class="headerlink" title="二、问题分析"></a>二、问题分析</h2><p>下方的文本框是wangEditor，而wangEditor设置的层级z-index很高，会覆盖掉和他重合的区域。</p><h2 id="三、解决方法"><a href="#三、解决方法" class="headerlink" title="三、解决方法"></a>三、解决方法</h2><p>在wangEditor的css中添加如下代码：</p><figure class="highlight css"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">z-index</span>: 2 !<span class="selector-tag">important</span>;</span><br></pre></td></tr></tbody></table></figure><p>这段代码的效果就是将wangEditor设置的层级z-index降低。</p><p>z-index的等级的效果是数字越大，层级越高，越在上方。</p><p>下方为简单的解释：</p><figure class="highlight css"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">//在最上方</span><br><span class="line"><span class="selector-tag">z-index</span>: 9999 !<span class="selector-tag">important</span>;</span><br><span class="line">//在最下方</span><br><span class="line"><span class="selector-tag">z-index</span>: <span class="selector-tag">-1</span> !<span class="selector-tag">important</span>;</span><br></pre></td></tr></tbody></table></figure><h2 id="四、解决后的效果"><a href="#四、解决后的效果" class="headerlink" title="四、解决后的效果"></a>四、解决后的效果</h2><p>在网页中利用“检查元素”可以看到添加到的代码。（F12或者Fn+F12）</p><p><img src="/images/select%E8%A2%AB%E8%A6%86%E7%9B%96%E7%9A%84%E9%97%AE%E9%A2%98/2.png" alt="2"></p><p>最终得到的效果如图所示：</p><p><img src="/images/select%E8%A2%AB%E8%A6%86%E7%9B%96%E7%9A%84%E9%97%AE%E9%A2%98/3.png" alt="3"></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> css </tag>
+            
+            <tag> ERROR </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>wechat-devtools下载及安装</title>
       <link href="2021/03/03/wechat-devtools-xia-zai-ji-an-zhuang/"/>
       <url>2021/03/03/wechat-devtools-xia-zai-ji-an-zhuang/</url>
@@ -354,11 +375,11 @@
             
             <tag> Git </tag>
             
+            <tag> 拉取（Pull） </tag>
+            
             <tag> 克隆 </tag>
             
             <tag> 推送（Push） </tag>
-            
-            <tag> 拉取（Pull） </tag>
             
         </tags>
       
@@ -427,11 +448,11 @@
             
             <tag> Git </tag>
             
-            <tag> 拉取（Pull） </tag>
-            
             <tag> HBuilder </tag>
             
             <tag> 导入 </tag>
+            
+            <tag> 拉取（Pull） </tag>
             
         </tags>
       
