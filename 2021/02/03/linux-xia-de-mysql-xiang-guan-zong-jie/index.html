@@ -476,7 +476,7 @@
 <figure class="highlight sql"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">DELETE</span> <span class="keyword">FROM</span> fire</span><br><span class="line"><span class="keyword">WHERE</span> name<span class="operator">=</span><span class="string">'anquan'</span> <span class="keyword">AND</span> country<span class="operator">=</span><span class="string">'USA'</span>;</span><br></pre></td></tr></tbody></table></figure>
 <p>如果想要删除表中所有数据，但是并不想删除表的话可以用下面的命令(二选一即可)</p>
 <figure class="highlight sql"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">DELETE</span> <span class="keyword">FROM</span> table_name;</span><br><span class="line"><span class="keyword">DELETE</span> <span class="operator">*</span> <span class="keyword">FROM</span> table_name;</span><br></pre></td></tr></tbody></table></figure>
-<p>注意：<strong>删除需谨慎，无法撤回！！！</strong></p>
+<p><span style="color:red;">注意：<strong>删除需谨慎，无法撤回！！！</strong></span></p>
 <h2 id="五、导入、导出数据库"><a href="#五、导入、导出数据库" class="headerlink" title="五、导入、导出数据库"></a>五、导入、导出数据库</h2><h3 id="5-1导出指定数据库、数据表"><a href="#5-1导出指定数据库、数据表" class="headerlink" title="5.1导出指定数据库、数据表"></a>5.1导出指定数据库、数据表</h3><p>注意：有些需要在MySQL中的bin目录下进行</p>
 <figure class="highlight sql"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">.<span class="operator">/</span>mysqldump <span class="operator">-</span>u用户名 <span class="operator">-</span>p密码 <span class="comment">--databases 数据库名 &gt; /路径/路径/导出的表名.sql</span></span><br></pre></td></tr></tbody></table></figure>
 <p>例子：</p>
@@ -504,9 +504,9 @@
 <p>导入数据表</p>
 <figure class="highlight sql"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">source <span class="operator">/</span>home<span class="operator">/</span>users.sql</span><br></pre></td></tr></tbody></table></figure>
 <p>注：/home/users.sql是路径++数据表sql文件</p>
-<h3 id="5-9导入失败"><a href="#5-9导入失败" class="headerlink" title="5.9导入失败"></a>5.9导入失败</h3><p>错误：**<code>ERROR 1273 (HY000): Unknown collation: 'utf8mb4_0900_ai_ci'</code>**</p>
+<h3 id="5-9导入失败"><a href="#5-9导入失败" class="headerlink" title="5.9导入失败"></a>5.9导入失败</h3><p>错误：<span style="color:red;"><strong><code>ERROR 1273 (HY000): Unknown collation: 'utf8mb4_0900_ai_ci'</code></strong></span></p>
 <p>是因为Linux下MySQL版本不兼容导致的</p>
-<p><strong>• 把文件中的所有的<code>utf8mb4_0900_ai_ci</code>替换为<code>utf8_general_ci</code><br>• 以及<code>utf8mb4</code>替换为<code>utf8</code></strong></p>
+<p><span style="color:red;"><strong>• 把文件中的所有的<code>utf8mb4_0900_ai_ci</code>替换为<code>utf8_general_ci</code><br>• 以及<code>utf8mb4</code>替换为<code>utf8</code></strong></span></p>
 <p>利用全局搜索替换就可以</p>
 <p>如果用nodepad++的话利用快捷键ctrl+F，然后全局替换就可以了。</p>
 <p><img src="/images/Linux%E4%B8%8B%E7%9A%84mysql%E7%9B%B8%E5%85%B3%E6%80%BB%E7%BB%93/image-20210203122533248.png"></p>
