@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="select被覆盖的问题, milu麋鹿博">
+    <meta name="keywords" content="Android Studio--相对布局(Button9), milu麋鹿博">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>select被覆盖的问题 | milu麋鹿博</title>
+    <title>Android Studio--相对布局(Button9) | milu麋鹿博</title>
     <link rel="icon" type="image/png" href="/medias/logo1.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -249,12 +249,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/9.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/21.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">select被覆盖的问题</h1>
+                    <h1 class="description center-align post-title">Android Studio--相对布局(Button9)</h1>
                 </div>
             </div>
         </div>
@@ -370,12 +370,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/css/">
-                                <span class="chip bg-color">css</span>
-                            </a>
-                        
-                            <a href="/tags/ERROR/">
-                                <span class="chip bg-color">ERROR</span>
+                            <a href="/tags/Android-Studio/">
+                                <span class="chip bg-color">Android Studio</span>
                             </a>
                         
                     </div>
@@ -390,7 +386,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2021-03-09
+                    2021-03-12
                 </div>
                 
 
@@ -411,20 +407,10 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="一、问题描述"><a href="#一、问题描述" class="headerlink" title="一、问题描述"></a>一、问题描述</h2><p>如下图所示，select下拉栏被下方的文本框遮挡住了，怎么调都调不出来。</p>
-<p><img src="/images/select%E8%A2%AB%E8%A6%86%E7%9B%96%E7%9A%84%E9%97%AE%E9%A2%98/1.png" alt="1"></p>
-<h2 id="二、问题分析"><a href="#二、问题分析" class="headerlink" title="二、问题分析"></a>二、问题分析</h2><p>下方的文本框是wangEditor，而wangEditor设置的层级z-index很高，会覆盖掉和他重合的区域。</p>
-<h2 id="三、解决方法"><a href="#三、解决方法" class="headerlink" title="三、解决方法"></a>三、解决方法</h2><p>在wangEditor的css中添加如下代码：</p>
-<figure class="highlight css"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">z-index</span>: 2 !<span class="selector-tag">important</span>;</span><br></pre></td></tr></tbody></table></figure>
-<p>这段代码的效果就是将wangEditor设置的层级z-index降低。</p>
-<p>z-index的等级的效果是数字越大，层级越高，越在上方。</p>
-<p>下方为简单的解释：</p>
-<figure class="highlight css"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">//在最上方</span><br><span class="line"><span class="selector-tag">z-index</span>: 9999 !<span class="selector-tag">important</span>;</span><br><span class="line">//在最下方</span><br><span class="line"><span class="selector-tag">z-index</span>: <span class="selector-tag">-1</span> !<span class="selector-tag">important</span>;</span><br></pre></td></tr></tbody></table></figure>
-<p><span style="color:red;"><strong>！！！注意！！！如果使用vue，则不要写在scoped内，否则无效！！！</strong></span></p>
-<h2 id="四、解决后的效果"><a href="#四、解决后的效果" class="headerlink" title="四、解决后的效果"></a>四、解决后的效果</h2><p>在网页中利用“检查元素”可以看到添加到的代码。（F12或者Fn+F12）</p>
-<p><img src="/images/select%E8%A2%AB%E8%A6%86%E7%9B%96%E7%9A%84%E9%97%AE%E9%A2%98/2.png" alt="2"></p>
-<p>最终得到的效果如图所示：</p>
-<p><img src="/images/select%E8%A2%AB%E8%A6%86%E7%9B%96%E7%9A%84%E9%97%AE%E9%A2%98/3.png" alt="3"></p>
+                <h2 id="一、相对布局"><a href="#一、相对布局" class="headerlink" title="一、相对布局"></a>一、相对布局</h2><p>​    RelativeLayout 又称作相对布局，也是一种非常常用的布局。和 LinearLayout的排列规则不同，RelativeLayout显得更加随意一些，它可以通过相对定位的方式让控件出现在布局的任何位置。也正因为如此，RelativeLayout 中的属性非常多，不过这些属性都是有规律可循的，其实开不难理解和记忆。</p>
+<h2 id="二、代码展示"><a href="#二、代码展示" class="headerlink" title="二、代码展示"></a>二、代码展示</h2><figure class="highlight html"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version="1.0" encoding="utf-8"?&gt;</span></span><br><span class="line"><span class="comment">&lt;!--相对布局--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">RelativeLayout</span> <span class="attr">xmlns:android</span>=<span class="string">"http://schemas.android.com/apk/res/android"</span></span></span><br><span class="line"><span class="tag">    <span class="attr">android:layout_width</span>=<span class="string">"match_parent"</span></span></span><br><span class="line"><span class="tag">    <span class="attr">android:layout_height</span>=<span class="string">"match_parent"</span>&gt;</span></span><br><span class="line"><span class="comment">&lt;!--左上角--&gt;</span></span><br><span class="line">    &lt;Button</span><br><span class="line">        android:layout_width="wrap_content"</span><br><span class="line">        android:layout_height="wrap_content"</span><br><span class="line">        android:id="@+id/button1"</span><br><span class="line">        android:layout_alignParentTop="true"</span><br><span class="line">        android:layout_alignParentLeft="true"</span><br><span class="line">        android:text="Button 1"/&gt;</span><br><span class="line"><span class="comment">&lt;!--右上角--&gt;</span></span><br><span class="line">    &lt;Button</span><br><span class="line">        android:layout_width="wrap_content"</span><br><span class="line">        android:layout_height="wrap_content"</span><br><span class="line">        android:id="@+id/button2"</span><br><span class="line">        android:layout_alignParentTop="true"</span><br><span class="line">        android:layout_alignParentRight="true"</span><br><span class="line">        android:text="Button 2"/&gt;</span><br><span class="line"><span class="comment">&lt;!--  正中间  --&gt;</span></span><br><span class="line">    &lt;Button</span><br><span class="line">        android:layout_width="wrap_content"</span><br><span class="line">        android:layout_height="wrap_content"</span><br><span class="line">        android:id="@+id/button3"</span><br><span class="line">        android:layout_centerInParent="true"</span><br><span class="line">        android:text="Button 3"/&gt;</span><br><span class="line"><span class="comment">&lt;!--  左下角  --&gt;</span></span><br><span class="line">    &lt;Button</span><br><span class="line">        android:layout_width="wrap_content"</span><br><span class="line">        android:layout_height="wrap_content"</span><br><span class="line">        android:id="@+id/button4"</span><br><span class="line">        android:layout_alignParentBottom="true"</span><br><span class="line">        android:layout_alignParentLeft="true"</span><br><span class="line">        android:text="Button 4"/&gt;</span><br><span class="line"><span class="comment">&lt;!--  右下角  --&gt;</span></span><br><span class="line">    &lt;Button</span><br><span class="line">        android:layout_width="wrap_content"</span><br><span class="line">        android:layout_height="wrap_content"</span><br><span class="line">        android:id="@+id/button5"</span><br><span class="line">        android:layout_alignParentBottom="true"</span><br><span class="line">        android:layout_alignParentRight="true"</span><br><span class="line">        android:text="Button 5"/&gt;</span><br><span class="line"></span><br><span class="line">    &lt;Button</span><br><span class="line">        android:layout_width="wrap_content"</span><br><span class="line">        android:layout_height="wrap_content"</span><br><span class="line">        android:id="@+id/button6"</span><br><span class="line">        android:layout_above="@+id/button3"</span><br><span class="line">        android:layout_toLeftOf="@id/button3"</span><br><span class="line">        android:text="Button 6"/&gt;</span><br><span class="line">    &lt;Button</span><br><span class="line">        android:layout_width="wrap_content"</span><br><span class="line">        android:layout_height="wrap_content"</span><br><span class="line">        android:id="@+id/button7"</span><br><span class="line">        android:layout_above="@+id/button3"</span><br><span class="line">        android:layout_toRightOf="@id/button3"</span><br><span class="line">        android:text="Button 7"/&gt;</span><br><span class="line">    &lt;Button</span><br><span class="line">        android:layout_width="wrap_content"</span><br><span class="line">        android:layout_height="wrap_content"</span><br><span class="line">        android:id="@+id/button8"</span><br><span class="line">        android:layout_below="@+id/button3"</span><br><span class="line">        android:layout_toLeftOf="@id/button3"</span><br><span class="line">        android:text="Button 8"/&gt;</span><br><span class="line">    &lt;Button</span><br><span class="line">        android:layout_width="wrap_content"</span><br><span class="line">        android:layout_height="wrap_content"</span><br><span class="line">        android:id="@+id/button9"</span><br><span class="line">        android:layout_below="@+id/button3"</span><br><span class="line">        android:layout_toRightOf="@id/button3"</span><br><span class="line">        android:text="Button 9"/&gt;</span><br><span class="line"><span class="tag">&lt;/<span class="name">RelativeLayout</span>&gt;</span></span><br></pre></td></tr></tbody></table></figure>
+<p><span style="color:red;"><strong>注意：因为没有任何跳转的操作，只是显示布局情况，所以这里只需要修改xml文件就可以了。</strong></span></p>
+<h2 id="三、结果展示"><a href="#三、结果展示" class="headerlink" title="三、结果展示"></a>三、结果展示</h2><p><img src="/images/Android-Studio-%E7%9B%B8%E5%AF%B9%E5%B8%83%E5%B1%80-Button9/%E5%B8%83%E5%B1%80.png" alt="布局"></p>
 
                 
             </div>
@@ -451,7 +437,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://example.com/2021/03/09/select-bei-fu-gai-de-wen-ti/">http://example.com/2021/03/09/select-bei-fu-gai-de-wen-ti/</a>
+                    <a href="http://example.com/2021/03/12/android-studio-xiang-dui-bu-ju-button9/">http://example.com/2021/03/12/android-studio-xiang-dui-bu-ju-button9/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -489,12 +475,8 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/css/">
-                                    <span class="chip bg-color">css</span>
-                                </a>
-                            
-                                <a href="/tags/ERROR/">
-                                    <span class="chip bg-color">ERROR</span>
+                                <a href="/tags/Android-Studio/">
+                                    <span class="chip bg-color">Android Studio</span>
                                 </a>
                             
                         </div>
@@ -538,9 +520,10 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
                 <a href="/2021/03/12/android-studio-xiang-dui-bu-ju-button9/">
                     <div class="card-image">
@@ -558,9 +541,9 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-03-12
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-03-12
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -569,6 +552,7 @@
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -587,13 +571,13 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2021/03/03/wechat-devtools-xia-zai-ji-an-zhuang/">
+                <a href="/2021/03/09/select-bei-fu-gai-de-wen-ti/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="wechat-devtools下载及安装">
+                        <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="select被覆盖的问题">
                         
-                        <span class="card-title">wechat-devtools下载及安装</span>
+                        <span class="card-title">select被覆盖的问题</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -604,7 +588,7 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-03-03
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-03-09
                             </span>
                         <span class="publish-author">
                             
@@ -617,16 +601,12 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E4%B8%8B%E8%BD%BD/">
-                        <span class="chip bg-color">下载</span>
+                    <a href="/tags/css/">
+                        <span class="chip bg-color">css</span>
                     </a>
                     
-                    <a href="/tags/%E5%AE%89%E8%A3%85/">
-                        <span class="chip bg-color">安装</span>
-                    </a>
-                    
-                    <a href="/tags/wechat-devtools/">
-                        <span class="chip bg-color">wechat-devtools</span>
+                    <a href="/tags/ERROR/">
+                        <span class="chip bg-color">ERROR</span>
                     </a>
                     
                 </div>
