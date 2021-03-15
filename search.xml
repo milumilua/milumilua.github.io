@@ -4,6 +4,40 @@
   
     
     <entry>
+      <title>WebStorm的安装</title>
+      <link href="2021/03/15/webstorm-de-an-zhuang/"/>
+      <url>2021/03/15/webstorm-de-an-zhuang/</url>
+      
+        <content type="html"><![CDATA[<h2 id="一、下载"><a href="#一、下载" class="headerlink" title="一、下载"></a>一、下载</h2><p>点击下载：</p><p><a href="https://www.jetbrains.com/webstorm/">官网地址</a></p><p><img src="/images/webstorm%E7%9A%84%E5%AE%89%E8%A3%85/0.png" alt="0"></p><p>下载过后就会得到下面的这个安装包（之后的WebStorm会安装在第一个是我自己建的空的文件夹里面，第二个是破解包</p><p><img src="/images/webstorm%E7%9A%84%E5%AE%89%E8%A3%85/1.png" alt="1"></p><p><a href="https://pan.baidu.com/s/1uRAuNudwx1jOEdhuM3vwhg">网盘链接</a><br>提取码：milu </p><h2 id="二、安装"><a href="#二、安装" class="headerlink" title="二、安装"></a>二、安装</h2><h3 id="1-双击安装包-gt-Next"><a href="#1-双击安装包-gt-Next" class="headerlink" title="1.双击安装包->Next"></a>1.双击安装包-&gt;Next</h3><p><img src="/images/webstorm%E7%9A%84%E5%AE%89%E8%A3%85/2.png" alt="2"></p><h3 id="2-选择所需安装位置-gt-Next"><a href="#2-选择所需安装位置-gt-Next" class="headerlink" title="2.选择所需安装位置->Next"></a>2.选择所需安装位置-&gt;Next</h3><p><strong>（我安装在了刚刚自己建好的空文件夹中）</strong></p><p><img src="/images/webstorm%E7%9A%84%E5%AE%89%E8%A3%85/3.png" alt="3"></p><h3 id="3-选择所需的选项-gt-Next"><a href="#3-选择所需的选项-gt-Next" class="headerlink" title="3.选择所需的选项->Next"></a>3.选择所需的选项-&gt;Next</h3><p><img src="/images/webstorm%E7%9A%84%E5%AE%89%E8%A3%85/4.png" alt="4"></p><h3 id="4-直接Install"><a href="#4-直接Install" class="headerlink" title="4.直接Install"></a>4.直接Install</h3><p><img src="/images/webstorm%E7%9A%84%E5%AE%89%E8%A3%85/5.png" alt="5"></p><h3 id="5-等待"><a href="#5-等待" class="headerlink" title="5.等待"></a>5.等待</h3><p><img src="/images/webstorm%E7%9A%84%E5%AE%89%E8%A3%85/6.png" alt="6"></p><h3 id="6-选择是否重启电脑-gt-Finish"><a href="#6-选择是否重启电脑-gt-Finish" class="headerlink" title="6.选择是否重启电脑->Finish"></a>6.选择是否重启电脑-&gt;Finish</h3><p>您的计算机必须重新启动，才能完成Webstorm的安装。你现在想重新启动吗?</p><p>第一个是现在重启，第二个是稍后手动重启</p><p><img src="/images/webstorm%E7%9A%84%E5%AE%89%E8%A3%85/7.png" alt="7"></p><h3 id="三、破解"><a href="#三、破解" class="headerlink" title="三、破解"></a>三、破解</h3><p>破解的步骤和idea的完全一样，可以参考idea的破解步骤：</p><p><a href="https://milumilua.github.io/2021/01/30/idea-de-xia-zai-an-zhuang-po-jie/#toc-heading-3">idea的下载、安装、破解</a></p><p>破解步骤及原理可以参考下面的链接：</p><p><a href="https://zhile.io/">参考链接</a></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 安装 </tag>
+            
+            <tag> WebStorm </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Axure的安装破解及汉化</title>
+      <link href="2021/03/15/axure-de-an-zhuang-po-jie-ji-han-hua/"/>
+      <url>2021/03/15/axure-de-an-zhuang-po-jie-ji-han-hua/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>client_loop: send disconnect: Connection reset by peer fatal: the remote end hung up unexpectedly</title>
       <link href="2021/03/13/client-loop-send-disconnect-connection-reset-by-peer-fatal-the-remote-end-hung-up-unexpectedly/"/>
       <url>2021/03/13/client-loop-send-disconnect-connection-reset-by-peer-fatal-the-remote-end-hung-up-unexpectedly/</url>
