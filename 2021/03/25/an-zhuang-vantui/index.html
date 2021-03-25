@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="vue-axios插件的安装, milu麋鹿博">
+    <meta name="keywords" content="安装vantUI, milu麋鹿博">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>vue-axios插件的安装 | milu麋鹿博</title>
+    <title>安装vantUI | milu麋鹿博</title>
     <link rel="icon" type="image/png" href="/medias/logo1.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -249,12 +249,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/68.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/55.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">vue-axios插件的安装</h1>
+                    <h1 class="description center-align post-title">安装vantUI</h1>
                 </div>
             </div>
         </div>
@@ -370,12 +370,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/Vue/">
-                                <span class="chip bg-color">Vue</span>
-                            </a>
-                        
-                            <a href="/tags/axios/">
-                                <span class="chip bg-color">axios</span>
+                            <a href="/tags/vantUI/">
+                                <span class="chip bg-color">vantUI</span>
                             </a>
                         
                     </div>
@@ -416,23 +412,10 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="一、安装vue-axios插件"><a href="#一、安装vue-axios插件" class="headerlink" title="一、安装vue-axios插件"></a>一、安装vue-axios插件</h2><p>由于cnpm比npm更加的快速，所以建议用cnpm代替npm来进行插件的安装。</p>
-<p>将路径换成淘宝的路径速度能够快点，命令如下：</p>
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g cnpm --registry=https://registry.npm.taobao.org</span><br></pre></td></tr></tbody></table></figure>
-<p>利用命令安装axios：</p>
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cnpm install axios</span><br></pre></td></tr></tbody></table></figure>
-<p><img src="/images/vue-axios%E6%8F%92%E4%BB%B6%E7%9A%84%E5%AE%89%E8%A3%85/image-20210325202205033.png" alt="安装axios插件"></p>
-<h2 id="二、vue-axios插件的引用"><a href="#二、vue-axios插件的引用" class="headerlink" title="二、vue-axios插件的引用"></a>二、vue-axios插件的引用</h2><p><strong>在这里我们用vue2.0 vue-cli脚手架去实现。</strong></p>
-<h3 id="1、创建引用文件："><a href="#1、创建引用文件：" class="headerlink" title="1、创建引用文件："></a>1、创建引用文件：</h3><p>用ide打开项目文件，在src目录下创建文件夹axios，后在文件夹内创建index.js。如图：</p>
-<p><img src="/images/vue-axios%E6%8F%92%E4%BB%B6%E7%9A%84%E5%AE%89%E8%A3%85/clip_image001.png" alt="创建index.js"></p>
-<h3 id="2-引入axios"><a href="#2-引入axios" class="headerlink" title="2.引入axios"></a>2.引入axios</h3><h4 id="1-index-js"><a href="#1-index-js" class="headerlink" title="1.index.js"></a>1.index.js</h4><p>将下方代码粘到index.js文件中就可以了。</p>
-<figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*引入Vue框架*/</span></span><br><span class="line"><span class="keyword">import</span> Vue from <span class="string">'vue'</span>;</span><br><span class="line"><span class="comment">/*引入资源请求插件*/</span></span><br><span class="line"><span class="keyword">import</span> axios from <span class="string">'axios'</span>;</span><br><span class="line">    </span><br><span class="line"><span class="comment">/*使用axios插件*/</span></span><br><span class="line">Vue.prototype.$axios = axios;</span><br><span class="line"><span class="function">export <span class="title">default</span><span class="params">({</span></span></span><br><span class="line"><span class="function"><span class="params">})</span></span>;</span><br></pre></td></tr></tbody></table></figure>
-<p><img src="/images/vue-axios%E6%8F%92%E4%BB%B6%E7%9A%84%E5%AE%89%E8%A3%85/image-20210325203445321.png" alt="引入axios"></p>
-<h4 id="2-找到src下的main-js"><a href="#2-找到src下的main-js" class="headerlink" title="2.找到src下的main.js"></a>2.找到src下的main.js</h4><p><img src="/images/vue-axios%E6%8F%92%E4%BB%B6%E7%9A%84%E5%AE%89%E8%A3%85/image-20210325204017288.png" alt="main.js位置显示"></p>
-<p>引入下方代码：</p>
-<figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> axios from <span class="string">'./axios'</span>;<span class="comment">//通过import引入</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">new</span> Vue({</span><br><span class="line">  el: <span class="string">'#app'</span>,</span><br><span class="line">  router,</span><br><span class="line">  axios,<span class="comment">//通过import引入，然后在这里调用</span></span><br><span class="line">  components: { App },</span><br><span class="line">  template: <span class="string">'&lt;App/&gt;'</span></span><br><span class="line">})</span><br></pre></td></tr></tbody></table></figure>
-<p><img src="/images/vue-axios%E6%8F%92%E4%BB%B6%E7%9A%84%E5%AE%89%E8%A3%85/image-20210325203904826.png" alt="引入axios"></p>
-<p><a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_42363090/article/details/89007711">参考路径</a></p>
+                <h2 id="一、vantUI安装"><a href="#一、vantUI安装" class="headerlink" title="一、vantUI安装"></a>一、vantUI安装</h2><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cnpm i vant -S</span><br></pre></td></tr></tbody></table></figure>
+<p><img src="/images/%E5%AE%89%E8%A3%85vantUI/image-20210325205551408.png" alt="安装vantUI"></p>
+<h2 id="二、vant引入"><a href="#二、vant引入" class="headerlink" title="二、vant引入"></a>二、vant引入</h2><figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//在main.js中全局引入vant</span></span><br><span class="line"><span class="keyword">import</span> Vant from <span class="string">'vant'</span><span class="comment">//引入vant</span></span><br><span class="line"><span class="keyword">import</span> <span class="string">'vant/lib/index.css'</span><span class="comment">//引入vant样式</span></span><br><span class="line">Vue.use(Vant)<span class="comment">//运用vant</span></span><br></pre></td></tr></tbody></table></figure>
+<p><img src="/images/%E5%AE%89%E8%A3%85vantUI/image-20210325205627077.png" alt="image-20210325205627077"></p>
 
                 
             </div>
@@ -459,7 +442,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://example.com/2021/03/25/vue-axios-cha-jian-de-an-zhuang/">http://example.com/2021/03/25/vue-axios-cha-jian-de-an-zhuang/</a>
+                    <a href="http://example.com/2021/03/25/an-zhuang-vantui/">http://example.com/2021/03/25/an-zhuang-vantui/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -497,12 +480,8 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/Vue/">
-                                    <span class="chip bg-color">Vue</span>
-                                </a>
-                            
-                                <a href="/tags/axios/">
-                                    <span class="chip bg-color">axios</span>
+                                <a href="/tags/vantUI/">
+                                    <span class="chip bg-color">vantUI</span>
                                 </a>
                             
                         </div>
@@ -813,13 +792,13 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2021/03/25/an-zhuang-vantui/">
+                <a href="/2021/03/25/less-an-zhuang/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/55.jpg" class="responsive-img" alt="安装vantUI">
+                        <img src="/medias/featureimages/32.jpg" class="responsive-img" alt="Less安装">
                         
-                        <span class="card-title">安装vantUI</span>
+                        <span class="card-title">Less安装</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -843,8 +822,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/vantUI/">
-                        <span class="chip bg-color">vantUI</span>
+                    <a href="/tags/Less/">
+                        <span class="chip bg-color">Less</span>
                     </a>
                     
                 </div>
@@ -858,13 +837,13 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2021/03/25/xin-jian-vue-xiang-mu/">
+                <a href="/2021/03/25/vue-axios-cha-jian-de-an-zhuang/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/50.jpg" class="responsive-img" alt="新建vue项目">
+                        <img src="/medias/featureimages/68.jpg" class="responsive-img" alt="vue-axios插件的安装">
                         
-                        <span class="card-title">新建vue项目</span>
+                        <span class="card-title">vue-axios插件的安装</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -890,6 +869,10 @@
                     
                     <a href="/tags/Vue/">
                         <span class="chip bg-color">Vue</span>
+                    </a>
+                    
+                    <a href="/tags/axios/">
+                        <span class="chip bg-color">axios</span>
                     </a>
                     
                 </div>
