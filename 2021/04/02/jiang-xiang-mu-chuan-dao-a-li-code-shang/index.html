@@ -410,6 +410,9 @@
         <hr class="clearfix">
 
         
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="/libs/prism/prism.css">
+        
 
         
         <!-- 代码块折行 -->
@@ -452,7 +455,11 @@
 <h4 id="2-git-add-lt-文件名-gt"><a href="#2-git-add-lt-文件名-gt" class="headerlink" title="(2)git add <文件名>"></a>(2)<code>git add &lt;文件名&gt;</code></h4><p>仓库分为工作区 暂存区 提交区，文件夹即是工作区，现在我们新建一个空文件并使用<code>git add &lt;文件名&gt;</code>把它添加到暂存区。</p>
 <h4 id="3-Git-commit"><a href="#3-Git-commit" class="headerlink" title="(3)Git commit"></a>(3)<code>Git commit</code></h4><h5 id="①git-commit-m-“message”"><a href="#①git-commit-m-“message”" class="headerlink" title="①git commit -m “message”"></a><strong>①git commit -m “message”</strong></h5><p>​        这种是比较常见的用法，<code>-m</code> 参数表示可以直接输入后面的“<code>message</code>”，如果不加 -m参数，那么是不能直接输入<code>message</code>的，而是会调用一个编辑器一般是<code>vim</code>来让你输入这个<code>message</code></p>
 <p>​        <code>message</code>即是我们用来简要说明这次提交的语句。还有另外一种方法，当我们想要提交的<code>message</code>很长或者我们想描述的更清楚更简洁明了一点，我们可以使用这样的格式，如下：</p>
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">git commit -m <span class="string">'</span></span><br><span class="line"><span class="string">	message1</span></span><br><span class="line"><span class="string">	message2</span></span><br><span class="line"><span class="string">	message3</span></span><br><span class="line"><span class="string">'</span></span><br></pre></td></tr></tbody></table></figure>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">git commit -m '
+	message1
+	message2
+	message3
+'<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <h5 id="②git-commit-a-m-“massage”"><a href="#②git-commit-a-m-“massage”" class="headerlink" title="②git commit -a -m “massage”"></a><strong>②git commit -a -m “massage”</strong></h5><p>​        其他功能如<code>-m</code>参数，加的<code>-a</code>参数可以将所有已跟踪文件中的执行修改或删除操作的文件都提交到本地仓库，即使它们没有经过<code>git add</code>添加到暂存区，注意，</p>
 <p>​        新加的文件（即没有被<code>git</code>系统管理的文件）是不能被提交到本地仓库的。建议一般不要使用<code>-a</code>参数，正常的提交还是使用<code>git add</code>先将要改动的文件添加到暂存区，再用<code>git commit </code>提交到本地版本库。</p>
 <h5 id="③git-commit-–amend"><a href="#③git-commit-–amend" class="headerlink" title="③git commit –amend"></a><strong>③git commit –amend</strong></h5><p>​        如果我们不小心提交了一版我们不满意的代码，并且给它推送到服务器了，在代码没被<code>merge</code>之前我们希望再修改一版满意的，而如果我们不想在服务器上<code>abondon</code>，那么我们怎么做呢？</p>

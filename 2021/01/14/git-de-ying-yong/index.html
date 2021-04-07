@@ -414,6 +414,9 @@
         <hr class="clearfix">
 
         
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="/libs/prism/prism.css">
+        
 
         
         <!-- 代码块折行 -->
@@ -438,20 +441,21 @@
 <p><img src="/images/Git%E7%9A%84%E5%BA%94%E7%94%A8/image-20210114182552414.png" alt="image-20210114182552414"></p>
 <p>之后我们就可以输入命令来克隆项目啦</p>
 <p>命令：</p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$git clone XXX</span><br></pre></td></tr></tbody></table></figure>
+<pre class="line-numbers language-git" data-language="git"><code class="language-git">$git clone XXX<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>这里的“XXX”就是刚刚复制下来的项目地址。</p>
 <p>完成后打开文件夹就可以看到我们<span style="color:red;"><strong>克隆完成</strong></span>的项目啦。</p>
 <h2 id="三、利用Git上传项目"><a href="#三、利用Git上传项目" class="headerlink" title="三、利用Git上传项目"></a>三、利用Git上传项目</h2><h3 id="1-定位"><a href="#1-定位" class="headerlink" title="1.定位"></a>1.定位</h3><p>首先定位到你的项目地址，方法可以用上面的两种方法得到下面的位置。</p>
 <p><img src="/images/Git%E7%9A%84%E5%BA%94%E7%94%A8/image-20210114183329623.png" alt="image-20210114183329623"></p>
 <h3 id="2-上传到本地仓库"><a href="#2-上传到本地仓库" class="headerlink" title="2.上传到本地仓库"></a>2.上传到本地仓库</h3><p>利用命令可以将项目上传到本地git仓库：</p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$git commit -a -m“XXX”</span><br></pre></td></tr></tbody></table></figure>
+<pre class="line-numbers language-git" data-language="git"><code class="language-git">$git commit -a -m“XXX”<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>这里的“-a”指的是全局的意思，“-m”指的是所需要的信息，“XXX”写的是你想要写入的提示信息，类似于“修改了前端页面”或者“修改后端接口”这种文字性的信息。</p>
 <h3 id="3-利用Git推送（Push）"><a href="#3-利用Git推送（Push）" class="headerlink" title="3.利用Git推送（Push）"></a>3.利用Git推送（Push）</h3><p>利用命令来Push项目：</p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$git push</span><br></pre></td></tr></tbody></table></figure>
+<pre class="line-numbers language-git" data-language="git"><code class="language-git">$git push<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p><img src="/images/Git%E7%9A%84%E5%BA%94%E7%94%A8/image-20210114213601580.png" alt="image-20210114213601580"></p>
 <p>上图中会显示已经上传的细节，这样就是<span style="color:red;"><strong>推送完成啦！</strong></span></p>
 <h2 id="四、拉取（Pull）项目（更新）"><a href="#四、拉取（Pull）项目（更新）" class="headerlink" title="四、拉取（Pull）项目（更新）"></a>四、拉取（Pull）项目（更新）</h2><p>利用两条命令：</p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$git checkout master</span><br><span class="line">$git pull</span><br></pre></td></tr></tbody></table></figure>
+<pre class="line-numbers language-git" data-language="git"><code class="language-git">$git checkout master
+$git pull<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 <p>第一条是切换到主分支来操作，第二条就是拉取代码啦。</p>
 <p><img src="/images/Git%E7%9A%84%E5%BA%94%E7%94%A8/image-20210114214216029.png" alt="image-20210114214216029"></p>
 <p>如果是拉取的代码有所修改，那么就会显示相应的修改信息，若是没有修改，那么就会显示上图的样式。</p>

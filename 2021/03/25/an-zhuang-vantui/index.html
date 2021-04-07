@@ -402,6 +402,9 @@
         <hr class="clearfix">
 
         
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="/libs/prism/prism.css">
+        
 
         
         <!-- 代码块折行 -->
@@ -412,9 +415,12 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="一、vantUI安装"><a href="#一、vantUI安装" class="headerlink" title="一、vantUI安装"></a>一、vantUI安装</h2><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cnpm i vant -S</span><br></pre></td></tr></tbody></table></figure>
+                <h2 id="一、vantUI安装"><a href="#一、vantUI安装" class="headerlink" title="一、vantUI安装"></a>一、vantUI安装</h2><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">cnpm i vant -S<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p><img src="/images/%E5%AE%89%E8%A3%85vantUI/image-20210325205551408.png" alt="安装vantUI"></p>
-<h2 id="二、vant引入"><a href="#二、vant引入" class="headerlink" title="二、vant引入"></a>二、vant引入</h2><figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//在main.js中全局引入vant</span></span><br><span class="line"><span class="keyword">import</span> Vant from <span class="string">'vant'</span><span class="comment">//引入vant</span></span><br><span class="line"><span class="keyword">import</span> <span class="string">'vant/lib/index.css'</span><span class="comment">//引入vant样式</span></span><br><span class="line">Vue.use(Vant)<span class="comment">//运用vant</span></span><br></pre></td></tr></tbody></table></figure>
+<h2 id="二、vant引入"><a href="#二、vant引入" class="headerlink" title="二、vant引入"></a>二、vant引入</h2><pre class="line-numbers language-java" data-language="java"><code class="language-java">//在main.js中全局引入vant
+import Vant from 'vant'//引入vant
+import 'vant/lib/index.css'//引入vant样式
+Vue.use(Vant)//运用vant<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
 <p><img src="/images/%E5%AE%89%E8%A3%85vantUI/image-20210325205627077.png" alt="image-20210325205627077"></p>
 
                 

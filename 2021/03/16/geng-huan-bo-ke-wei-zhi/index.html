@@ -402,6 +402,9 @@
         <hr class="clearfix">
 
         
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="/libs/prism/prism.css">
+        
 
         
         <!-- 代码块折行 -->
@@ -413,12 +416,12 @@
         <div class="card-content article-card-content">
             <div id="articleContent">
                 <h2 id="一、配置GitHub密钥ssh"><a href="#一、配置GitHub密钥ssh" class="headerlink" title="一、配置GitHub密钥ssh"></a>一、配置GitHub密钥ssh</h2><h3 id="1-找到博客位置，右键打开Git-Bash"><a href="#1-找到博客位置，右键打开Git-Bash" class="headerlink" title="1.找到博客位置，右键打开Git Bash"></a>1.找到博客位置，右键打开Git Bash</h3><p>输入命令：</p>
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ls -al ~/.ssh</span><br></pre></td></tr></tbody></table></figure>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">ls -al ~/.ssh<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p><img src="/images/%E6%9B%B4%E6%8D%A2%E5%8D%9A%E5%AE%A2%E4%BD%8D%E7%BD%AE/%E6%9F%A5%E7%9C%8B%E6%98%AF%E5%90%A6%E6%9C%89%E5%AF%86%E9%92%A5.png" alt="查看是否有密钥"></p>
 <p>这里有没有密钥都没有关系，之后都会覆盖掉，要是想删掉也可以，这里的ssh相关文件在C:\Users\你主机的名字.ssh</p>
 <p><img src="/images/%E6%9B%B4%E6%8D%A2%E5%8D%9A%E5%AE%A2%E4%BD%8D%E7%BD%AE/ssh%E4%BD%8D%E7%BD%AE.png" alt="ssh位置"></p>
 <h3 id="2-生成新的ssh"><a href="#2-生成新的ssh" class="headerlink" title="2.生成新的ssh"></a>2.生成新的ssh</h3><p>输入下面的命令：</p>
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C <span class="string">"注册Github时候的邮箱"</span></span><br></pre></td></tr></tbody></table></figure>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">ssh-keygen -t rsa -C "注册Github时候的邮箱"<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p><img src="/images/%E6%9B%B4%E6%8D%A2%E5%8D%9A%E5%AE%A2%E4%BD%8D%E7%BD%AE/%E7%94%9F%E6%88%90%E5%AF%86%E9%92%A5.png" alt="生成密钥"></p>
 <p><span style="color: red;"><strong>在这里注意，一路回车就好，不需要输入任何东西！！！</strong></span></p>
 <h3 id="3-复制ssh"><a href="#3-复制ssh" class="headerlink" title="3.复制ssh"></a>3.复制ssh</h3><p>找到下图的位置，复制下方密钥，之后备用。</p>
@@ -439,7 +442,7 @@
 <h3 id="5-在系统变量中找到“Path”，编辑，添加新的路径"><a href="#5-在系统变量中找到“Path”，编辑，添加新的路径" class="headerlink" title="5.在系统变量中找到“Path”，编辑，添加新的路径"></a>5.在系统变量中找到“Path”，编辑，添加新的路径</h3><p><span style="color: red"><strong>注意：在这里我之前配置过hexo，所以在“node_modules”中可以找到“hexo“文件夹，如果之前没有配置过的话，就不会有这个文件夹！！！</strong></span></p>
 <p><img src="/images/%E6%9B%B4%E6%8D%A2%E5%8D%9A%E5%AE%A2%E4%BD%8D%E7%BD%AE/%E6%B7%BB%E5%8A%A0%E8%B7%AF%E5%BE%84.png" alt="添加路径"></p>
 <h3 id="6-如果没有配置过hexo"><a href="#6-如果没有配置过hexo" class="headerlink" title="6.如果没有配置过hexo"></a>6.如果没有配置过hexo</h3><p>输入下面命令，安装 <code>hexo-migrator-rss</code> 插件</p>
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-migrator-rss --save</span><br></pre></td></tr></tbody></table></figure>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">npm install hexo-migrator-rss --save<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>想要了解跟多的有关hexo的相关命令点击下方的链接。</p>
 <p><a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/commands">hexo相关命令参考</a></p>
 <h2 id="三、博客中图片存放的小技巧"><a href="#三、博客中图片存放的小技巧" class="headerlink" title="三、博客中图片存放的小技巧"></a>三、博客中图片存放的小技巧</h2><p>点开文件-&gt;偏好设置-&gt;图片，然后进行如下配置。</p>

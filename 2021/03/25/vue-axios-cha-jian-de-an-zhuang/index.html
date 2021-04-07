@@ -406,6 +406,9 @@
         <hr class="clearfix">
 
         
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="/libs/prism/prism.css">
+        
 
         
         <!-- 代码块折行 -->
@@ -418,19 +421,35 @@
             <div id="articleContent">
                 <h2 id="一、安装vue-axios插件"><a href="#一、安装vue-axios插件" class="headerlink" title="一、安装vue-axios插件"></a>一、安装vue-axios插件</h2><p>由于cnpm比npm更加的快速，所以建议用cnpm代替npm来进行插件的安装。</p>
 <p>将路径换成淘宝的路径速度能够快点，命令如下：</p>
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g cnpm --registry=https://registry.npm.taobao.org</span><br></pre></td></tr></tbody></table></figure>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">npm install -g cnpm --registry=https://registry.npm.taobao.org<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>利用命令安装axios：</p>
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cnpm install axios</span><br></pre></td></tr></tbody></table></figure>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">cnpm install axios<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p><img src="/images/vue-axios%E6%8F%92%E4%BB%B6%E7%9A%84%E5%AE%89%E8%A3%85/image-20210325202205033.png" alt="安装axios插件"></p>
 <h2 id="二、vue-axios插件的引用"><a href="#二、vue-axios插件的引用" class="headerlink" title="二、vue-axios插件的引用"></a>二、vue-axios插件的引用</h2><p><strong>在这里我们用vue2.0 vue-cli脚手架去实现。</strong></p>
 <h3 id="1、创建引用文件："><a href="#1、创建引用文件：" class="headerlink" title="1、创建引用文件："></a>1、创建引用文件：</h3><p>用ide打开项目文件，在src目录下创建文件夹axios，后在文件夹内创建index.js。如图：</p>
 <p><img src="/images/vue-axios%E6%8F%92%E4%BB%B6%E7%9A%84%E5%AE%89%E8%A3%85/clip_image001.png" alt="创建index.js"></p>
 <h3 id="2-引入axios"><a href="#2-引入axios" class="headerlink" title="2.引入axios"></a>2.引入axios</h3><h4 id="1-index-js"><a href="#1-index-js" class="headerlink" title="1.index.js"></a>1.index.js</h4><p>将下方代码粘到index.js文件中就可以了。</p>
-<figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*引入Vue框架*/</span></span><br><span class="line"><span class="keyword">import</span> Vue from <span class="string">'vue'</span>;</span><br><span class="line"><span class="comment">/*引入资源请求插件*/</span></span><br><span class="line"><span class="keyword">import</span> axios from <span class="string">'axios'</span>;</span><br><span class="line">    </span><br><span class="line"><span class="comment">/*使用axios插件*/</span></span><br><span class="line">Vue.prototype.$axios = axios;</span><br><span class="line"><span class="function">export <span class="title">default</span><span class="params">({</span></span></span><br><span class="line"><span class="function"><span class="params">})</span></span>;</span><br></pre></td></tr></tbody></table></figure>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java">/*引入Vue框架*/
+import Vue from 'vue';
+/*引入资源请求插件*/
+import axios from 'axios';
+    
+/*使用axios插件*/
+Vue.prototype.$axios = axios;
+export default({
+});<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p><img src="/images/vue-axios%E6%8F%92%E4%BB%B6%E7%9A%84%E5%AE%89%E8%A3%85/image-20210325203445321.png" alt="引入axios"></p>
 <h4 id="2-找到src下的main-js"><a href="#2-找到src下的main-js" class="headerlink" title="2.找到src下的main.js"></a>2.找到src下的main.js</h4><p><img src="/images/vue-axios%E6%8F%92%E4%BB%B6%E7%9A%84%E5%AE%89%E8%A3%85/image-20210325204017288.png" alt="main.js位置显示"></p>
 <p>引入下方代码：</p>
-<figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> axios from <span class="string">'./axios'</span>;<span class="comment">//通过import引入</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">new</span> Vue({</span><br><span class="line">  el: <span class="string">'#app'</span>,</span><br><span class="line">  router,</span><br><span class="line">  axios,<span class="comment">//通过import引入，然后在这里调用</span></span><br><span class="line">  components: { App },</span><br><span class="line">  template: <span class="string">'&lt;App/&gt;'</span></span><br><span class="line">})</span><br></pre></td></tr></tbody></table></figure>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java">import axios from './axios';//通过import引入
+
+new Vue({
+  el: '#app',
+  router,
+  axios,//通过import引入，然后在这里调用
+  components: { App },
+  template: '&lt;App/&gt;'
+})<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p><img src="/images/vue-axios%E6%8F%92%E4%BB%B6%E7%9A%84%E5%AE%89%E8%A3%85/image-20210325203904826.png" alt="引入axios"></p>
 <p><a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_42363090/article/details/89007711">参考路径</a></p>
 

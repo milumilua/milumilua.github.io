@@ -402,6 +402,9 @@
         <hr class="clearfix">
 
         
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="/libs/prism/prism.css">
+        
 
         
         <!-- 代码块折行 -->
@@ -416,27 +419,35 @@
 
 <p>如果没有安装node可以通过参考下方链接进行node安装</p>
 <p><a target="_blank" rel="noopener" href="https://www.runoob.com/nodejs/nodejs-tutorial.html">node的安装</a></p>
-<h2 id="二、安装vue-cli"><a href="#二、安装vue-cli" class="headerlink" title="二、安装vue-cli"></a>二、安装vue-cli</h2><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cnpm install vue-cli -g      //全局安装 vue-cli</span><br></pre></td></tr></tbody></table></figure>
+<h2 id="二、安装vue-cli"><a href="#二、安装vue-cli" class="headerlink" title="二、安装vue-cli"></a>二、安装vue-cli</h2><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">cnpm install vue-cli -g      //全局安装 vue-cli<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <img src="/images/新建vue项目/image-20210325194048348.png" alt="安装vue-cli" style="zoom:;">
 
 <h2 id="三、查看vue-cli是否成功"><a href="#三、查看vue-cli是否成功" class="headerlink" title="三、查看vue-cli是否成功"></a>三、查看vue-cli是否成功</h2><p><span style="color:red;"><strong>注意：不能检查vue-cli,需要检查vue</strong></span></p>
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vue list</span><br></pre></td></tr></tbody></table></figure>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">vue list<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
 
 <img src="/images/新建vue项目/clip_image002.jpg" alt="查看vue-cli是否安装成功">
 
-<h2 id="四、新建项目"><a href="#四、新建项目" class="headerlink" title="四、新建项目"></a>四、新建项目</h2><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#新建项目</span></span><br><span class="line">vue init webpack <span class="string">"项目名字"</span></span><br><span class="line"><span class="comment">#我的例子</span></span><br><span class="line">vue init webpack <span class="string">"phone_store_demo"</span></span><br></pre></td></tr></tbody></table></figure>
+<h2 id="四、新建项目"><a href="#四、新建项目" class="headerlink" title="四、新建项目"></a>四、新建项目</h2><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">#新建项目
+vue init webpack "项目名字"
+#我的例子
+vue init webpack "phone_store_demo"<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
 <p><img src="/images/%E6%96%B0%E5%BB%BAvue%E9%A1%B9%E7%9B%AE/clip_image004.jpg" alt="新建项目命令"></p>
 <h2 id="五、新建项目配置"><a href="#五、新建项目配置" class="headerlink" title="五、新建项目配置"></a>五、新建项目配置</h2><p>1.前六个选项可以直接回车或者使用默认的设置，但是后面的三个就不建议用“yes”</p>
 <p>2.用到ESLint可能会使格式比较严格，编写代码的时候可能会遇到各种因为格式的原因而造成的错误，这样会比较麻烦，所以不建议用。</p>
 <p>3.最后这里我们用比较方便的npm</p>
 <p><img src="/images/%E6%96%B0%E5%BB%BAvue%E9%A1%B9%E7%9B%AE/clip_image008.jpg" alt="配置"></p>
 <h2 id="六、启动项目"><a href="#六、启动项目" class="headerlink" title="六、启动项目"></a>六、启动项目</h2><p>首先，我们需要进入到项目的文件夹中。</p>
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#进入项目</span></span><br><span class="line"><span class="built_in">cd</span> 项目名</span><br><span class="line"><span class="comment">#我的例子</span></span><br><span class="line"><span class="built_in">cd</span> phone_store_demo</span><br></pre></td></tr></tbody></table></figure>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">#进入项目
+cd 项目名
+#我的例子
+cd phone_store_demo<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
 <p>现在已经创建好了，那就让项目先安装下依赖再运行一下，会出现下面的页面</p>
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#安装依赖</span></span><br><span class="line">cnpm install</span><br></pre></td></tr></tbody></table></figure>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">#安装依赖
+cnpm install<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 <p><img src="/images/%E6%96%B0%E5%BB%BAvue%E9%A1%B9%E7%9B%AE/clip_image010.jpg" alt="安装依赖"></p>
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#运行项目</span></span><br><span class="line">cnpm run dev </span><br></pre></td></tr></tbody></table></figure>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">#运行项目
+cnpm run dev <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 <p><img src="/images/%E6%96%B0%E5%BB%BAvue%E9%A1%B9%E7%9B%AE/clip_image011.png" alt="运行项目"></p>
 <h2 id="七、运行成功"><a href="#七、运行成功" class="headerlink" title="七、运行成功"></a>七、运行成功</h2><p><img src="/images/%E6%96%B0%E5%BB%BAvue%E9%A1%B9%E7%9B%AE/image-20210325201404713.png" alt="运行成功"></p>
 <p><a target="_blank" rel="noopener" href="https://www.jianshu.com/p/02b12c600c7b">参考文档</a></p>

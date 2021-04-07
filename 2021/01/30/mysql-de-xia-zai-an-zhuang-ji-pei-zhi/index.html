@@ -410,6 +410,9 @@
         <hr class="clearfix">
 
         
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="/libs/prism/prism.css">
+        
 
         
         <!-- 代码块折行 -->
@@ -430,7 +433,23 @@
 <h2 id="二、文件配置"><a href="#二、文件配置" class="headerlink" title="二、文件配置"></a>二、文件配置</h2><p>添加 my.ini 文件</p>
 <p>首先要新建一个文本文档（txt格式的那种），然后在文档中添加下面的配置代码。</p>
 <p>注意：需要根据注释中的提示来相应的修改自己的地址，不要以为直接复制粘贴就完成了。</p>
-<figure class="highlight txt"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">[client]</span><br><span class="line"># 设置mysql客户端默认字符集</span><br><span class="line">default-character-set=utf8</span><br><span class="line"> </span><br><span class="line">[mysqld]</span><br><span class="line"># 设置3306端口</span><br><span class="line">port = 3306</span><br><span class="line"># 设置mysql的安装目录</span><br><span class="line">basedir=D:\02-install\02-install\02-mysql\mysql-8.0.23-winx64</span><br><span class="line"># 设置 mysql数据库的数据的存放目录，MySQL 8+ 不需要以下配置，系统自己生成即可，否则有可能报错</span><br><span class="line"># datadir=D:\02-install\02-install\02-mysql\mysql-8.0.23-winx64</span><br><span class="line"># 允许最大连接数</span><br><span class="line">max_connections=20</span><br><span class="line"># 服务端使用的字符集默认为8比特编码的latin1字符集</span><br><span class="line">character-set-server=utf8</span><br><span class="line"># 创建新表时将使用的默认存储引擎</span><br><span class="line">default-storage-engine=INNODB</span><br></pre></td></tr></tbody></table></figure>
+<pre class="line-numbers language-txt" data-language="txt"><code class="language-txt">[client]
+# 设置mysql客户端默认字符集
+default-character-set=utf8
+ 
+[mysqld]
+# 设置3306端口
+port = 3306
+# 设置mysql的安装目录
+basedir=D:\02-install\02-install\02-mysql\mysql-8.0.23-winx64
+# 设置 mysql数据库的数据的存放目录，MySQL 8+ 不需要以下配置，系统自己生成即可，否则有可能报错
+# datadir=D:\02-install\02-install\02-mysql\mysql-8.0.23-winx64
+# 允许最大连接数
+max_connections=20
+# 服务端使用的字符集默认为8比特编码的latin1字符集
+character-set-server=utf8
+# 创建新表时将使用的默认存储引擎
+default-storage-engine=INNODB<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>需要修改的可能只有下面这两个地方。</p>
 <p><img src="/images/MySQL%E7%9A%84%E4%B8%8B%E8%BD%BD%E3%80%81%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AE/image-20210130092015113.png" alt="image-20210130092015113"></p>
 <p>完成保存之后，直接将文件的名字修改成 my.ini 的格式就好。</p>
@@ -442,28 +461,28 @@
 <h3 id="2-切换到相应的目录下"><a href="#2-切换到相应的目录下" class="headerlink" title="2.切换到相应的目录下"></a>2.切换到相应的目录下</h3><p>注意，要切换到相应的bin的目录下。</p>
 <h3 id="3-然后初始化数据库。"><a href="#3-然后初始化数据库。" class="headerlink" title="3.然后初始化数据库。"></a>3.然后初始化数据库。</h3><p><img src="/images/MySQL%E7%9A%84%E4%B8%8B%E8%BD%BD%E3%80%81%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AE/image-20210130092619128.png" alt="image-20210130092619128"></p>
 <p>命令：</p>
-<figure class="highlight txt"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mysqld --initialize --console</span><br></pre></td></tr></tbody></table></figure>
+<pre class="line-numbers language-txt" data-language="txt"><code class="language-txt">mysqld --initialize --console<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>在这里会生成初始的密码，像是我的初始密码就是：Y6h_gPKl(_r)</p>
 <p>不用怀疑，确实带着特殊符号，有括号是正常的。</p>
 <p><img src="/images/MySQL%E7%9A%84%E4%B8%8B%E8%BD%BD%E3%80%81%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AE/image-20210130092809753.png" alt="image-20210130092809753"></p>
 <h3 id="4-进行安装"><a href="#4-进行安装" class="headerlink" title="4.进行安装"></a>4.进行安装</h3><p><img src="/images/MySQL%E7%9A%84%E4%B8%8B%E8%BD%BD%E3%80%81%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AE/image-20210130093011228.png" alt="image-20210130093011228"></p>
 <p>命令：</p>
-<figure class="highlight txt"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mysqld install</span><br></pre></td></tr></tbody></table></figure>
+<pre class="line-numbers language-txt" data-language="txt"><code class="language-txt">mysqld install<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <h3 id="5-启动"><a href="#5-启动" class="headerlink" title="5.启动"></a>5.启动</h3><p><img src="/images/MySQL%E7%9A%84%E4%B8%8B%E8%BD%BD%E3%80%81%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AE/image-20210130093056153.png" alt="image-20210130093056153"></p>
 <p>命令：</p>
-<figure class="highlight txt"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">net start mysql</span><br></pre></td></tr></tbody></table></figure>
+<pre class="line-numbers language-txt" data-language="txt"><code class="language-txt">net start mysql<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <h3 id="6-登录"><a href="#6-登录" class="headerlink" title="6.登录"></a>6.登录</h3><p><img src="/images/MySQL%E7%9A%84%E4%B8%8B%E8%BD%BD%E3%80%81%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AE/image-20210130093148393.png" alt="image-20210130093148393"></p>
 <p>命令：</p>
-<figure class="highlight txt"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mysql -h 主机名 -u 用户名 -p</span><br></pre></td></tr></tbody></table></figure>
+<pre class="line-numbers language-txt" data-language="txt"><code class="language-txt">mysql -h 主机名 -u 用户名 -p<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>说明：</p>
 <p>1） 这里的 -h 是客户端所要登录的 MySQL 主机名，登录本机是localhost 或着 127.0.0.1，所以如果是本机登录的话，这个可以省略。</p>
 <p>2） -u 指的是 user ，后面输入用户的名字，这里默认用户名是 root。</p>
 <p>3） -p 指的是 password ，后面写你的密码。</p>
 <p>所以最后我需要输入的命令就可以简化成下面这样（不要忘记修改你自己的密码哦~）</p>
-<figure class="highlight txt"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mysql -uroot –pY6h_gPKl(_r)</span><br></pre></td></tr></tbody></table></figure>
+<pre class="line-numbers language-txt" data-language="txt"><code class="language-txt">mysql -uroot –pY6h_gPKl(_r)<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <h3 id="7-修改密码"><a href="#7-修改密码" class="headerlink" title="7.修改密码"></a>7.修改密码</h3><p>在退出 MySQL 命令环境的情况下输入命令即可修改，我把我的密码修改成 123456 了。</p>
 <p>命令：</p>
-<figure class="highlight txt"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mysqladmin -uroot –pY6h_gPKl(_r) password 123456</span><br></pre></td></tr></tbody></table></figure>
+<pre class="line-numbers language-txt" data-language="txt"><code class="language-txt">mysqladmin -uroot –pY6h_gPKl(_r) password 123456<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p><img src="/images/MySQL%E7%9A%84%E4%B8%8B%E8%BD%BD%E3%80%81%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AE/image-20210130094528123.png" alt="image-20210130094528123"></p>
 <h3 id="8-登录验证"><a href="#8-登录验证" class="headerlink" title="8.登录验证"></a>8.登录验证</h3><p><img src="/images/MySQL%E7%9A%84%E4%B8%8B%E8%BD%BD%E3%80%81%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AE/image-20210130094550171.png" alt="image-20210130094550171"></p>
 <p>这样，我们的 <span style="color:red;"><strong>MySQL 就可以用啦！</strong></span></p>

@@ -406,6 +406,9 @@
         <hr class="clearfix">
 
         
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="/libs/prism/prism.css">
+        
 
         
         <!-- 代码块折行 -->
@@ -420,11 +423,14 @@
 <p><img src="/images/select%E8%A2%AB%E8%A6%86%E7%9B%96%E7%9A%84%E9%97%AE%E9%A2%98/1.png" alt="1"></p>
 <h2 id="二、问题分析"><a href="#二、问题分析" class="headerlink" title="二、问题分析"></a>二、问题分析</h2><p>下方的文本框是wangEditor，而wangEditor设置的层级z-index很高，会覆盖掉和他重合的区域。</p>
 <h2 id="三、解决方法"><a href="#三、解决方法" class="headerlink" title="三、解决方法"></a>三、解决方法</h2><p>在wangEditor的css中添加如下代码：</p>
-<figure class="highlight css"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">z-index</span>: 2 !<span class="selector-tag">important</span>;</span><br></pre></td></tr></tbody></table></figure>
+<pre class="line-numbers language-css" data-language="css"><code class="language-css"><span class="token property">z-index</span><span class="token punctuation">:</span> 2 <span class="token important">!important</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>这段代码的效果就是将wangEditor设置的层级z-index降低。</p>
 <p>z-index的等级的效果是数字越大，层级越高，越在上方。</p>
 <p>下方为简单的解释：</p>
-<figure class="highlight css"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">//在最上方</span><br><span class="line"><span class="selector-tag">z-index</span>: 9999 !<span class="selector-tag">important</span>;</span><br><span class="line">//在最下方</span><br><span class="line"><span class="selector-tag">z-index</span>: <span class="selector-tag">-1</span> !<span class="selector-tag">important</span>;</span><br></pre></td></tr></tbody></table></figure>
+<pre class="line-numbers language-css" data-language="css"><code class="language-css">//在最上方
+<span class="token property">z-index</span><span class="token punctuation">:</span> 9999 <span class="token important">!important</span><span class="token punctuation">;</span>
+//在最下方
+<span class="token property">z-index</span><span class="token punctuation">:</span> -1 <span class="token important">!important</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
 <p><span style="color:red;"><strong>！！！注意！！！如果使用vue，则不要写在scoped内，否则无效！！！</strong></span></p>
 <h2 id="四、解决后的效果"><a href="#四、解决后的效果" class="headerlink" title="四、解决后的效果"></a>四、解决后的效果</h2><p>在网页中利用“检查元素”可以看到添加到的代码。（F12或者Fn+F12）</p>
 <p><img src="/images/select%E8%A2%AB%E8%A6%86%E7%9B%96%E7%9A%84%E9%97%AE%E9%A2%98/2.png" alt="2"></p>

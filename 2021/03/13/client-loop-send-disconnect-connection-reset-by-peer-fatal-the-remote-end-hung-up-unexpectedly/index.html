@@ -410,6 +410,9 @@
         <hr class="clearfix">
 
         
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="/libs/prism/prism.css">
+        
 
         
         <!-- 代码块折行 -->
@@ -427,7 +430,7 @@
 <p><strong>fatal: the remote end hung up unexpectedly</strong></p>
 <p>翻译：<br>Client_循环：发送断开：由对等方重置连接<br>致命：远程终端意外挂起</p>
 <h2 id="二、解决方法"><a href="#二、解决方法" class="headerlink" title="二、解决方法"></a>二、解决方法</h2><p>执行下面命令，发现能连上github</p>
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh -T git@github.com</span><br></pre></td></tr></tbody></table></figure>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">ssh -T git@github.com<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p><img src="/images/client-loop-send-disconnect-Connection-reset-by-peer-fatal-the-remote-end-hung-up-unexpectedly/%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95.png" alt="解决方法"></p>
 <p>然后直接执行命令发现就可以连上了。</p>
 <h2 id="三、问题分析"><a href="#三、问题分析" class="headerlink" title="三、问题分析"></a>三、问题分析</h2><p>可能是网络的问题。</p>
