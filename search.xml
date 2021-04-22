@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>git commit代码提交书写规范</title>
+      <link href="2021/04/22/git-commit-dai-ma-ti-jiao-shu-xie-gui-fan/"/>
+      <url>2021/04/22/git-commit-dai-ma-ti-jiao-shu-xie-gui-fan/</url>
+      
+        <content type="html"><![CDATA[<h2 id="git-commit规定格式"><a href="#git-commit规定格式" class="headerlink" title="git commit规定格式"></a>git commit规定格式</h2><h3 id="1-fix：修复bug"><a href="#1-fix：修复bug" class="headerlink" title="1.fix：修复bug"></a>1.fix：修复bug</h3><h3 id="2-add：增加新功能"><a href="#2-add：增加新功能" class="headerlink" title="2.add：增加新功能"></a>2.add：增加新功能</h3><h3 id="3-update：更新"><a href="#3-update：更新" class="headerlink" title="3.update：更新"></a>3.update：更新</h3><h3 id="4-refactor：某个已有功能重构"><a href="#4-refactor：某个已有功能重构" class="headerlink" title="4.refactor：某个已有功能重构"></a>4.refactor：某个已有功能重构</h3><h3 id="5-perf：性能优化"><a href="#5-perf：性能优化" class="headerlink" title="5.perf：性能优化"></a>5.perf：性能优化</h3><h3 id="6-style：代码格式改变"><a href="#6-style：代码格式改变" class="headerlink" title="6.style：代码格式改变"></a>6.style：代码格式改变</h3><h3 id="7-test：增加测试代码"><a href="#7-test：增加测试代码" class="headerlink" title="7.test：增加测试代码"></a>7.test：增加测试代码</h3><h3 id="8-docs：文档改变"><a href="#8-docs：文档改变" class="headerlink" title="8.docs：文档改变"></a>8.docs：文档改变</h3><h3 id="9-revert：撤销上一次的commit"><a href="#9-revert：撤销上一次的commit" class="headerlink" title="9.revert：撤销上一次的commit"></a>9.revert：撤销上一次的commit</h3><h3 id="10-build：构建工具或构建过程等的变动，如：关联包升级等。"><a href="#10-build：构建工具或构建过程等的变动，如：关联包升级等。" class="headerlink" title="10.build：构建工具或构建过程等的变动，如：关联包升级等。"></a>10.build：构建工具或构建过程等的变动，如：关联包升级等。</h3>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> Git </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>将项目传到阿里code上</title>
       <link href="2021/04/02/jiang-xiang-mu-chuan-dao-a-li-code-shang/"/>
       <url>2021/04/02/jiang-xiang-mu-chuan-dao-a-li-code-shang/</url>
