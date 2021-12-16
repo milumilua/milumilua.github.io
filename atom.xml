@@ -1,0 +1,550 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>mi鹿博</title>
+  
+  <subtitle>凡事无小大 , 物自为舍。</subtitle>
+  <link href="http://example.com/atom.xml" rel="self"/>
+  
+  <link href="http://example.com/"/>
+  <updated>2021-12-14T09:08:50.381Z</updated>
+  <id>http://example.com/</id>
+  
+  <author>
+    <name>milu</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>英语作文模板</title>
+    <link href="http://example.com/posts/a51b.html"/>
+    <id>http://example.com/posts/a51b.html</id>
+    <published>2021-12-14T08:40:44.000Z</published>
+    <updated>2021-12-14T09:08:50.381Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;英语作文模板&quot;&gt;&lt;a href=&quot;#英语作文模板&quot; class=&quot;headerlink&quot; title=&quot;英语作文模板&quot;&gt;&lt;/a&gt;英语作文模板&lt;/h2&gt;&lt;h3 id=&quot;第一段&quot;&gt;&lt;a href=&quot;#第一段&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    
+    <category term="英语" scheme="http://example.com/tags/%E8%8B%B1%E8%AF%AD/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>YOLOv3总结</title>
+    <link href="http://example.com/posts/4a3e.html"/>
+    <id>http://example.com/posts/4a3e.html</id>
+    <published>2021-11-15T00:59:13.000Z</published>
+    <updated>2021-11-20T08:57:14.190Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;一、背景&quot;&gt;&lt;a href=&quot;#一、背景&quot; class=&quot;headerlink&quot; title=&quot;一、背景&quot;&gt;&lt;/a&gt;一、背景&lt;/h2&gt;&lt;p&gt;&lt;code&gt;YOLOv3&lt;/code&gt;出自论文《&lt;code&gt;YOLOv3: An Incremental</summary>
+        
+      
+    
+    
+    
+    
+    <category term="YOLO" scheme="http://example.com/tags/YOLO/"/>
+    
+    <category term="论文" scheme="http://example.com/tags/%E8%AE%BA%E6%96%87/"/>
+    
+    <category term="机器学习/深度学习" scheme="http://example.com/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0-%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>YOLOv2总结</title>
+    <link href="http://example.com/posts/8a2e.html"/>
+    <id>http://example.com/posts/8a2e.html</id>
+    <published>2021-11-13T08:53:03.000Z</published>
+    <updated>2021-11-20T08:57:14.189Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;一、YOLOv2概述&quot;&gt;&lt;a href=&quot;#一、YOLOv2概述&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    
+    <category term="YOLO" scheme="http://example.com/tags/YOLO/"/>
+    
+    <category term="论文" scheme="http://example.com/tags/%E8%AE%BA%E6%96%87/"/>
+    
+    <category term="机器学习/深度学习" scheme="http://example.com/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0-%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>YOLO总结</title>
+    <link href="http://example.com/posts/6aa8.html"/>
+    <id>http://example.com/posts/6aa8.html</id>
+    <published>2021-11-13T01:24:10.000Z</published>
+    <updated>2021-11-20T08:57:14.191Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;一、目标检测简单分类&quot;&gt;&lt;a href=&quot;#一、目标检测简单分类&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    
+    <category term="YOLO" scheme="http://example.com/tags/YOLO/"/>
+    
+    <category term="论文" scheme="http://example.com/tags/%E8%AE%BA%E6%96%87/"/>
+    
+    <category term="机器学习/深度学习" scheme="http://example.com/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0-%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Linux安装MySQL</title>
+    <link href="http://example.com/posts/59b1.html"/>
+    <id>http://example.com/posts/59b1.html</id>
+    <published>2021-10-05T01:03:47.000Z</published>
+    <updated>2021-11-20T08:57:14.186Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;一、下载&quot;&gt;&lt;a href=&quot;#一、下载&quot; class=&quot;headerlink&quot; title=&quot;一、下载&quot;&gt;&lt;/a&gt;一、下载&lt;/h2&gt;&lt;p&gt;在&lt;code&gt;MySQL&lt;/code&gt;官网，点击上方的&lt;code&gt;DOWNLOADS&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img</summary>
+        
+      
+    
+    
+    
+    
+    <category term="安装" scheme="http://example.com/tags/%E5%AE%89%E8%A3%85/"/>
+    
+    <category term="Linux" scheme="http://example.com/tags/Linux/"/>
+    
+    <category term="MySQL" scheme="http://example.com/tags/MySQL/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Linux安装jdk</title>
+    <link href="http://example.com/posts/d854.html"/>
+    <id>http://example.com/posts/d854.html</id>
+    <published>2021-09-28T08:37:33.000Z</published>
+    <updated>2021-11-20T08:57:14.187Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;一、下载安装包&quot;&gt;&lt;a href=&quot;#一、下载安装包&quot; class=&quot;headerlink&quot; title=&quot;一、下载安装包&quot;&gt;&lt;/a&gt;一、下载安装包&lt;/h2&gt;&lt;p&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    
+    <category term="安装" scheme="http://example.com/tags/%E5%AE%89%E8%A3%85/"/>
+    
+    <category term="Linux" scheme="http://example.com/tags/Linux/"/>
+    
+    <category term="JDK" scheme="http://example.com/tags/JDK/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Linux中基本命令</title>
+    <link href="http://example.com/posts/a9e7.html"/>
+    <id>http://example.com/posts/a9e7.html</id>
+    <published>2021-09-17T01:43:07.000Z</published>
+    <updated>2021-09-17T11:06:56.317Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;sudo 表示获取root权限，可以加在所有的命令之前&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;1-查询进程&quot;&gt;&lt;a href=&quot;#1-查询进程&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    
+    <category term="Linux" scheme="http://example.com/tags/Linux/"/>
+    
+    <category term="命令" scheme="http://example.com/tags/%E5%91%BD%E4%BB%A4/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>CentOS中的lsof</title>
+    <link href="http://example.com/posts/80f6.html"/>
+    <id>http://example.com/posts/80f6.html</id>
+    <published>2021-09-17T00:57:48.000Z</published>
+    <updated>2021-11-20T08:57:14.184Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;1-安装&quot;&gt;&lt;a href=&quot;#1-安装&quot; class=&quot;headerlink&quot; title=&quot;1.安装&quot;&gt;&lt;/a&gt;1.安装&lt;/h2&gt;&lt;p&gt;&lt;code&gt;lsof&lt;/code&gt;的安装命令如下&lt;/p&gt;
+&lt;pre class=&quot;line-numbers</summary>
+        
+      
+    
+    
+    
+    
+    <category term="CentOS7" scheme="http://example.com/tags/CentOS7/"/>
+    
+    <category term="lsof" scheme="http://example.com/tags/lsof/"/>
+    
+    <category term="Linux" scheme="http://example.com/tags/Linux/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Linux系统中CentOS7防火墙</title>
+    <link href="http://example.com/posts/dbc9.html"/>
+    <id>http://example.com/posts/dbc9.html</id>
+    <published>2021-09-15T11:22:11.000Z</published>
+    <updated>2021-09-16T14:00:07.825Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;1-查看防火墙状态&quot;&gt;&lt;a href=&quot;#1-查看防火墙状态&quot; class=&quot;headerlink&quot; title=&quot;1.查看防火墙状态&quot;&gt;&lt;/a&gt;1.查看防火墙状态&lt;/h2&gt;&lt;pre class=&quot;line-numbers language-sh&quot;</summary>
+        
+      
+    
+    
+    
+    
+    <category term="CentOS7" scheme="http://example.com/tags/CentOS7/"/>
+    
+    <category term="Linux" scheme="http://example.com/tags/Linux/"/>
+    
+    <category term="防火墙" scheme="http://example.com/tags/%E9%98%B2%E7%81%AB%E5%A2%99/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>本地部署tomcat时出现乱码</title>
+    <link href="http://example.com/posts/7c14.html"/>
+    <id>http://example.com/posts/7c14.html</id>
+    <published>2021-09-14T11:33:17.000Z</published>
+    <updated>2021-09-15T02:14:49.824Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;一、问题描述&quot;&gt;&lt;a href=&quot;#一、问题描述&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    
+    <category term="ERROR" scheme="http://example.com/tags/ERROR/"/>
+    
+    <category term="tomcat" scheme="http://example.com/tags/tomcat/"/>
+    
+    <category term="部署" scheme="http://example.com/tags/%E9%83%A8%E7%BD%B2/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Vue-video循环播放</title>
+    <link href="http://example.com/posts/41b9.html"/>
+    <id>http://example.com/posts/41b9.html</id>
+    <published>2021-09-13T08:50:32.000Z</published>
+    <updated>2021-09-13T13:50:27.993Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;一、问题描述&quot;&gt;&lt;a href=&quot;#一、问题描述&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    
+    <category term="技巧" scheme="http://example.com/tags/%E6%8A%80%E5%B7%A7/"/>
+    
+    <category term="Vue" scheme="http://example.com/tags/Vue/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>国考资料整理</title>
+    <link href="http://example.com/posts/4e7e.html"/>
+    <id>http://example.com/posts/4e7e.html</id>
+    <published>2021-09-02T06:26:02.000Z</published>
+    <updated>2021-09-13T06:30:53.239Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;信息网站&quot;&gt;&lt;a href=&quot;#信息网站&quot; class=&quot;headerlink&quot; title=&quot;信息网站&quot;&gt;&lt;/a&gt;信息网站&lt;/h1&gt;&lt;ol&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.huatu.com/&quot;&gt;华图教育&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    
+    <category term="公务员考试" scheme="http://example.com/tags/%E5%85%AC%E5%8A%A1%E5%91%98%E8%80%83%E8%AF%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>prescan关联MATLAB/simulink出错</title>
+    <link href="http://example.com/posts/36bd.html"/>
+    <id>http://example.com/posts/36bd.html</id>
+    <published>2021-08-25T01:35:16.000Z</published>
+    <updated>2021-09-13T06:30:53.237Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;一、问题描述&quot;&gt;&lt;a href=&quot;#一、问题描述&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    
+    <category term="MATLAB" scheme="http://example.com/tags/MATLAB/"/>
+    
+    <category term="PreScan" scheme="http://example.com/tags/PreScan/"/>
+    
+    <category term="ERROER" scheme="http://example.com/tags/ERROER/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>TDM-GCC安装</title>
+    <link href="http://example.com/posts/1d0d.html"/>
+    <id>http://example.com/posts/1d0d.html</id>
+    <published>2021-08-25T00:56:08.000Z</published>
+    <updated>2021-09-13T06:30:53.235Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;一、下载&quot;&gt;&lt;a href=&quot;#一、下载&quot; class=&quot;headerlink&quot; title=&quot;一、下载&quot;&gt;&lt;/a&gt;一、下载&lt;/h2&gt;&lt;p&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    
+    <category term="安装" scheme="http://example.com/tags/%E5%AE%89%E8%A3%85/"/>
+    
+    <category term="MATLAB" scheme="http://example.com/tags/MATLAB/"/>
+    
+    <category term="PreScan" scheme="http://example.com/tags/PreScan/"/>
+    
+    <category term="TDM-GCC" scheme="http://example.com/tags/TDM-GCC/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://example.com/posts/16107.html"/>
+    <id>http://example.com/posts/16107.html</id>
+    <published>2021-08-21T07:54:04.049Z</published>
+    <updated>2021-08-21T07:54:04.049Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt;</summary>
+        
+      
+    
+    
+    
+    
+    <category term="技巧" scheme="http://example.com/tags/%E6%8A%80%E5%B7%A7/"/>
+    
+    <category term="HEXO" scheme="http://example.com/tags/HEXO/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>PreScan安装及破解</title>
+    <link href="http://example.com/posts/4c68.html"/>
+    <id>http://example.com/posts/4c68.html</id>
+    <published>2021-08-18T00:35:33.000Z</published>
+    <updated>2021-08-21T07:54:04.049Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;一、下载&quot;&gt;&lt;a href=&quot;#一、下载&quot; class=&quot;headerlink&quot; title=&quot;一、下载&quot;&gt;&lt;/a&gt;一、下载&lt;/h2&gt;&lt;p&gt;链接：&lt;a href=&quot;https://pan.baidu.com/s/1oKwAXIpmnsb1-HpVlAhN5Q</summary>
+        
+      
+    
+    
+    
+    
+    <category term="安装" scheme="http://example.com/tags/%E5%AE%89%E8%A3%85/"/>
+    
+    <category term="破解" scheme="http://example.com/tags/%E7%A0%B4%E8%A7%A3/"/>
+    
+    <category term="PreScan" scheme="http://example.com/tags/PreScan/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>remote: Incorrect username or password (access token) fatal: Authentication failed for</title>
+    <link href="http://example.com/posts/a75e.html"/>
+    <id>http://example.com/posts/a75e.html</id>
+    <published>2021-08-12T08:19:17.000Z</published>
+    <updated>2021-08-21T07:54:04.065Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;一、问题描述&quot;&gt;&lt;a href=&quot;#一、问题描述&quot; class=&quot;headerlink&quot; title=&quot;一、问题描述&quot;&gt;&lt;/a&gt;一、问题描述&lt;/h2&gt;&lt;p&gt;gitee推送到远程仓库时提示错误&lt;/p&gt;
+&lt;pre class=&quot;line-numbers</summary>
+        
+      
+    
+    
+    
+    
+    <category term="ERROR" scheme="http://example.com/tags/ERROR/"/>
+    
+    <category term="Git" scheme="http://example.com/tags/Git/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>远程桌面安装MATLAB出现报错License Manager Error -103已解决</title>
+    <link href="http://example.com/posts/9c4d.html"/>
+    <id>http://example.com/posts/9c4d.html</id>
+    <published>2021-08-12T07:17:16.000Z</published>
+    <updated>2021-08-21T07:54:04.081Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;一、问题描述：&quot;&gt;&lt;a href=&quot;#一、问题描述：&quot; class=&quot;headerlink&quot; title=&quot;一、问题描述：&quot;&gt;&lt;/a&gt;一、问题描述：&lt;/h3&gt;&lt;p&gt;远程桌面使用&lt;code&gt;matlab&lt;/code&gt;报错&lt;code&gt;License Manager</summary>
+        
+      
+    
+    
+    
+    
+    <category term="ERROR" scheme="http://example.com/tags/ERROR/"/>
+    
+    <category term="MATLAB" scheme="http://example.com/tags/MATLAB/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>MATLAB安装与破解</title>
+    <link href="http://example.com/posts/8603.html"/>
+    <id>http://example.com/posts/8603.html</id>
+    <published>2021-08-09T02:16:35.000Z</published>
+    <updated>2021-08-21T07:54:04.045Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;一、前提条件&quot;&gt;&lt;a href=&quot;#一、前提条件&quot; class=&quot;headerlink&quot; title=&quot;一、前提条件&quot;&gt;&lt;/a&gt;一、前提条件&lt;/h2&gt;&lt;p&gt;需要安装&lt;code&gt;Microsoft Visual</summary>
+        
+      
+    
+    
+    
+    
+    <category term="安装" scheme="http://example.com/tags/%E5%AE%89%E8%A3%85/"/>
+    
+    <category term="破解" scheme="http://example.com/tags/%E7%A0%B4%E8%A7%A3/"/>
+    
+    <category term="MATLAB" scheme="http://example.com/tags/MATLAB/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Excel表格随机排序</title>
+    <link href="http://example.com/posts/33753.html"/>
+    <id>http://example.com/posts/33753.html</id>
+    <published>2021-08-02T00:38:54.000Z</published>
+    <updated>2021-08-21T07:54:04.029Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;一、实现目标&quot;&gt;&lt;a href=&quot;#一、实现目标&quot; class=&quot;headerlink&quot; title=&quot;一、实现目标&quot;&gt;&lt;/a&gt;一、实现目标&lt;/h2&gt;&lt;p&gt;在已有的姓名排序中实现随机排序姓名。&lt;/p&gt;
+&lt;h2 id=&quot;二、解决办法&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    
+    <category term="Excel" scheme="http://example.com/tags/Excel/"/>
+    
+    <category term="技巧" scheme="http://example.com/tags/%E6%8A%80%E5%B7%A7/"/>
+    
+  </entry>
+  
+</feed>

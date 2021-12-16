@@ -1,0 +1,1080 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="YOLO总结, mi鹿博">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+    <title>YOLO总结 | mi鹿博</title>
+    <link rel="icon" type="image/png" href="/medias/logo1.png">
+
+    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="/css/my.css">
+
+    <script src="/libs/jquery/jquery.min.js"></script>
+
+<meta name="generator" content="Hexo 5.3.0">
+<style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
+<link rel="alternate" href="/atom.xml" title="mi鹿博" type="application/atom+xml">
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
+
+
+
+
+<body>
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
+                    
+                    <img src="/medias/logo.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">mi鹿博</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>首页</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/tags" class="waves-effect waves-light">
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>分类</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/archives" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>归档</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/about" class="waves-effect waves-light">
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>关于</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/friends" class="waves-effect waves-light">
+      
+      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
+      
+      <span>友情链接</span>
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="/medias/logo.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">mi鹿博</div>
+        <div class="logo-desc">
+            
+            Never really desperate, only the lost of the soul.
+            
+        </div>
+    </div>
+
+    
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="/" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			首页
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/tags" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			分类
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			归档
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/about" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-user-circle"></i>
+			
+			关于
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/friends" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-address-book"></i>
+			
+			友情链接
+		</a>
+          
+        </li>
+        
+        
+    </ul>
+</div>
+
+
+        </div>
+
+        
+    </nav>
+
+</header>
+
+    
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/71.jpg')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title">YOLO总结</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<main class="post-container content">
+
+    
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        width: 345px;
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        padding: 35px 0 15px 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content {
+        padding-bottom: 30px;
+        overflow: auto;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+
+        position: absolute;
+        right: 23.5vw;
+        display: block;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 15px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                    <div class="article-tag">
+                        
+                            <a href="/tags/YOLO/">
+                                <span class="chip bg-color">YOLO</span>
+                            </a>
+                        
+                            <a href="/tags/%E8%AE%BA%E6%96%87/">
+                                <span class="chip bg-color">论文</span>
+                            </a>
+                        
+                            <a href="/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0-%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/">
+                                <span class="chip bg-color">机器学习/深度学习</span>
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
+                    2021-11-13
+                </div>
+                
+
+                
+
+                
+
+                
+
+                
+            </div>
+        </div>
+        <hr class="clearfix">
+
+        
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="/libs/prism/prism.css">
+        
+
+        
+        <!-- 代码块折行 -->
+        <style type="text/css">
+            code[class*="language-"], pre[class*="language-"] { white-space: pre-wrap !important; }
+        </style>
+        
+
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <h2 id="一、目标检测简单分类"><a href="#一、目标检测简单分类" class="headerlink" title="一、目标检测简单分类"></a>一、目标检测简单分类</h2><p>目标检测目前有<code>one-stage</code>和<code>two-stage</code>两种，<code>two-stage</code>指的是检测算法需要分两步完成，首先需要获取候选区域，然后进行分类，比如<code>R-CNN</code>系列；与之相对的是<code>one-stage</code>检测，可以理解为一步到位，不需要单独寻找候选区域，典型的有<code>SSD/YOLO</code>。</p>
+<h2 id="二、引言"><a href="#二、引言" class="headerlink" title="二、引言"></a>二、引言</h2><p><code>YOLO（You Only Look Once）</code>是一种基于深度神经网络的对象识别和定位算法，其最大的特点是运行速度很快，可以用于实时系统。<code>YOLO（You Only Look Once）</code>是一种基于深度神经网络的对象识别和定位算法，其最大的特点是运行速度很快，可以用于实时系统。</p>
+<p>对象识别和定位，可以看成两个任务：<strong>找到图片中某个存在对象的区域</strong>，然后<strong>识别出该区域中具体是哪个对象。</strong>我们想要识别一个目标需要得到两类信息就可以确定一个物体，分别是这个物体的类别和这个物体的位置。</p>
+<p>一下面这两张图为例，看到这张图，我们可以看出图中左侧有一只狗，狗的后面有一辆自行车，在图片的右侧有一辆小汽车。那么这一过程放到计算机中应该是怎样的呢？计算机能够识别的也就是下图中右侧的图片。计算机可以识别出这个物体是什么，并且可以用框框标出该物体的位置。</p>
+<p><img src="/images/YOLO%E6%80%BB%E7%BB%93/20190620132520283.png" alt="目标检测示例"></p>
+<h2 id="三、YOLO"><a href="#三、YOLO" class="headerlink" title="三、YOLO"></a>三、YOLO</h2><h3 id="1-简述YOLO的检测流程"><a href="#1-简述YOLO的检测流程" class="headerlink" title="1.简述YOLO的检测流程"></a>1.简述YOLO的检测流程</h3><ol>
+<li><p>将图片<code>resize</code>到448×448大小，图片分割得到7×7网格。</p>
+</li>
+<li><p>将图片放到网络里面进行处理：提取特征和预测</p>
+<p>卷积部分负责提特征。</p>
+<p>全链接部分负责预测：7×7×2=98个<code>bounding box</code>的坐标和是否有物体的<code>confidence</code>。7×7=49个<code>cell</code>所属20个物体的概率。</p>
+</li>
+<li><p>进行非极大值抑制<code>（NMS）</code>处理得到结果。</p>
+</li>
+</ol>
+<h3 id="2-结构"><a href="#2-结构" class="headerlink" title="2.结构"></a>2.结构</h3><p><code>YOLO</code>网络结构由24个卷积层与2个全连接层构成，网络入口为448×448(<code>v2</code>为416×416)，图片进入网络先经过<code>resize</code>，网络的输出结果为一个张量，维度为<br>$$<br>S×S×(B×(4+1)+C)<br>$$<br>其中，<code>S</code>为划分网格数，<code>B</code>为每个网格负责的边框个数，<code>C</code>为类别个数。每个小格会对应<code>B</code>个边界框，边界框的宽高范围为全图，表示以该小格为中心寻找物体的边界框位置。每个边界框对应一个分值，<strong>代表该处是否有物体及定位准确度</strong>：$$P(object)×IoU_p^t$$（<code>t:truth</code>；<code>p:preted</code>），每个小格会对应<code>C</code>个概率值，找出最大概率对应的类别$$P(Class|Object)$$，并认为小格中包含该物体或者该物体的一部分。</p>
+<p>以本文为例，输出的张量可以写成为：7×7×(2×(4+1)+20)=7×7×30</p>
+<h3 id="3-输入和输出的映射关系"><a href="#3-输入和输出的映射关系" class="headerlink" title="3.输入和输出的映射关系"></a>3.输入和输出的映射关系</h3><p><img src="/images/YOLO%E6%80%BB%E7%BB%93/20190620132450256.png" alt="输入和输出的映射关系"></p>
+<p>首先我们来解释一下这张图。</p>
+<p>（1）输入：原始图像</p>
+<p>左侧的<code>input</code>即为输入的部分，<strong>唯一的要求是缩放到448×448的大小</strong>。这里的3是三通道的意思。主要是因为<code>YOLO</code>的网络中，<strong>卷积层最后接了两个全连接层，全连接层是要求固定大小的向量作为输入，所以倒推回去也就要求原始图像有固定的尺寸</strong>。那么<code>YOLO</code>设计的尺寸就是<code>448×448</code>。</p>
+<p>（2）输出：一个7×7×30的张量（<code>tensor</code>）</p>
+<p>右侧的长条即为输出，下面我们将一个小长条放大了看，如下图所示。</p>
+<p><img src="/images/YOLO%E6%80%BB%E7%BB%93/20190620133044971.png" alt="张量组成"></p>
+<p>在这张图中，可以分为三个部分，前面的绿色的部分是对象，两个蓝色的部分是<code>bounding box</code>的置信度，后方的两个黄色的部分是两个<code>bounding box</code>的位置信息.</p>
+<p>①20个对象分类的概率</p>
+<p><code>YOLO</code>支持识别20种不同的对象（人、鸟、猫、汽车、椅子等），所以这里有20个值表示该网格位置存在任一种对象的概率。</p>
+<p>②2个<code>bounding box</code>的位置</p>
+<p>每个<code>bounding box</code>需要4个数值来表示其位置，(<code>Center_x</code>，<code>Center_y</code>，<code>width</code>，<code>height</code>)，即(<code>bounding box</code>的中心点的<code>x</code>坐标，<code>y</code>坐标，宽度，高度)，2个<code>bounding box</code>共需要8个数值来表示其位置。其中坐标的<code>x</code>，<code>y</code>用对应网格的<code>offset</code>归一化到0-1之间，<code>w</code>，<code>h</code>用图像的<code>width</code>和height归一化到0-1之间。</p>
+<p>③2个<code>bounding box</code>的置信度</p>
+<p><code>bounding box</code>的置信度 = 该<code>bounding box</code>内存在对象的概率 × 该<code>bounding box</code>与该对象实际<code>bounding box</code>的<code>IOU</code>，公式:<br>$$<br>Confidence = Pr(Object)×IOU_p^t<br>$$</p>
+<p>$$Pr(Object)$$是<code>bounding box</code>内<strong>存在对象的概率</strong>，无论是什么类型的，我们只关注这里<span style="color:red;"><strong>是否存在</strong></span>。</p>
+<p>$$IOU_p^t$$是<code>bounding box</code>与对象真实<code>bounding box</code>的<code>IOU</code>，体现的是预测的<code>bounding box</code>与真实的<code>bounding box</code>的接近程度。虽然有时说”预测”的<code>bounding box</code>，但这个<code>IOU</code>是在训练阶段计算的。等到了<strong>测试阶段（<code>Inference</code>），这时并不知道真实对象在哪里，只能完全依赖于网络的输出，这时已经不需要（也无法）计算<code>IOU</code>了</strong>。</p>
+<p>综合来说，一个<code>bounding box</code>的置信度<code>Confidence</code>意味着它是否包含对象且位置准确的程度。<span style="color:red;"><strong>置信度高表示这里存在一个对象且位置比较准确</strong></span>，置信度低表示可能没有对象或者即便有对象也存在较大的位置偏差。</p>
+<p><span style="color:red;"><strong>注意：</strong></span></p>
+<ul>
+<li><p><strong><code>class</code> 信息是针对每个网格的，<code>confidence</code> 信息是针对每个 <code>bounding box</code> 的。</strong></p>
+</li>
+<li><p>一张图片<strong>最多可以检测出49个对象。</strong>每个30维向量中只有一组（20个）对象分类的概率，也就只能预测出一个对象。所以输出的 7×7=49个30维向量，最多表示出49个对象。</p>
+</li>
+<li><p>总共有 49×2=<strong>98 个候选区</strong>（<code>bounding box</code>），每个30维向量中有2组bounding box，所以总共是98个候选区。</p>
+</li>
+</ul>
+<h3 id="4-训练"><a href="#4-训练" class="headerlink" title="4.训练"></a>4.训练</h3><p> <code>YOLO</code>先使用<code>ImageNet</code>数据集对前20层卷积网络进行预训练，然后使用完整的网络，在<code>PASCAL VOC</code>数据集上进行对象识别和定位的训练和预测。<code>YOLO</code>的网络结构如下图所示：</p>
+<p><img src="/images/YOLO%E6%80%BB%E7%BB%93/20190620135643533.png" alt="img"></p>
+<p><code>YOLO</code>的最后一层采用线性激活函数，其它层都是<code>Leaky ReLU</code>。训练中采用了<code>drop out</code>和数据增强（<code>data augmentation</code>）来防止过拟合。</p>
+<h3 id="5-预测（inference）"><a href="#5-预测（inference）" class="headerlink" title="5.预测（inference）"></a>5.预测（inference）</h3><p>训练好的<code>YOLO</code>网络，输入一张图片，将输出一个 7×7×30 的张量（<code>tensor</code>）来表示图片中所有网格包含的对象（概率）以及该对象可能的2个位置（<code>bounding box</code>）和置信度。<code>YOLO</code>采用<code>NMS</code>（<code>Non-maximal suppression</code>，非极大值抑制）算法，从中提取出最有可能的那些对象和位置。</p>
+<h3 id="6-NMS（非极大值抑制）"><a href="#6-NMS（非极大值抑制）" class="headerlink" title="6.NMS（非极大值抑制）"></a>6.NMS（非极大值抑制）</h3><p><code>NMS</code>其核心思想是：选择得分最高的作为输出，与该输出重叠的去掉，不断重复这一过程直到所有备选处理完。<code>YOLO</code>的<code>NMS</code>计算方法如下。</p>
+<p>  网络输出的7×7×30的张量，在每一个网格中，对象C<del>i</del>第<code>j</code>个<code>bounding box</code>的得分：</p>
+<p>$$<br>Score_ij=P(C_i|Object)×Confidence_j<br>$$</p>
+<p>它代表着某个对象C<del>i​</del>存在于第<code>j</code>个<code>bounding box</code>的可能性。每个网格有：20个对象的概率×2个<code>bounding box</code>的置信度，共40个得分（候选对象）。49个网格共1960个得分。对每种对象分别进行<code>NMS</code>，那么每种对象有1960/20=98个得分。</p>
+<p><code>NMS</code>步骤如下：</p>
+<ol>
+<li><p>设置一个<code>Score</code>的阈值，低于该阈值的候选对象排除掉（将该<code>Score</code>设为0）</p>
+</li>
+<li><p>遍历每一个对象类别</p>
+<p>遍历该对象的98个得分<br>  ①找到<code>Score</code>最大的那个对象及其<code>bounding box</code>，添加到输出列表<br>  ②对每个<code>Score</code>不为0的候选对象，计算其与上面①输出对象的<code>bounding box</code>的<code>IOU</code><br>  ③根据预先设置的<code>IOU</code>阈值，所有高于该阈值（重叠度较高）的候选对象排除掉（将<code>Score</code>设为0）<br>  ④如果所有<code>bounding box</code>要么在输出列表中，要么<code>Score=0​</code>，则该对象类别的<code>NMS</code>完成，返回步骤2处理下一种对象</p>
+</li>
+<li><p>输出列表即为预测的对象</p>
+</li>
+</ol>
+<h2 id="四、YOLO的优点"><a href="#四、YOLO的优点" class="headerlink" title="四、YOLO的优点"></a>四、YOLO的优点</h2><ol>
+<li><p>速度快，处理速度可以达到<code>45fps</code>，其快速版本（网络较小）甚至可以达到<code>155fps</code>。这得益于其识别和定位合二为一的网络设计，而且这种统一的设计也使得训练和预测可以端到端的进行，非常简便。</p>
+</li>
+<li><p>泛化能力强 ，可以广泛适用于其他测试集。</p>
+</li>
+<li><p>背景预测错误率低，因为是整张图片放到网络里面进行预测。</p>
+</li>
+</ol>
+<h2 id="五、YOLO的缺点"><a href="#五、YOLO的缺点" class="headerlink" title="五、YOLO的缺点"></a>五、YOLO的缺点</h2><p>精度低，<strong>小目标和邻近目标检测效果差</strong>，小对象检测效果不太好（尤其是一些聚集在一起的小对象），对边框的预测准确度不是很高，总体预测精度略低于<code>Fast RCNN</code>。主要是因为网格设置比较稀疏，而且每个网格只预测两个边框，另外<code>Pooling</code>层会丢失一些细节信息，对定位存在影响。</p>
+<p>  <code>YOLO</code>与<code>Fast R-CNN</code>相比有<strong>较大的定位误差</strong>，与基于<code>region proposal</code>的方法相比具有较低的召回率。但是，<code>YOLO</code>在定位识别背景时准确率更高，而 <code>Fast-R-CNN</code> 的假阳性很高。</p>
+<h2 id="相关链接"><a href="#相关链接" class="headerlink" title="相关链接"></a>相关链接</h2><p>如果对于<code>YOLOv2</code>和<code>YOLOv3</code>感兴趣可以可以前往参观。</p>
+<p><a target="_blank" rel="noopener" href="https://milumilua.github.io/posts/8a2e.html">YOLOv2总结</a></p>
+<p><a target="_blank" rel="noopener" href="https://milumilua.github.io/posts/4a3e.html">YOLOv3总结</a></p>
+<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><p>【1】<a target="_blank" rel="noopener" href="https://www.jianshu.com/p/468e08f739bd">超全面目标检测算法综述</a></p>
+<p>【2】<a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_30815237/article/details/91949543">YOLO框架简述</a></p>
+
+                
+            </div>
+            <hr/>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        文章作者:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="/about" rel="external nofollow noreferrer">milu</a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        文章链接:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="http://example.com/posts/6aa8.html">http://example.com/posts/6aa8.html</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        版权声明:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    本博客所有文章除特別声明外，均采用
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    许可协议。转载请注明来源
+                    <a href="/about" target="_blank">milu</a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>复制成功，请遵循本文的转载规则</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">查看</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            
+                                <a href="/tags/YOLO/">
+                                    <span class="chip bg-color">YOLO</span>
+                                </a>
+                            
+                                <a href="/tags/%E8%AE%BA%E6%96%87/">
+                                    <span class="chip bg-color">论文</span>
+                                </a>
+                            
+                                <a href="/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0-%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/">
+                                    <span class="chip bg-color">机器学习/深度学习</span>
+                                </a>
+                            
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+    <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="/libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+            <div class="card">
+                <a href="/posts/8a2e.html">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/64.jpg" class="responsive-img" alt="YOLOv2总结">
+                        
+                        <span class="card-title">YOLOv2总结</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2021-11-13
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            milu
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/YOLO/">
+                        <span class="chip bg-color">YOLO</span>
+                    </a>
+                    
+                    <a href="/tags/%E8%AE%BA%E6%96%87/">
+                        <span class="chip bg-color">论文</span>
+                    </a>
+                    
+                    <a href="/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0-%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/">
+                        <span class="chip bg-color">机器学习/深度学习</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/posts/59b1.html">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/69.jpg" class="responsive-img" alt="Linux安装MySQL">
+                        
+                        <span class="card-title">Linux安装MySQL</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-10-05
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            milu
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E5%AE%89%E8%A3%85/">
+                        <span class="chip bg-color">安装</span>
+                    </a>
+                    
+                    <a href="/tags/Linux/">
+                        <span class="chip bg-color">Linux</span>
+                    </a>
+                    
+                    <a href="/tags/MySQL/">
+                        <span class="chip bg-color">MySQL</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+<script>
+    $('#articleContent').on('copy', function (e) {
+        // IE8 or earlier browser is 'undefined'
+        if (typeof window.getSelection === 'undefined') return;
+
+        var selection = window.getSelection();
+        // if the selection is short let's not annoy our users.
+        if (('' + selection).length < Number.parseInt('120')) {
+            return;
+        }
+
+        // create a div outside of the visible area and fill it with the selected text.
+        var bodyElement = document.getElementsByTagName('body')[0];
+        var newdiv = document.createElement('div');
+        newdiv.style.position = 'absolute';
+        newdiv.style.left = '-99999px';
+        bodyElement.appendChild(newdiv);
+        newdiv.appendChild(selection.getRangeAt(0).cloneContents());
+
+        // we need a <pre> tag workaround.
+        // otherwise the text inside "pre" loses all the line breaks!
+        if (selection.getRangeAt(0).commonAncestorContainer.nodeName === 'PRE') {
+            newdiv.innerHTML = "<pre>" + newdiv.innerHTML + "</pre>";
+        }
+
+        var url = document.location.href;
+        newdiv.innerHTML += '<br />'
+            + '来源: mi鹿博<br />'
+            + '文章作者: milu<br />'
+            + '文章链接: <a href="' + url + '">' + url + '</a><br />'
+            + '本文章著作权归作者所有，任何形式的转载都请注明出处。';
+
+        selection.selectAllChildren(newdiv);
+        window.setTimeout(function () {bodyElement.removeChild(newdiv);}, 200);
+    });
+</script>
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget card" style="background-color: white;">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h2, h3, h4'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h2, h3, h4').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
+    
+
+</main>
+
+
+<script src="https://cdn.bootcss.com/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script>
+    MathJax.Hub.Config({
+        tex2jax: {inlineMath: [['$', '$'], ['\(', '\)']]}
+    });
+</script>
+
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+<!-- 代码语言 -->
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+<!-- 代码块复制 -->
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+<script type="text/javascript" src="/libs/codeBlock/clipboard.min.js"></script>
+<!-- 代码块收缩 -->
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script> 
+<!-- 代码块折行 -->
+<style type="text/css">code[class*="language-"], pre[class*="language-"] { white-space: pre !important; }</style>
+
+    <footer class="page-footer bg-color">
+    
+    <div class="container row center-align" style="margin-bottom: 0px !important;">
+        <div class="col s12 m8 l8 copy-right">
+            Copyright&nbsp;&copy;
+            
+                <span id="year">2019-2021</span>
+            
+            <span id="year">2019</span>
+            <a href="/about" target="_blank">milu</a>
+            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+            <br>
+            
+            
+            
+            
+            
+            
+            <span id="busuanzi_container_site_pv">
+                |&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span id="busuanzi_value_site_pv"
+                    class="white-color"></span>&nbsp;次
+            </span>
+            
+            
+            <span id="busuanzi_container_site_uv">
+                |&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;<span id="busuanzi_value_site_uv"
+                    class="white-color"></span>&nbsp;人
+            </span>
+            
+            <br>
+            
+            <br>
+            
+        </div>
+        <div class="col s12 m4 l4 social-link social-statis">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;搜索</span>
+            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script type="text/javascript">
+$(function () {
+    var searchFunc = function (path, search_id, content_id) {
+        'use strict';
+        $.ajax({
+            url: path,
+            dataType: "xml",
+            success: function (xmlResponse) {
+                // get the contents from search data
+                var datas = $("entry", xmlResponse).map(function () {
+                    return {
+                        title: $("title", this).text(),
+                        content: $("content", this).text(),
+                        url: $("url", this).text()
+                    };
+                }).get();
+                var $input = document.getElementById(search_id);
+                var $resultContent = document.getElementById(content_id);
+                $input.addEventListener('input', function () {
+                    var str = '<ul class=\"search-result-list\">';
+                    var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                    $resultContent.innerHTML = "";
+                    if (this.value.trim().length <= 0) {
+                        return;
+                    }
+                    // perform local searching
+                    datas.forEach(function (data) {
+                        var isMatch = true;
+                        var data_title = data.title.trim().toLowerCase();
+                        var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
+                        var data_url = data.url;
+                        data_url = data_url.indexOf('/') === 0 ? data.url : '/' + data_url;
+                        var index_title = -1;
+                        var index_content = -1;
+                        var first_occur = -1;
+                        // only match artiles with not empty titles and contents
+                        if (data_title !== '' && data_content !== '') {
+                            keywords.forEach(function (keyword, i) {
+                                index_title = data_title.indexOf(keyword);
+                                index_content = data_content.indexOf(keyword);
+                                if (index_title < 0 && index_content < 0) {
+                                    isMatch = false;
+                                } else {
+                                    if (index_content < 0) {
+                                        index_content = 0;
+                                    }
+                                    if (i === 0) {
+                                        first_occur = index_content;
+                                    }
+                                }
+                            });
+                        }
+                        // show search results
+                        if (isMatch) {
+                            str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
+                            var content = data.content.trim().replace(/<[^>]+>/g, "");
+                            if (first_occur >= 0) {
+                                // cut out 100 characters
+                                var start = first_occur - 20;
+                                var end = first_occur + 80;
+                                if (start < 0) {
+                                    start = 0;
+                                }
+                                if (start === 0) {
+                                    end = 100;
+                                }
+                                if (end > content.length) {
+                                    end = content.length;
+                                }
+                                var match_content = content.substr(start, end);
+                                // highlight all keywords
+                                keywords.forEach(function (keyword) {
+                                    var regS = new RegExp(keyword, "gi");
+                                    match_content = match_content.replace(regS, "<em class=\"search-keyword\">" + keyword + "</em>");
+                                });
+
+                                str += "<p class=\"search-result\">" + match_content + "...</p>"
+                            }
+                            str += "</li>";
+                        }
+                    });
+                    str += "</ul>";
+                    $resultContent.innerHTML = str;
+                });
+            }
+        });
+    };
+
+    searchFunc('/search.xml', 'searchInput', 'searchResult');
+});
+</script>
+
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
+
+    <!-- Baidu Analytics -->
+
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    <script src="/libs/others/clicklove.js" async="async"></script>
+    
+    
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+    
+
+    
+
+    
+
+    <!--腾讯兔小巢-->
+    
+    
+
+    
+
+    
+    <script type="text/javascript" src="/libs/background/ribbon-dynamic.js" async="async"></script>
+    
+
+    
+    <script src="/libs/instantpage/instantpage.js" type="module"></script>
+    
+
+</body>
+
+</html>
