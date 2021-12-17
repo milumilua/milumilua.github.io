@@ -213,9 +213,9 @@
     
     
     
-    <category term="安装" scheme="http://example.com/tags/%E5%AE%89%E8%A3%85/"/>
-    
     <category term="Linux" scheme="http://example.com/tags/Linux/"/>
+    
+    <category term="安装" scheme="http://example.com/tags/%E5%AE%89%E8%A3%85/"/>
     
     <category term="MySQL" scheme="http://example.com/tags/MySQL/"/>
     
@@ -240,9 +240,9 @@
     
     
     
-    <category term="安装" scheme="http://example.com/tags/%E5%AE%89%E8%A3%85/"/>
-    
     <category term="Linux" scheme="http://example.com/tags/Linux/"/>
+    
+    <category term="安装" scheme="http://example.com/tags/%E5%AE%89%E8%A3%85/"/>
     
     <category term="JDK" scheme="http://example.com/tags/JDK/"/>
     
