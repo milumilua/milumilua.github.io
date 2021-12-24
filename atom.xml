@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2021-12-17T11:27:14.442Z</updated>
+  <updated>2021-12-24T03:23:16.467Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Anaconda安装及简单应用</title>
+    <link href="http://example.com/posts/4b14.html"/>
+    <id>http://example.com/posts/4b14.html</id>
+    <published>2021-12-24T02:07:53.000Z</published>
+    <updated>2021-12-24T03:23:16.467Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;一、下载地址&quot;&gt;&lt;a href=&quot;#一、下载地址&quot; class=&quot;headerlink&quot; title=&quot;一、下载地址&quot;&gt;&lt;/a&gt;一、下载地址&lt;/h2&gt;&lt;p&gt;Anaconda可以从官网上下载：&lt;/p&gt;
+&lt;p&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    
+    <category term="安装" scheme="http://example.com/tags/%E5%AE%89%E8%A3%85/"/>
+    
+  </entry>
   
   <entry>
     <title>英语作文模板</title>
@@ -513,32 +537,6 @@
     <category term="破解" scheme="http://example.com/tags/%E7%A0%B4%E8%A7%A3/"/>
     
     <category term="PreScan" scheme="http://example.com/tags/PreScan/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>remote: Incorrect username or password (access token) fatal: Authentication failed for</title>
-    <link href="http://example.com/posts/a75e.html"/>
-    <id>http://example.com/posts/a75e.html</id>
-    <published>2021-08-12T08:19:17.000Z</published>
-    <updated>2021-08-21T07:54:04.065Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;一、问题描述&quot;&gt;&lt;a href=&quot;#一、问题描述&quot; class=&quot;headerlink&quot; title=&quot;一、问题描述&quot;&gt;&lt;/a&gt;一、问题描述&lt;/h2&gt;&lt;p&gt;gitee推送到远程仓库时提示错误&lt;/p&gt;
-&lt;pre class=&quot;line-numbers</summary>
-        
-      
-    
-    
-    
-    
-    <category term="ERROR" scheme="http://example.com/tags/ERROR/"/>
-    
-    <category term="Git" scheme="http://example.com/tags/Git/"/>
     
   </entry>
   
