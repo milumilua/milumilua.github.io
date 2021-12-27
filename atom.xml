@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2021-12-24T03:23:47.224Z</updated>
+  <updated>2021-12-25T06:21:47.263Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -17,11 +17,37 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>MobaXterm的安装及简单使用</title>
+    <link href="http://example.com/posts/cae9.html"/>
+    <id>http://example.com/posts/cae9.html</id>
+    <published>2021-12-25T01:19:49.000Z</published>
+    <updated>2021-12-25T06:21:47.263Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;一、下载&quot;&gt;&lt;a href=&quot;#一、下载&quot; class=&quot;headerlink&quot; title=&quot;一、下载&quot;&gt;&lt;/a&gt;一、下载&lt;/h2&gt;&lt;p&gt;官网下载地址：&lt;/p&gt;
+&lt;p&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    
+    <category term="安装" scheme="http://example.com/tags/%E5%AE%89%E8%A3%85/"/>
+    
+    <category term="MobaXterm" scheme="http://example.com/tags/MobaXterm/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Anaconda安装及简单应用</title>
     <link href="http://example.com/posts/4b14.html"/>
     <id>http://example.com/posts/4b14.html</id>
     <published>2021-12-24T02:07:53.000Z</published>
-    <updated>2021-12-24T03:23:47.224Z</updated>
+    <updated>2021-12-25T01:20:43.849Z</updated>
     
     
       
@@ -38,6 +64,8 @@
     
     <category term="安装" scheme="http://example.com/tags/%E5%AE%89%E8%A3%85/"/>
     
+    <category term="Anaconda" scheme="http://example.com/tags/Anaconda/"/>
+    
   </entry>
   
   <entry>
@@ -45,7 +73,7 @@
     <link href="http://example.com/posts/a51b.html"/>
     <id>http://example.com/posts/a51b.html</id>
     <published>2021-12-14T08:40:44.000Z</published>
-    <updated>2021-12-17T11:27:14.442Z</updated>
+    <updated>2021-12-25T08:51:26.672Z</updated>
     
     
       
@@ -510,33 +538,6 @@
     <category term="技巧" scheme="http://example.com/tags/%E6%8A%80%E5%B7%A7/"/>
     
     <category term="HEXO" scheme="http://example.com/tags/HEXO/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>PreScan安装及破解</title>
-    <link href="http://example.com/posts/4c68.html"/>
-    <id>http://example.com/posts/4c68.html</id>
-    <published>2021-08-18T00:35:33.000Z</published>
-    <updated>2021-08-21T07:54:04.049Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;一、下载&quot;&gt;&lt;a href=&quot;#一、下载&quot; class=&quot;headerlink&quot; title=&quot;一、下载&quot;&gt;&lt;/a&gt;一、下载&lt;/h2&gt;&lt;p&gt;链接：&lt;a href=&quot;https://pan.baidu.com/s/1oKwAXIpmnsb1-HpVlAhN5Q</summary>
-        
-      
-    
-    
-    
-    
-    <category term="安装" scheme="http://example.com/tags/%E5%AE%89%E8%A3%85/"/>
-    
-    <category term="破解" scheme="http://example.com/tags/%E7%A0%B4%E8%A7%A3/"/>
-    
-    <category term="PreScan" scheme="http://example.com/tags/PreScan/"/>
     
   </entry>
   
