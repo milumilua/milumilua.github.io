@@ -29,9 +29,9 @@
 
     <script src="/libs/jquery/jquery.min.js"></script>
 
-<meta name="generator" content="Hexo 5.3.0">
+<meta name="generator" content="Hexo 5.3.0"><link rel="alternate" href="/atom.xml" title="mi鹿博" type="application/atom+xml">
+
 <style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
-<link rel="alternate" href="/atom.xml" title="mi鹿博" type="application/atom+xml">
 <link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
 
 
@@ -376,7 +376,14 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="一、需要准备的东西"><a href="#一、需要准备的东西" class="headerlink" title="一、需要准备的东西"></a>一、需要准备的东西</h2><h3 id="1-图像识别"><a href="#1-图像识别" class="headerlink" title="1.图像识别"></a>1.图像识别</h3><h3 id="2-模型预测"><a href="#2-模型预测" class="headerlink" title="2.模型预测"></a>2.模型预测</h3><p>采用了基于车道线距离阈值来计算换道数据的算法。<a href="#1">^[1]^</a></p>
+                <h2 id="一、需要准备的东西"><a href="#一、需要准备的东西" class="headerlink" title="一、需要准备的东西"></a>一、需要准备的东西</h2><h3 id="1-图像识别"><a href="#1-图像识别" class="headerlink" title="1.图像识别"></a>1.图像识别</h3><h1 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h1><hr>
+<h2 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h2><ol>
+<li><a href="#jump1">目录1</a></li>
+<li><a href="#jump2">目录2</a></li>
+</ol>
+<hr>
+<h3 id="1-目录1"><a href="#1-目录1" class="headerlink" title="1. 目录1"></a><span id="jump1">1. 目录1</span></h3><hr>
+<h3 id="2-目录2"><a href="#2-目录2" class="headerlink" title="2. 目录2"></a><span id="jump2">2. 目录2</span></h3><h3 id="2-模型预测"><a href="#2-模型预测" class="headerlink" title="2.模型预测"></a>2.模型预测</h3><p>采用了基于车道线距离阈值来计算换道数据的算法。<a href="#1">^[1]^</a></p>
 <p>基于改进动态窗口法的轨迹预测方法。<a href="#1">^[1]^</a></p>
 <h3 id="3-仿真验证"><a href="#3-仿真验证" class="headerlink" title="3.仿真验证"></a>3.仿真验证</h3><h3 id="4-碰撞分类"><a href="#4-碰撞分类" class="headerlink" title="4.碰撞分类"></a>4.碰撞分类</h3><h3 id="5-有用的信息"><a href="#5-有用的信息" class="headerlink" title="5.有用的信息"></a>5.有用的信息</h3><h4 id="博士论文-1-李峻翔-无人车规划及车辆运动预测研究-D-导师：戴斌-国防科技大学-2019"><a href="#博士论文-1-李峻翔-无人车规划及车辆运动预测研究-D-导师：戴斌-国防科技大学-2019" class="headerlink" title="博士论文-[1]李峻翔.无人车规划及车辆运动预测研究[D].导师：戴斌.国防科技大学,2019"></a>博士论文-[1]李峻翔.无人车规划及车辆运动预测研究[D].导师：戴斌.国防科技大学,2019</h4><h5 id="（1）与车辆物理状态有关的特征-1"><a href="#（1）与车辆物理状态有关的特征-1" class="headerlink" title="（1）与车辆物理状态有关的特征^[1]^"></a>（1）与车辆物理状态有关的特征<a href="#1">^[1]^</a></h5><p>与其他特征不同，与车辆物理状态有关的特征（除了<code>VC</code>节点外）会随着时间的变化而发生改变，并且会形成跨时间片段的因果间推理。这些特征包括以下节点。<br>• <code>VC</code>：表示车辆的种类，该特征的状态包括摩托车、卡车和汽车。<code>VC</code> 被放置在证据层中，因为其作为预测行为的辅助依据时，不会随时间改变。<br>• <code>TI/BI</code>：表示转向灯 / 刹车灯的状态，包括开、关。<br>• <code>LO</code>：表示动态车辆横向速度的方向。<br>• <code>YA</code>：表示动态车辆与道路中心线的切向角。<br>• <code>BO</code>：表示动态车辆距离车道两旁的车道线的距离。</p>
 <h5 id="（2）与道路结构有关的特征-1"><a href="#（2）与道路结构有关的特征-1" class="headerlink" title="（2）与道路结构有关的特征^[1]^"></a>（2）与道路结构有关的特征<a href="#1">^[1]^</a></h5><p>与道路结构有关的特征往往决定着意图的可行性，同时还影响着动态车辆的交互行为，但这些特征不会形成跨时间片段的因果推理。这些特征包括以下节点。<br>• <code>LLE</code>：表示动态车辆左侧是否存在车道。<br>• <code>RLE</code>：表示动态车辆右侧是否存在车道。<br>• <code>LCU</code>：表示动态车辆所在车道的道路曲率。道路曲率是影响车辆意图的条件之一。</p>
