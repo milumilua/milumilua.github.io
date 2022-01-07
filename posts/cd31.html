@@ -388,7 +388,8 @@
 <p><img src="../images/%E8%AE%BA%E6%96%87%E6%80%9D%E8%B7%AF%E6%95%B4%E7%90%86/image-20220106152947733.png" alt="流程图"></p>
 <p>如果关心区域内的其他车辆的意图所产生的行为可能占领预测车辆的意图空间，则认为是干扰型交互。如果没有发生上述空间的冲突，则认为是合作型交互。常见的交互场景<code>如图3.7</code>所示。</p>
 <p><img src="../images/%E8%AE%BA%E6%96%87%E6%80%9D%E8%B7%AF%E6%95%B4%E7%90%86/image-20220106153336398.png" alt="常见高速环境下的交互场景"></p>
-<h3 id="4-碰撞分类"><a href="#4-碰撞分类" class="headerlink" title="4.碰撞分类"></a>4.碰撞分类</h3><h3 id="5-有用的信息"><a href="#5-有用的信息" class="headerlink" title="5.有用的信息"></a>5.有用的信息</h3><h4 id="（1）与车辆物理状态有关的特征-1"><a href="#（1）与车辆物理状态有关的特征-1" class="headerlink" title="（1）与车辆物理状态有关的特征[1]"></a>（1）与车辆物理状态有关的特征<a href="#reference">[1]</a></h4><p>与其他特征不同，与车辆物理状态有关的特征（除了<code>VC</code>节点外）会随着时间的变化而发生改变，并且会形成跨时间片段的因果间推理。这些特征包括以下节点。<br>• <code>VC</code>：表示车辆的种类，该特征的状态包括摩托车、卡车和汽车。<code>VC</code> 被放置在证据层中，因为其作为预测行为的辅助依据时，不会随时间改变。<br>• <code>TI/BI</code>：表示转向灯 / 刹车灯的状态，包括开、关。<br>• <code>LO</code>：表示动态车辆横向速度的方向。<br>• <code>YA</code>：表示动态车辆与道路中心线的切向角。<br>• <code>BO</code>：表示动态车辆距离车道两旁的车道线的距离。</p>
+<h3 id="4-碰撞分类"><a href="#4-碰撞分类" class="headerlink" title="4.碰撞分类"></a>4.碰撞分类</h3><p>事故预测问题可以表述为一个二元分类问题，其中正类是事故发生的情况，负类是给定道路在给定日期和时间未发生事故的情况。<a href="#reference">[2]</a></p>
+<h3 id="5-有用的信息"><a href="#5-有用的信息" class="headerlink" title="5.有用的信息"></a>5.有用的信息</h3><h4 id="（1）与车辆物理状态有关的特征-1"><a href="#（1）与车辆物理状态有关的特征-1" class="headerlink" title="（1）与车辆物理状态有关的特征[1]"></a>（1）与车辆物理状态有关的特征<a href="#reference">[1]</a></h4><p>与其他特征不同，与车辆物理状态有关的特征（除了<code>VC</code>节点外）会随着时间的变化而发生改变，并且会形成跨时间片段的因果间推理。这些特征包括以下节点。<br>• <code>VC</code>：表示车辆的种类，该特征的状态包括摩托车、卡车和汽车。<code>VC</code> 被放置在证据层中，因为其作为预测行为的辅助依据时，不会随时间改变。<br>• <code>TI/BI</code>：表示转向灯 / 刹车灯的状态，包括开、关。<br>• <code>LO</code>：表示动态车辆横向速度的方向。<br>• <code>YA</code>：表示动态车辆与道路中心线的切向角。<br>• <code>BO</code>：表示动态车辆距离车道两旁的车道线的距离。</p>
 <h4 id="（2）与道路结构有关的特征-1"><a href="#（2）与道路结构有关的特征-1" class="headerlink" title="（2）与道路结构有关的特征[1]"></a>（2）与道路结构有关的特征<a href="#reference">[1]</a></h4><p>与道路结构有关的特征往往决定着意图的可行性，同时还影响着动态车辆的交互行为，但这些特征不会形成跨时间片段的因果推理。这些特征包括以下节点。<br>• <code>LLE</code>：表示动态车辆左侧是否存在车道。<br>• <code>RLE</code>：表示动态车辆右侧是否存在车道。<br>• <code>LCU</code>：表示动态车辆所在车道的道路曲率。道路曲率是影响车辆意图的条件之一。</p>
 <h4 id="（3）与多车交互有关的特征-1"><a href="#（3）与多车交互有关的特征-1" class="headerlink" title="（3）与多车交互有关的特征[1]"></a>（3）与多车交互有关的特征<a href="#reference">[1]</a></h4><p>车辆驾驶意图通常受到周围车辆交互行为的影响，考虑的周围车辆是指感兴趣区域内的车辆，感兴趣区域的设计如<code>图2.7</code>所示，并假设动态车辆的意图不受其同一车道中后方跟随车辆的影响。本节根据动态车辆与周围车辆的间距和相对速度的关系来建模多车交互行为的特征。由于相邻车辆存在的先决条件是相邻车道存在，因此与多车交互有关的特征还与 <code>LLE</code>、<code>RLE</code> 有关。与多车交互有关的特征包括以下节点。<br>• <code>LBRV</code>：表示动态车辆感兴趣区域内左车道前方车辆交互关系，包括其他车辆是否存在、其他车辆相对动态车辆的速度。<br>• <code>LARV</code>：表示动态车辆感兴趣区域内左车道后方车辆交互关系。<br>• <code>RBRV</code>：表示动态车辆感兴趣区域内右车道前方车辆交互关系。<br>• <code>RARV</code>：表示动态车辆感兴趣区域内右车道后方车辆交互关系。<br>• <code>FVRV</code>：表示动态车辆感兴趣区域内相同车道前方车辆交互关系。</p>
 <p><img src="../images/%E8%AE%BA%E6%96%87%E6%80%9D%E8%B7%AF%E6%95%B4%E7%90%86/image-20220104165440491.png" alt="图2.7"></p>
@@ -396,8 +397,13 @@
 <p>车辆与车辆之间的关系：侧面接近，前后碰撞</p>
 <p>车辆的属性：车辆的属性（小轿车，大卡车）</p>
 <p>道路的属性：直道，弯道（有偏向角）</p>
-<h2 id="二、数据集"><a href="#二、数据集" class="headerlink" title="二、数据集"></a>二、数据集</h2><p>实验采用美国联邦公路管理局提供的公开数据集<code>NGSIM I-80</code>和 <code>NGSIM US-101</code>（<a target="_blank" rel="noopener" href="https://data.transportation.gov/Automobiles/Next-Generation-Simulation-NGSIM-Vehicle-Trajector/8ect-6jqj">下载地址</a>），这些数据集已被广泛用于智能交通系统和车辆运动预测算法的验证中。<a href="#reference">[1]</a> <strong>(数据只是车辆运动预测，没有碰撞数据)</strong></p>
-<h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a><span id="reference">参考文献</span></h2><p>[1]李峻翔.无人车规划及车辆运动预测研究[D].导师：戴斌.国防科技大学,2019（博士论文）</p>
+<h2 id="二、数据集"><a href="#二、数据集" class="headerlink" title="二、数据集"></a>二、数据集</h2><p>1.实验采用美国联邦公路管理局提供的公开数据集<code>NGSIM I-80</code>和 <code>NGSIM US-101</code>（<a target="_blank" rel="noopener" href="https://data.transportation.gov/Automobiles/Next-Generation-Simulation-NGSIM-Vehicle-Trajector/8ect-6jqj">下载地址</a>），这些数据集已被广泛用于智能交通系统和车辆运动预测算法的验证中。<a href="#reference">[1]</a> <strong>(数据只是车辆运动预测，没有碰撞数据)</strong></p>
+<p>2.一个包含道路车辆碰撞的数据集、一个描述加拿大道路网络的数据集和一个包含历史天气信息的数据集。<a href="#reference">[2]</a> </p>
+<p><strong>(除了代码没有一个数据是能下载下来的，代码还看不懂/(ㄒoㄒ)/~~)</strong></p>
+<p>数据特征通常包括道路信息，如车道数、平均每日交通流量、道路曲率，以及天气信息，如平均降水和温度。</p>
+<p>交通事故是非常罕见的事件，所以我们有更多的没有事故的例子，而不是有事故的例子。机器学习算法通常很难从不平衡数据集学习。抽样方法包括对数据集进行重新抽样，以使其平衡，要么<strong>对少数类进行过度抽样</strong>，要么<strong>对多数类进行欠抽样</strong>，或者两者同时进行。</p>
+<h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a><span id="reference">参考文献</span></h2><p>[1] 李峻翔.无人车规划及车辆运动预测研究[D].导师：戴斌.国防科技大学,2019（博士论文）</p>
+<p>[2] Jaumard G. High-Resolution Road Vehicle Collision Prediction for the City of Montreal[J]. 2019. (蒙特利尔市高分辨率道路车辆碰撞预测,2019,IEEE)</p>
 
                 
             </div>
@@ -511,18 +517,17 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="far fa-dot-circle"></i>&nbsp;本篇
-            </div>
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/posts/cd31.html">
+                <a href="/posts/346c.html">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/70.jpg" class="responsive-img" alt="论文思路整理">
+                        <img src="/medias/featureimages/46.jpg" class="responsive-img" alt="扫盲-数据不平衡">
                         
-                        <span class="card-title">论文思路整理</span>
+                        <span class="card-title">扫盲-数据不平衡</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -532,9 +537,9 @@
                         
                     </div>
                     <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-01-04
-                            </span>
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2022-01-07
+                        </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -543,7 +548,6 @@
                         </span>
                     </div>
                 </div>
-
                 
                 <div class="card-action article-tags">
                     
@@ -551,8 +555,8 @@
                         <span class="chip bg-color">论文</span>
                     </a>
                     
-                    <a href="/tags/%E6%80%9D%E8%B7%AF%E6%95%B4%E7%90%86/">
-                        <span class="chip bg-color">思路整理</span>
+                    <a href="/tags/%E6%89%AB%E7%9B%B2/">
+                        <span class="chip bg-color">扫盲</span>
                     </a>
                     
                 </div>

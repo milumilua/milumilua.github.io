@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="JDK的安装和环境变量的配置, mi鹿博">
+    <meta name="keywords" content="扫盲-数据不平衡, mi鹿博">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>JDK的安装和环境变量的配置 | mi鹿博</title>
+    <title>扫盲-数据不平衡 | mi鹿博</title>
     <link rel="icon" type="image/png" href="/medias/logo1.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -206,12 +206,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/48.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/46.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">JDK的安装和环境变量的配置</h1>
+                    <h1 class="description center-align post-title">扫盲-数据不平衡</h1>
                 </div>
             </div>
         </div>
@@ -327,16 +327,12 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/%E5%AE%89%E8%A3%85/">
-                                <span class="chip bg-color">安装</span>
+                            <a href="/tags/%E8%AE%BA%E6%96%87/">
+                                <span class="chip bg-color">论文</span>
                             </a>
                         
-                            <a href="/tags/%E9%85%8D%E7%BD%AE/">
-                                <span class="chip bg-color">配置</span>
-                            </a>
-                        
-                            <a href="/tags/JDK/">
-                                <span class="chip bg-color">JDK</span>
+                            <a href="/tags/%E6%89%AB%E7%9B%B2/">
+                                <span class="chip bg-color">扫盲</span>
                             </a>
                         
                     </div>
@@ -351,7 +347,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2021-01-26
+                    2022-01-07
                 </div>
                 
 
@@ -380,42 +376,91 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="一、JDK的安装"><a href="#一、JDK的安装" class="headerlink" title="一、JDK的安装"></a>一、JDK的安装</h2><h3 id="1-下载安装包"><a href="#1-下载安装包" class="headerlink" title="1.下载安装包"></a>1.下载安装包</h3><p>首先我们得有一个安装包，可以到这里下载。</p>
-<p><a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1g-m9dWrTPM5jBltC1qhQKg ">网盘链接</a>        提取码：h6zg<br>        也可以去<a target="_blank" rel="noopener" href="https://www.oracle.com/java/technologies/javase/javase-jdk8-downloads.html">官网下载</a></p>
-<h3 id="2-安装"><a href="#2-安装" class="headerlink" title="2.安装"></a>2.安装</h3><p>双击之后就会出现下面的图片（图片不一样也没关系，可能是版本不太一样，但是过程都差不多）</p>
-<p><img src="/images/JDK%E7%9A%84%E5%AE%89%E8%A3%85%E5%92%8C%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E7%9A%84%E9%85%8D%E7%BD%AE/image-20210126230111751.png"></p>
-<p>遇到需要更改路径的时候就更改一下自己的路径。</p>
-<p>但是要注意!路径中<span style="color:red;"><strong>一定不要出现中文！！！一定不要出现中文！！！一定不要出现中文！！！</strong></span>（详情可看3.安装时常见问题）</p>
-<p>下面就一路下一步（Next）就好了。</p>
-<h3 id="3-安装时常见问题"><a href="#3-安装时常见问题" class="headerlink" title="3.安装时常见问题"></a>3.安装时常见问题</h3><p>有时就会出现下面这种情况</p>
-<p><img src="/images/JDK%E7%9A%84%E5%AE%89%E8%A3%85%E5%92%8C%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E7%9A%84%E9%85%8D%E7%BD%AE/image-20210126230504632.png"></p>
-<p>当你反复安装的时候也会有这种情况：</p>
-<p><img src="/images/JDK%E7%9A%84%E5%AE%89%E8%A3%85%E5%92%8C%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E7%9A%84%E9%85%8D%E7%BD%AE/image-20210126230614732.png"></p>
-<p>然后就会根据他的提示进入到类似于这种页面：</p>
-<p><img src="/images/JDK%E7%9A%84%E5%AE%89%E8%A3%85%E5%92%8C%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E7%9A%84%E9%85%8D%E7%BD%AE/image-20210126230658883.png"></p>
-<p>这时候我们下载了脱机安装包之后，再次安装，就会出现上面两幅图中的情况，反复循环。</p>
-<p>然后这个时候我们就会怀疑是不是防火墙啦，杀毒啦，这种东西没有关，但是关闭之后发现还是老样子，这就很难受了。</p>
-<p>注意啦，这就是路径中出现中文的情况啦，改掉就好了。</p>
-<h2 id="二、环境变量配置"><a href="#二、环境变量配置" class="headerlink" title="二、环境变量配置"></a>二、环境变量配置</h2><p>在“此电脑”处右键找到”属性“，然后在属性中找到“高级系统设置”</p>
-<p><img src="/images/JDK%E7%9A%84%E5%AE%89%E8%A3%85%E5%92%8C%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E7%9A%84%E9%85%8D%E7%BD%AE/image-20210126231333746.png"></p>
-<p>然后找到“环境变量”</p>
-<p><img src="/images/JDK%E7%9A%84%E5%AE%89%E8%A3%85%E5%92%8C%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E7%9A%84%E9%85%8D%E7%BD%AE/image-20210126231401281.png"></p>
-<p>新建一个“JAVA_HOME”然后把你的地址填到下面去</p>
-<p><img src="/images/JDK%E7%9A%84%E5%AE%89%E8%A3%85%E5%92%8C%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E7%9A%84%E9%85%8D%E7%BD%AE/image-20210126231517279.png"></p>
-<p>你的地址应该是下面这幅图片中的“地址1”</p>
-<p><img src="/images/JDK%E7%9A%84%E5%AE%89%E8%A3%85%E5%92%8C%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E7%9A%84%E9%85%8D%E7%BD%AE/image-20210126231555061.png"></p>
-<p>然后找到“Path”点击“编辑”</p>
-<p><img src="/images/JDK%E7%9A%84%E5%AE%89%E8%A3%85%E5%92%8C%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E7%9A%84%E9%85%8D%E7%BD%AE/image-20210126231624528.png"></p>
-<p>在这里新建三个路径，如下图所示</p>
-<p><img src="/images/JDK%E7%9A%84%E5%AE%89%E8%A3%85%E5%92%8C%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E7%9A%84%E9%85%8D%E7%BD%AE/image-20210126231700264.png"></p>
-<p>%JAVA_HOME%\bin</p>
-<p>%JAVA_HOME%\lib\dt.jar</p>
-<p>%JAVA_HOME%\lib\tools.jar</p>
-<p>然后连续点击“确定”直到没有就好啦~</p>
-<p>在开始中找到“命令提示符”，或者利用win+R来打开运行，输入“cmd”来打开，在其中输入“java -version”来查看JDK的版本号。</p>
-<p>注意：要在根目录下哦~</p>
-<p><img src="/images/JDK%E7%9A%84%E5%AE%89%E8%A3%85%E5%92%8C%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E7%9A%84%E9%85%8D%E7%BD%AE/image-20210126232031931.png"></p>
-<p>出现类似上图就说明我们的<span style="color:red;"><strong>JDK配置成功啦~</strong></span></p>
+                <h2 id="一、数据不平衡"><a href="#一、数据不平衡" class="headerlink" title="一、数据不平衡"></a>一、数据不平衡</h2><p>举个例子，假如说现在又两个样本标签 <code>A</code> 和 <code>B</code> ，而对应的 <code>A</code> 有1000个数据，对应的 <code>B</code> 有100个数据，两个样本标签的数据相差很大，这就产生了数据的不平衡。机器学习算法通常很难从不平衡数据集学习。所以我们需要对于这些不平衡进行处理。</p>
+<h2 id="二、如何解决"><a href="#二、如何解决" class="headerlink" title="二、如何解决"></a>二、如何解决</h2><p>简单来讲，常规操作是想方设法使 <code>A</code> 和 <code>B</code> 的数量变成一样的，这也是最容易想到的方法，也就是拥有相同的话语权。<span style="color:#E96F0B"><strong>[2]</strong></span></p>
+<h3 id="1-采样-1"><a href="#1-采样-1" class="headerlink" title="1.采样 [1]"></a>1.采样 <span style="color:#E96F0B"><strong>[1]</strong></span></h3><p>采样方法是通过对训练集进行处理使其从不平衡的数据集变成平衡的数据集，在大部分情况下会对最终的结果带来提升。</p>
+<p>采样分为上采样（<code>Oversampling</code>）和下采样（<code>Undersampling</code>），上采样是把小众类复制多份，下采样是从大众类中剔除一些样本，或者说只从大众类中选取部分样本。</p>
+<p>随机采样最大的优点是简单，但缺点也很明显。上采样后的数据集中会反复出现一些样本，训练出来的模型会有一定的过拟合；而下采样的缺点显而易见，那就是最终的训练集丢失了数据，模型只学到了总体模式的一部分。</p>
+<h4 id="1-1随机采样"><a href="#1-1随机采样" class="headerlink" title="1.1随机采样"></a>1.1随机采样</h4><h5 id="朴素随机过采样（上采样）-1"><a href="#朴素随机过采样（上采样）-1" class="headerlink" title="朴素随机过采样（上采样）[1]"></a>朴素随机过采样（上采样）<span style="color:#E96F0B"><strong>[1]</strong></span></h5><p>针对不平衡数据, 最简单的一种方法就是生成少数类的样本, 这其中最基本的一种方法就是： 从少数类的样本中进行随机采样来增加新的样本，对应<code>Python</code>库中函数为<code>RandomOverSampler</code>：</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python">from imblearn.over_sampling
+import RandomOverSampler
+ros = RandomOverSampler(random_state=0)
+X_resampled, y_resampled = ros.fit_sample(X, y)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+<h5 id="朴素随机欠采样（下采样）-1"><a href="#朴素随机欠采样（下采样）-1" class="headerlink" title="朴素随机欠采样（下采样）[1]"></a>朴素随机欠采样（下采样）<span style="color:#E96F0B"><strong>[1]</strong></span></h5><p>与过采样相反，欠采样是从多数类样本中随机选择少量样本，再合并原有少数类样本作为新的训练数据集。</p>
+<p>随机欠采样有两种类型分别为有放回和无放回两种，无放回欠采样在对多数类某样本被采样后不会再被重复采样，有放回采样则有可能。</p>
+<p>对应<code>Python</code>库中函数为<code>RandomUnderSampler</code>，通过设置<code>RandomUnderSampler</code>中的<code>replacement=True</code>参数, 可以实现自助法(<code>boostrap</code>)抽样。</p>
+<h4 id="1-2数据合成-1"><a href="#1-2数据合成-1" class="headerlink" title="1.2数据合成 [1]"></a>1.2数据合成 <span style="color:#E96F0B"><strong>[1]</strong></span></h4><p>相对于采样随机的方法进行过采样, 还有两种比较流行的过采样的改进方式： </p>
+<blockquote>
+<p>(1) Synthetic Minority Oversampling Technique(SMOTE)</p>
+<p>(2) Adaptive Synthetic (ADASYN) </p>
+</blockquote>
+<h5 id="SMOTE"><a href="#SMOTE" class="headerlink" title="SMOTE"></a>SMOTE</h5><p>SMOTE算法的基本思想是对少数类样本进行分析并根据少数类样本人工合成新样本添加到数据集中。</p>
+<p>可执行代码如下，可以用<code>Anaconda</code>的<code>Notebook</code>可以直接运行（可能会有些需要安装的包，根据提示安装就好了）<span style="color:#E96F0B"><strong>[3]</strong></span></p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python">import pandas as pd
+import matplotlib.pyplot as plt
+import numpy as np
+from sklearn.preprocessing import StandardScaler
+from sklearn.model_selection import train_test_split
+from sklearn.model_selection import GridSearchCV
+from sklearn.linear_model import LogisticRegression
+from sklearn.metrics import classification_report
+from imblearn.over_sampling import SMOTE
+ 
+def load_and_analyse_data():
+    data = pd.read_csv('./data/creditcard.csv')
+    # ----------------------预处理----------------
+ 
+    # ----------------------标准化Amount列---------
+    data['normAmout'] = StandardScaler().fit_transform(data['Amount'].values.reshape(-1, 1))
+    data = data.drop(['Time', 'Amount'], axis=1)
+    # ----------------------------------------------
+ 
+    X = data.iloc[:, data.columns != 'Class']
+    y = data.iloc[:, data.columns == 'Class']
+    X_train,X_test,y_train,y_test = train_test_split(X,y,test_size=0.3,random_state=0)
+    # ----------------------采样-------------------
+    sample_solver = SMOTE(random_state=0)
+    X_sample ,y_sample = sample_solver.fit_resample(X_train,y_train)#从原始的训练集采出样本，用来训练模型
+    return np.array(X_test),np.array(y_test).reshape(len(y_test)),np.array(X_sample),np.array(y_sample).reshape(len(y_sample))
+ 
+if __name__ == '__main__':
+    X_test, y_test, X_sample, y_sample  = load_and_analyse_data()
+    X_train,X_dev,y_train,y_dev = train_test_split(X_sample,y_sample,test_size=0.3,random_state=1)
+    
+    print("X_train:{}  X_dev:{}  X_test:{}".format(len(y_train), len(y_dev), len(y_test)))
+    model = LogisticRegression()
+    parameters = {'C':[0.001,0.003,0.01,0.03,0.1,0.3,1,3,10]}
+    gs = GridSearchCV(model,parameters,verbose=5,cv=5)
+    gs.fit(X_train,y_train)#训练模型，训练集为采样后的数据
+    print('最佳模型:',gs.best_params_,gs.best_score_)
+    print('在采样数据上的性能表现：')
+    print(gs.score(X_dev,y_dev))
+    y_dev_pre = gs.predict(X_dev)
+    print(classification_report(y_dev,y_dev_pre))
+    print('在原始数据上的性能表现：')
+    print(gs.score(X_test,y_test))
+    y_pre = gs.predict(X_test)
+    print(classification_report(y_test,y_pre))<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+<p>目录结构如下（数据集放在<code>data</code>文件夹里面）：</p>
+<p><img src="/images/%E6%89%AB%E7%9B%B2-%E6%95%B0%E6%8D%AE%E4%B8%8D%E5%B9%B3%E8%A1%A1/image-20220107201611803.png" alt="目录结构"></p>
+<p>数据集如下：</p>
+<p><img src="/images/%E6%89%AB%E7%9B%B2-%E6%95%B0%E6%8D%AE%E4%B8%8D%E5%B9%B3%E8%A1%A1/image-20220107201734098.png" alt="数据集文件"></p>
+<p>运行结果如下：</p>
+<p><img src="/images/%E6%89%AB%E7%9B%B2-%E6%95%B0%E6%8D%AE%E4%B8%8D%E5%B9%B3%E8%A1%A1/image-20220107201921996.png" alt="运行结果"></p>
+<h5 id="ADASYN-1"><a href="#ADASYN-1" class="headerlink" title="ADASYN [1]"></a>ADASYN <span style="color:#E96F0B"><strong>[1]</strong></span></h5><p>这种改进方法的主要思想是根据数据分布情况为不同的少数类样本生成不同数量的新样本。首先根据最终的平衡程度设定总共需要生成的新少数类样本数量 ，然后为每个少数类样本x计算分布比例。</p>
+<p>对应Python库中函数为ADASYN：</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python">from imblearn.over_sampling import ADASYN
+X_resampled_adasyn, y_resampled_adasyn = ADASYN().fit_sample(X, y)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+
+<h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><p>【1】<a target="_blank" rel="noopener" href="https://www.cnblogs.com/kamekin/p/9824294.html">不平衡数据集的处理 </a></p>
+<p>【2】<a target="_blank" rel="noopener" href="https://blog.csdn.net/u012879957/article/details/82459538">处理数据不平衡</a></p>
+<p>【3】<a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_40849273/article/details/83143383">过采样（处理数据不平衡问题）</a></p>
+<p>【4】<a target="_blank" rel="noopener" href="https://www.cnblogs.com/charlotte77/p/10455900.html">【机器学习】如何解决数据不平衡问题 </a></p>
 
                 
             </div>
@@ -442,7 +487,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://example.com/posts/49854.html">http://example.com/posts/49854.html</a>
+                    <a href="http://example.com/posts/346c.html">http://example.com/posts/346c.html</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -480,16 +525,12 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/%E5%AE%89%E8%A3%85/">
-                                    <span class="chip bg-color">安装</span>
+                                <a href="/tags/%E8%AE%BA%E6%96%87/">
+                                    <span class="chip bg-color">论文</span>
                                 </a>
                             
-                                <a href="/tags/%E9%85%8D%E7%BD%AE/">
-                                    <span class="chip bg-color">配置</span>
-                                </a>
-                            
-                                <a href="/tags/JDK/">
-                                    <span class="chip bg-color">JDK</span>
+                                <a href="/tags/%E6%89%AB%E7%9B%B2/">
+                                    <span class="chip bg-color">扫盲</span>
                                 </a>
                             
                         </div>
@@ -533,17 +574,18 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/posts/24241.html">
+                <a href="/posts/346c.html">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/22.jpg" class="responsive-img" alt="MySQL的下载及配置">
+                        <img src="/medias/featureimages/46.jpg" class="responsive-img" alt="扫盲-数据不平衡">
                         
-                        <span class="card-title">MySQL的下载及配置</span>
+                        <span class="card-title">扫盲-数据不平衡</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -553,9 +595,9 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-01-30
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-01-07
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -564,19 +606,16 @@
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E4%B8%8B%E8%BD%BD/">
-                        <span class="chip bg-color">下载</span>
+                    <a href="/tags/%E8%AE%BA%E6%96%87/">
+                        <span class="chip bg-color">论文</span>
                     </a>
                     
-                    <a href="/tags/%E9%85%8D%E7%BD%AE/">
-                        <span class="chip bg-color">配置</span>
-                    </a>
-                    
-                    <a href="/tags/MySQL/">
-                        <span class="chip bg-color">MySQL</span>
+                    <a href="/tags/%E6%89%AB%E7%9B%B2/">
+                        <span class="chip bg-color">扫盲</span>
                     </a>
                     
                 </div>
@@ -590,13 +629,13 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/posts/61433.html">
+                <a href="/posts/cd31.html">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="Git的应用">
+                        <img src="/medias/featureimages/70.jpg" class="responsive-img" alt="论文思路整理">
                         
-                        <span class="card-title">Git的应用</span>
+                        <span class="card-title">论文思路整理</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -607,7 +646,7 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-01-14
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-01-04
                             </span>
                         <span class="publish-author">
                             
@@ -620,20 +659,12 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Git/">
-                        <span class="chip bg-color">Git</span>
+                    <a href="/tags/%E8%AE%BA%E6%96%87/">
+                        <span class="chip bg-color">论文</span>
                     </a>
                     
-                    <a href="/tags/%E5%85%8B%E9%9A%86/">
-                        <span class="chip bg-color">克隆</span>
-                    </a>
-                    
-                    <a href="/tags/%E6%8E%A8%E9%80%81%EF%BC%88Push%EF%BC%89/">
-                        <span class="chip bg-color">推送（Push）</span>
-                    </a>
-                    
-                    <a href="/tags/%E6%8B%89%E5%8F%96%EF%BC%88Pull%EF%BC%89/">
-                        <span class="chip bg-color">拉取（Pull）</span>
+                    <a href="/tags/%E6%80%9D%E8%B7%AF%E6%95%B4%E7%90%86/">
+                        <span class="chip bg-color">思路整理</span>
                     </a>
                     
                 </div>
