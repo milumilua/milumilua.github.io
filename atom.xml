@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-03-02T14:02:09.311Z</updated>
+  <updated>2022-03-31T08:10:09.974Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -17,11 +17,59 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>性能测试</title>
+    <link href="http://example.com/posts/8592.html"/>
+    <id>http://example.com/posts/8592.html</id>
+    <published>2022-03-29T07:44:52.000Z</published>
+    <updated>2022-03-31T08:10:09.974Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;一、性能测试&quot;&gt;&lt;a href=&quot;#一、性能测试&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    
+    <category term="扫盲" scheme="http://example.com/tags/%E6%89%AB%E7%9B%B2/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>有关-阅读障碍-相关了解</title>
+    <link href="http://example.com/posts/9683.html"/>
+    <id>http://example.com/posts/9683.html</id>
+    <published>2022-03-27T13:41:05.000Z</published>
+    <updated>2022-03-27T14:05:21.444Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;一、名词理解&quot;&gt;&lt;a href=&quot;#一、名词理解&quot; class=&quot;headerlink&quot; title=&quot;一、名词理解&quot;&gt;&lt;/a&gt;一、名词理解&lt;/h2&gt;&lt;p&gt;阅读障碍症简单说来它是一种大脑综合处理&lt;a</summary>
+        
+      
+    
+    
+    
+    
+    <category term="扫盲" scheme="http://example.com/tags/%E6%89%AB%E7%9B%B2/"/>
+    
+    <category term="医学" scheme="http://example.com/tags/%E5%8C%BB%E5%AD%A6/"/>
+    
+  </entry>
+  
+  <entry>
     <title>体制内相关知识扫盲</title>
     <link href="http://example.com/posts/ad4f.html"/>
     <id>http://example.com/posts/ad4f.html</id>
     <published>2022-03-02T14:00:51.000Z</published>
-    <updated>2022-03-02T14:02:09.311Z</updated>
+    <updated>2022-03-02T14:02:46.052Z</updated>
     
     
       
@@ -478,61 +526,6 @@
     <category term="Linux" scheme="http://example.com/tags/Linux/"/>
     
     <category term="命令" scheme="http://example.com/tags/%E5%91%BD%E4%BB%A4/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>CentOS中的lsof</title>
-    <link href="http://example.com/posts/80f6.html"/>
-    <id>http://example.com/posts/80f6.html</id>
-    <published>2021-09-17T00:57:48.000Z</published>
-    <updated>2021-11-20T08:57:14.184Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;1-安装&quot;&gt;&lt;a href=&quot;#1-安装&quot; class=&quot;headerlink&quot; title=&quot;1.安装&quot;&gt;&lt;/a&gt;1.安装&lt;/h2&gt;&lt;p&gt;&lt;code&gt;lsof&lt;/code&gt;的安装命令如下&lt;/p&gt;
-&lt;pre class=&quot;line-numbers</summary>
-        
-      
-    
-    
-    
-    
-    <category term="CentOS7" scheme="http://example.com/tags/CentOS7/"/>
-    
-    <category term="lsof" scheme="http://example.com/tags/lsof/"/>
-    
-    <category term="Linux" scheme="http://example.com/tags/Linux/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Linux系统中CentOS7防火墙</title>
-    <link href="http://example.com/posts/dbc9.html"/>
-    <id>http://example.com/posts/dbc9.html</id>
-    <published>2021-09-15T11:22:11.000Z</published>
-    <updated>2021-09-16T14:00:07.825Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;1-查看防火墙状态&quot;&gt;&lt;a href=&quot;#1-查看防火墙状态&quot; class=&quot;headerlink&quot; title=&quot;1.查看防火墙状态&quot;&gt;&lt;/a&gt;1.查看防火墙状态&lt;/h2&gt;&lt;pre class=&quot;line-numbers language-sh&quot;</summary>
-        
-      
-    
-    
-    
-    
-    <category term="CentOS7" scheme="http://example.com/tags/CentOS7/"/>
-    
-    <category term="Linux" scheme="http://example.com/tags/Linux/"/>
-    
-    <category term="防火墙" scheme="http://example.com/tags/%E9%98%B2%E7%81%AB%E5%A2%99/"/>
     
   </entry>
   
