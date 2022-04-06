@@ -4,6 +4,27 @@
   
     
     <entry>
+      <title>论文相关命令</title>
+      <link href="posts/8a37.html"/>
+      <url>posts/8a37.html</url>
+      
+        <content type="html"><![CDATA[<p>由于平时跑实验有些相关的命令总是记不住所以想着真理一下。</p><h2 id="一、Anaconda"><a href="#一、Anaconda" class="headerlink" title="一、Anaconda"></a>一、Anaconda</h2><h3 id="1-创建一个新的环境"><a href="#1-创建一个新的环境" class="headerlink" title="1.创建一个新的环境"></a>1.创建一个新的环境</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">#conda create -n 环境名称 python=版本号，例如：conda create -n ForPytorch python=3.6<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><h3 id="2-删除环境"><a href="#2-删除环境" class="headerlink" title="2.删除环境"></a>2.删除环境</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">#conda env remove -n 环境名称，例如：conda env remove -n ForPytorch<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><h3 id="3-激活（进入）某个环境："><a href="#3-激活（进入）某个环境：" class="headerlink" title="3.激活（进入）某个环境："></a>3.激活（进入）某个环境：</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">#conda activate 环境名称，例如：conda activate ForPytorch<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><h3 id="4-退出某个环境："><a href="#4-退出某个环境：" class="headerlink" title="4.退出某个环境："></a>4.退出某个环境：</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">conda deactivate<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><h3 id="5-在环境中安装一个包"><a href="#5-在环境中安装一个包" class="headerlink" title="5.在环境中安装一个包"></a>5.在环境中安装一个包</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">#conda install 包名，例如：conda install numpypip install numpy<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">#安装指定版本的包pip install numpy==1.6.0<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">#删除某个包，如删除numpypip uninstall numpy<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">#升级某个包，如numpypip install --upgrade numpy<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><p><strong><span style="color:red">说明：</span><code>conda</code>和<code>pip</code>都是包管理器，似乎pip能下载到更多的包。建议在一个环境下只用其中一种包管理器。</strong></p><h3 id="6-查看conda中所有的环境"><a href="#6-查看conda中所有的环境" class="headerlink" title="6.查看conda中所有的环境"></a>6.查看conda中所有的环境</h3><pre class="line-numbers language-none"><code class="language-none">conda info -e<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><h3 id="7-查看某个环境中安装的所有包"><a href="#7-查看某个环境中安装的所有包" class="headerlink" title="7.查看某个环境中安装的所有包"></a>7.查看某个环境中安装的所有包</h3><p><strong><span style="color:red">需先进入该环境，然后执行如下命令</span></strong></p><pre class="line-numbers language-none"><code class="language-none">conda list<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>参考：<a href="https://www.cnblogs.com/picassooo/p/11776853.html">Anaconda环境配置常用命令</a></p><h3 id="8-打开notebook"><a href="#8-打开notebook" class="headerlink" title="8.打开notebook"></a>8.打开notebook</h3><p>①直接打开</p><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">#打开cmd等一系列类似窗口，输入下面代码（只能是C盘）jupyter notebook<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><p>②指定位置打开</p><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">#打开cmd等一系列类似窗口，然后定位，之后输入下面代码（可以在别的盘）jupyter notebook<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><p>参考：<a href="https://blog.csdn.net/u010132177/article/details/112594841">anaconda指定目录打开jupyter notebook</a></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 技巧 </tag>
+            
+            <tag> 论文 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>性能测试</title>
       <link href="posts/8592.html"/>
       <url>posts/8592.html</url>

@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-03-31T08:10:09.974Z</updated>
+  <updated>2022-04-05T15:01:23.438Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -17,11 +17,37 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>论文相关命令</title>
+    <link href="http://example.com/posts/8a37.html"/>
+    <id>http://example.com/posts/8a37.html</id>
+    <published>2022-03-31T09:35:19.000Z</published>
+    <updated>2022-04-05T15:01:23.438Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;由于平时跑实验有些相关的命令总是记不住所以想着真理一下。&lt;/p&gt;
+&lt;h2 id=&quot;一、Anaconda&quot;&gt;&lt;a href=&quot;#一、Anaconda&quot; class=&quot;headerlink&quot; title=&quot;一、Anaconda&quot;&gt;&lt;/a&gt;一、Anaconda&lt;/h2&gt;&lt;h3</summary>
+        
+      
+    
+    
+    
+    
+    <category term="技巧" scheme="http://example.com/tags/%E6%8A%80%E5%B7%A7/"/>
+    
+    <category term="论文" scheme="http://example.com/tags/%E8%AE%BA%E6%96%87/"/>
+    
+  </entry>
+  
+  <entry>
     <title>性能测试</title>
     <link href="http://example.com/posts/8592.html"/>
     <id>http://example.com/posts/8592.html</id>
     <published>2022-03-29T07:44:52.000Z</published>
-    <updated>2022-03-31T08:10:09.974Z</updated>
+    <updated>2022-03-31T08:10:53.047Z</updated>
     
     
       
@@ -44,7 +70,7 @@
     <link href="http://example.com/posts/9683.html"/>
     <id>http://example.com/posts/9683.html</id>
     <published>2022-03-27T13:41:05.000Z</published>
-    <updated>2022-03-27T14:05:21.444Z</updated>
+    <updated>2022-03-31T08:10:53.046Z</updated>
     
     
       
@@ -498,34 +524,6 @@
     <category term="Linux" scheme="http://example.com/tags/Linux/"/>
     
     <category term="JDK" scheme="http://example.com/tags/JDK/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Linux中基本命令</title>
-    <link href="http://example.com/posts/a9e7.html"/>
-    <id>http://example.com/posts/a9e7.html</id>
-    <published>2021-09-17T01:43:07.000Z</published>
-    <updated>2021-09-17T11:06:56.317Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;blockquote&gt;
-&lt;p&gt;sudo 表示获取root权限，可以加在所有的命令之前&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;1-查询进程&quot;&gt;&lt;a href=&quot;#1-查询进程&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    
-    <category term="Linux" scheme="http://example.com/tags/Linux/"/>
-    
-    <category term="命令" scheme="http://example.com/tags/%E5%91%BD%E4%BB%A4/"/>
     
   </entry>
   
