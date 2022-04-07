@@ -4,6 +4,27 @@
   
     
     <entry>
+      <title>解决CV2问题</title>
+      <link href="posts/ff5c.html"/>
+      <url>posts/ff5c.html</url>
+      
+        <content type="html"><![CDATA[<h2 id="一、问题描述"><a href="#一、问题描述" class="headerlink" title="一、问题描述"></a>一、问题描述</h2><p>在安装环境的时候遇到<code>import cv2;</code>的情况下，发现直接使用<code>pip install cv2</code>安装并不能安装成功。</p><h2 id="二、解决问题"><a href="#二、解决问题" class="headerlink" title="二、解决问题"></a>二、解决问题</h2><p>尝试使用下面语句</p><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">pip install opencv-python<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p><img src="../images/%E8%A7%A3%E5%86%B3CV2%E9%97%AE%E9%A2%98/image-20220407201513266.png" alt="成功"></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 技巧 </tag>
+            
+            <tag> 论文 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>论文相关命令</title>
       <link href="posts/8a37.html"/>
       <url>posts/8a37.html</url>

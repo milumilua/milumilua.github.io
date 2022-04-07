@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-04-05T15:01:23.438Z</updated>
+  <updated>2022-04-07T12:15:39.032Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -17,11 +17,36 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>解决CV2问题</title>
+    <link href="http://example.com/posts/ff5c.html"/>
+    <id>http://example.com/posts/ff5c.html</id>
+    <published>2022-04-07T12:03:25.000Z</published>
+    <updated>2022-04-07T12:15:39.032Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;一、问题描述&quot;&gt;&lt;a href=&quot;#一、问题描述&quot; class=&quot;headerlink&quot; title=&quot;一、问题描述&quot;&gt;&lt;/a&gt;一、问题描述&lt;/h2&gt;&lt;p&gt;在安装环境的时候遇到&lt;code&gt;import</summary>
+        
+      
+    
+    
+    
+    
+    <category term="技巧" scheme="http://example.com/tags/%E6%8A%80%E5%B7%A7/"/>
+    
+    <category term="论文" scheme="http://example.com/tags/%E8%AE%BA%E6%96%87/"/>
+    
+  </entry>
+  
+  <entry>
     <title>论文相关命令</title>
     <link href="http://example.com/posts/8a37.html"/>
     <id>http://example.com/posts/8a37.html</id>
     <published>2022-03-31T09:35:19.000Z</published>
-    <updated>2022-04-05T15:01:23.438Z</updated>
+    <updated>2022-04-06T00:04:31.617Z</updated>
     
     
       
@@ -497,33 +522,6 @@
     <category term="Linux" scheme="http://example.com/tags/Linux/"/>
     
     <category term="MySQL" scheme="http://example.com/tags/MySQL/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Linux安装jdk</title>
-    <link href="http://example.com/posts/d854.html"/>
-    <id>http://example.com/posts/d854.html</id>
-    <published>2021-09-28T08:37:33.000Z</published>
-    <updated>2021-11-20T08:57:14.187Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;一、下载安装包&quot;&gt;&lt;a href=&quot;#一、下载安装包&quot; class=&quot;headerlink&quot; title=&quot;一、下载安装包&quot;&gt;&lt;/a&gt;一、下载安装包&lt;/h2&gt;&lt;p&gt;&lt;a</summary>
-        
-      
-    
-    
-    
-    
-    <category term="安装" scheme="http://example.com/tags/%E5%AE%89%E8%A3%85/"/>
-    
-    <category term="Linux" scheme="http://example.com/tags/Linux/"/>
-    
-    <category term="JDK" scheme="http://example.com/tags/JDK/"/>
     
   </entry>
   
