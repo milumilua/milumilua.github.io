@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-04-18T10:40:10.663Z</updated>
+  <updated>2022-04-18T15:09:54.671Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -17,19 +17,41 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Linux系统删除文件命令</title>
+    <link href="http://example.com/posts/9889.html"/>
+    <id>http://example.com/posts/9889.html</id>
+    <published>2022-04-18T14:54:39.000Z</published>
+    <updated>2022-04-18T15:09:54.671Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;1-语法&quot;&gt;&lt;a href=&quot;#1-语法&quot; class=&quot;headerlink&quot; title=&quot;1.语法&quot;&gt;&lt;/a&gt;1.语法&lt;/h2&gt;&lt;pre class=&quot;line-numbers language-bash&quot;</summary>
+        
+      
+    
+    
+    
+    
+    <category term="整理" scheme="http://example.com/tags/%E6%95%B4%E7%90%86/"/>
+    
+  </entry>
+  
+  <entry>
     <title>删除文件时提示找不到该文件</title>
     <link href="http://example.com/posts/d0ba.html"/>
     <id>http://example.com/posts/d0ba.html</id>
     <published>2022-04-18T10:31:01.000Z</published>
-    <updated>2022-04-18T10:40:10.663Z</updated>
+    <updated>2022-04-18T15:08:39.389Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;p&gt;一、问题描述&lt;/p&gt;
-&lt;p&gt;当想要删除文件的时候得到提示如下图：&lt;/p&gt;
+    <summary type="html">&lt;h2 id=&quot;一、问题描述&quot;&gt;&lt;a href=&quot;#一、问题描述&quot; class=&quot;headerlink&quot; title=&quot;一、问题描述&quot;&gt;&lt;/a&gt;一、问题描述&lt;/h2&gt;&lt;p&gt;当想要删除文件的时候得到提示如下图：&lt;/p&gt;
 &lt;p&gt;&lt;img</summary>
         
       
@@ -467,31 +489,6 @@
         
         
     <summary type="html">&lt;h2 id=&quot;一、背景&quot;&gt;&lt;a href=&quot;#一、背景&quot; class=&quot;headerlink&quot; title=&quot;一、背景&quot;&gt;&lt;/a&gt;一、背景&lt;/h2&gt;&lt;p&gt;&lt;code&gt;YOLOv3&lt;/code&gt;出自论文《&lt;code&gt;YOLOv3: An Incremental</summary>
-        
-      
-    
-    
-    
-    
-    <category term="论文" scheme="http://example.com/tags/%E8%AE%BA%E6%96%87/"/>
-    
-    <category term="整理" scheme="http://example.com/tags/%E6%95%B4%E7%90%86/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>YOLOv2总结</title>
-    <link href="http://example.com/posts/8a2e.html"/>
-    <id>http://example.com/posts/8a2e.html</id>
-    <published>2021-11-13T08:53:03.000Z</published>
-    <updated>2022-04-17T04:47:15.140Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;一、YOLOv2概述&quot;&gt;&lt;a href=&quot;#一、YOLOv2概述&quot; class=&quot;headerlink&quot;</summary>
         
       
     

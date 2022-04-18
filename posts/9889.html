@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="删除文件时提示找不到该文件, mi鹿博">
+    <meta name="keywords" content="Linux系统删除文件命令, mi鹿博">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>删除文件时提示找不到该文件 | mi鹿博</title>
+    <title>Linux系统删除文件命令 | mi鹿博</title>
     <link rel="icon" type="image/png" href="/medias/logo1.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -206,12 +206,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/74.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/9.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">删除文件时提示找不到该文件</h1>
+                    <h1 class="description center-align post-title">Linux系统删除文件命令</h1>
                 </div>
             </div>
         </div>
@@ -327,8 +327,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/ERROR/">
-                                <span class="chip bg-color">ERROR</span>
+                            <a href="/tags/%E6%95%B4%E7%90%86/">
+                                <span class="chip bg-color">整理</span>
                             </a>
                         
                     </div>
@@ -372,30 +372,28 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="一、问题描述"><a href="#一、问题描述" class="headerlink" title="一、问题描述"></a>一、问题描述</h2><p>当想要删除文件的时候得到提示如下图：</p>
-<p><img src="../images/%E5%88%A0%E9%99%A4%E6%96%87%E4%BB%B6%E6%97%B6%E6%8F%90%E7%A4%BA%E6%89%BE%E4%B8%8D%E5%88%B0%E8%AF%A5%E6%96%87%E4%BB%B6/image-20220418183206505.png" alt="找不到项目提示"></p>
-<p>但是该位置确实存在这个文件，如下图</p>
-<p><img src="../images/%E5%88%A0%E9%99%A4%E6%96%87%E4%BB%B6%E6%97%B6%E6%8F%90%E7%A4%BA%E6%89%BE%E4%B8%8D%E5%88%B0%E8%AF%A5%E6%96%87%E4%BB%B6/image-20220418183328562.png" alt="确实存在文件"></p>
-<h2 id="二、解决方法"><a href="#二、解决方法" class="headerlink" title="二、解决方法"></a>二、解决方法</h2><h3 id="方法一："><a href="#方法一：" class="headerlink" title="方法一："></a>方法一：</h3><h4 id="1-新建一个txt文档"><a href="#1-新建一个txt文档" class="headerlink" title="1.新建一个txt文档"></a>1.新建一个<code>txt</code>文档</h4><p><img src="../images/%E5%88%A0%E9%99%A4%E6%96%87%E4%BB%B6%E6%97%B6%E6%8F%90%E7%A4%BA%E6%89%BE%E4%B8%8D%E5%88%B0%E8%AF%A5%E6%96%87%E4%BB%B6/image-20220418183454369.png" alt="新建文档"></p>
-<h4 id="2-输入下图内容"><a href="#2-输入下图内容" class="headerlink" title="2.输入下图内容"></a>2.输入下图内容</h4><p><img src="../images/%E5%88%A0%E9%99%A4%E6%96%87%E4%BB%B6%E6%97%B6%E6%8F%90%E7%A4%BA%E6%89%BE%E4%B8%8D%E5%88%B0%E8%AF%A5%E6%96%87%E4%BB%B6/image-20220418183549829.png" alt="输入内容"></p>
-<pre class="line-numbers language-txt" data-language="txt"><code class="language-txt">DEL /F /A /Q \\?\%1
-RD /S /Q \\?\%1<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-<h4 id="3-重新改名字"><a href="#3-重新改名字" class="headerlink" title="3.重新改名字"></a>3.重新改名字</h4><p>如遇到下面的图，则选择“是”就好，不用顾虑他的警告</p>
-<p><img src="../images/%E5%88%A0%E9%99%A4%E6%96%87%E4%BB%B6%E6%97%B6%E6%8F%90%E7%A4%BA%E6%89%BE%E4%B8%8D%E5%88%B0%E8%AF%A5%E6%96%87%E4%BB%B6/image-20220418183736233.png" alt="是"></p>
-<p>最后得到下面的名字</p>
-<p><img src="../images/%E5%88%A0%E9%99%A4%E6%96%87%E4%BB%B6%E6%97%B6%E6%8F%90%E7%A4%BA%E6%89%BE%E4%B8%8D%E5%88%B0%E8%AF%A5%E6%96%87%E4%BB%B6/image-20220418183757397.png" alt="后缀改为.bat"></p>
-<p>将想要删除的文件拖到新建好的文档上面就可以删除了</p>
-<p><img src="../images/%E5%88%A0%E9%99%A4%E6%96%87%E4%BB%B6%E6%97%B6%E6%8F%90%E7%A4%BA%E6%89%BE%E4%B8%8D%E5%88%B0%E8%AF%A5%E6%96%87%E4%BB%B6/image-20220418184007675.png" alt="拖拽删除"></p>
-<h3 id="方法二："><a href="#方法二：" class="headerlink" title="方法二："></a>方法二：</h3><p>使用Linux系统命令——rm命令</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ rm -i 文件名<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+                <h2 id="1-语法"><a href="#1-语法" class="headerlink" title="1.语法"></a>1.语法</h2><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ rm [option] file...<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h2 id="2-参数"><a href="#2-参数" class="headerlink" title="2.参数"></a>2.参数</h2><blockquote>
+<p>-f：–force 不提示，强制删除文件或目录，但是会忽略不存在的文件</p>
+<p>-i：–interactive 进行交互式删除，删除前逐一询问确认</p>
+<p>-r, -R：–recursive 递归删除，将指定目录下的所有文件与子目录一并删除</p>
+<p>-v： –verbose 详细显示进行的步骤</p>
+<p>–help 显示此帮助信息并退出</p>
+<p>–version 输出版本信息并退</p>
+</blockquote>
+<h2 id="3-例子"><a href="#3-例子" class="headerlink" title="3.例子"></a>3.例子</h2><p>删除<code>file.txt</code>文件</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"># 删除文件
+$ rm file.txt<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<p>删除<code>folder</code>文件夹</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"># 正确删除目录
+$ rm -r folder
 
-
-<p><img src="../images/%E5%88%A0%E9%99%A4%E6%96%87%E4%BB%B6%E6%97%B6%E6%8F%90%E7%A4%BA%E6%89%BE%E4%B8%8D%E5%88%B0%E8%AF%A5%E6%96%87%E4%BB%B6/image-20220418224747394.png" alt="删除成功"></p>
-<h3 id="其他方法："><a href="#其他方法：" class="headerlink" title="其他方法："></a>其他方法：</h3><p>1.刷新</p>
-<p>2.在相应的磁盘中右键选择“<strong>属性</strong>”，在“<strong>查错</strong>”中选择“<strong>检查</strong>”</p>
-<p><img src="../images/%E5%88%A0%E9%99%A4%E6%96%87%E4%BB%B6%E6%97%B6%E6%8F%90%E7%A4%BA%E6%89%BE%E4%B8%8D%E5%88%B0%E8%AF%A5%E6%96%87%E4%BB%B6/image-20220418225837677.png" alt="属性"></p>
-<p>3.万能方法：重启电脑</p>
-<p>注意：该方法可以解决80%的问题，剩下的20%,嘿嘿。（要知道，在计算机行业中不是所有的问题都是必须解决的)</p>
+# 强制删除目录
+$ rm -rf folder<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>删除隐藏文件</p>
+<p>Linux 下隐藏文件是指以符号 <code>.</code> 开头的文件，这种文件使用 <code>ls</code> 命令不能直接查看，需要加上 <code>-a</code> 选项才可以看到。所以如果需要删除该目录下所有隐藏文件的话，可以这样操作：</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ rm -rf .*<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p><span style="color:red"><strong>注意：Linux 下没有回收站，所以文件一旦使用rm命令删除，则无法恢复，所以必须格外小心地使用该命令。</strong></span></p>
 
                 
             </div>
@@ -422,7 +420,7 @@ RD /S /Q \\?\%1<span aria-hidden="true" class="line-numbers-rows"><span></span><
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://example.com/posts/d0ba.html">http://example.com/posts/d0ba.html</a>
+                    <a href="http://example.com/posts/9889.html">http://example.com/posts/9889.html</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -460,8 +458,8 @@ RD /S /Q \\?\%1<span aria-hidden="true" class="line-numbers-rows"><span></span><
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/ERROR/">
-                                    <span class="chip bg-color">ERROR</span>
+                                <a href="/tags/%E6%95%B4%E7%90%86/">
+                                    <span class="chip bg-color">整理</span>
                                 </a>
                             
                         </div>
@@ -505,9 +503,10 @@ RD /S /Q \\?\%1<span aria-hidden="true" class="line-numbers-rows"><span></span><
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
                 <a href="/posts/9889.html">
                     <div class="card-image">
@@ -525,9 +524,9 @@ RD /S /Q \\?\%1<span aria-hidden="true" class="line-numbers-rows"><span></span><
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2022-04-18
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-04-18
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -536,6 +535,7 @@ RD /S /Q \\?\%1<span aria-hidden="true" class="line-numbers-rows"><span></span><
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -554,13 +554,13 @@ RD /S /Q \\?\%1<span aria-hidden="true" class="line-numbers-rows"><span></span><
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/posts/3241.html">
+                <a href="/posts/d0ba.html">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/28.jpg" class="responsive-img" alt="扫盲-特征工程">
+                        <img src="/medias/featureimages/74.jpg" class="responsive-img" alt="删除文件时提示找不到该文件">
                         
-                        <span class="card-title">扫盲-特征工程</span>
+                        <span class="card-title">删除文件时提示找不到该文件</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -571,7 +571,7 @@ RD /S /Q \\?\%1<span aria-hidden="true" class="line-numbers-rows"><span></span><
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-04-17
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-04-18
                             </span>
                         <span class="publish-author">
                             
@@ -584,12 +584,8 @@ RD /S /Q \\?\%1<span aria-hidden="true" class="line-numbers-rows"><span></span><
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E8%AE%BA%E6%96%87/">
-                        <span class="chip bg-color">论文</span>
-                    </a>
-                    
-                    <a href="/tags/%E6%89%AB%E7%9B%B2/">
-                        <span class="chip bg-color">扫盲</span>
+                    <a href="/tags/ERROR/">
+                        <span class="chip bg-color">ERROR</span>
                     </a>
                     
                 </div>
