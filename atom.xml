@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-04-17T04:37:12.977Z</updated>
+  <updated>2022-04-18T10:40:10.663Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,56 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>删除文件时提示找不到该文件</title>
+    <link href="http://example.com/posts/d0ba.html"/>
+    <id>http://example.com/posts/d0ba.html</id>
+    <published>2022-04-18T10:31:01.000Z</published>
+    <updated>2022-04-18T10:40:10.663Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;一、问题描述&lt;/p&gt;
+&lt;p&gt;当想要删除文件的时候得到提示如下图：&lt;/p&gt;
+&lt;p&gt;&lt;img</summary>
+        
+      
+    
+    
+    
+    
+    <category term="ERROR" scheme="http://example.com/tags/ERROR/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>扫盲-特征工程</title>
+    <link href="http://example.com/posts/3241.html"/>
+    <id>http://example.com/posts/3241.html</id>
+    <published>2022-04-17T06:59:23.000Z</published>
+    <updated>2022-04-18T10:13:58.907Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;一、定义&quot;&gt;&lt;a href=&quot;#一、定义&quot; class=&quot;headerlink&quot; title=&quot;一、定义&quot;&gt;&lt;/a&gt;一、定义&lt;/h2&gt;&lt;p&gt;特征工程（Feature</summary>
+        
+      
+    
+    
+    
+    
+    <category term="论文" scheme="http://example.com/tags/%E8%AE%BA%E6%96%87/"/>
+    
+    <category term="扫盲" scheme="http://example.com/tags/%E6%89%AB%E7%9B%B2/"/>
+    
+  </entry>
   
   <entry>
     <title>解决CV2问题</title>
@@ -451,55 +501,6 @@
     <category term="论文" scheme="http://example.com/tags/%E8%AE%BA%E6%96%87/"/>
     
     <category term="整理" scheme="http://example.com/tags/%E6%95%B4%E7%90%86/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>YOLO总结</title>
-    <link href="http://example.com/posts/6aa8.html"/>
-    <id>http://example.com/posts/6aa8.html</id>
-    <published>2021-11-13T01:24:10.000Z</published>
-    <updated>2022-04-17T04:47:04.729Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;一、目标检测简单分类&quot;&gt;&lt;a href=&quot;#一、目标检测简单分类&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    
-    <category term="论文" scheme="http://example.com/tags/%E8%AE%BA%E6%96%87/"/>
-    
-    <category term="整理" scheme="http://example.com/tags/%E6%95%B4%E7%90%86/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Linux安装MySQL</title>
-    <link href="http://example.com/posts/59b1.html"/>
-    <id>http://example.com/posts/59b1.html</id>
-    <published>2021-10-05T01:03:47.000Z</published>
-    <updated>2022-04-17T04:44:19.960Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;一、下载&quot;&gt;&lt;a href=&quot;#一、下载&quot; class=&quot;headerlink&quot; title=&quot;一、下载&quot;&gt;&lt;/a&gt;一、下载&lt;/h2&gt;&lt;p&gt;在&lt;code&gt;MySQL&lt;/code&gt;官网，点击上方的&lt;code&gt;DOWNLOADS&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img</summary>
-        
-      
-    
-    
-    
-    
-    <category term="安装" scheme="http://example.com/tags/%E5%AE%89%E8%A3%85/"/>
     
   </entry>
   
