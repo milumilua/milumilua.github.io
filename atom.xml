@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-04-18T15:09:54.671Z</updated>
+  <updated>2022-05-13T04:17:17.132Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -17,11 +17,82 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Visual Studio安装</title>
+    <link href="http://example.com/posts/e253.html"/>
+    <id>http://example.com/posts/e253.html</id>
+    <published>2022-05-13T04:04:15.000Z</published>
+    <updated>2022-05-13T04:17:17.132Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;一、下载&quot;&gt;&lt;a href=&quot;#一、下载&quot; class=&quot;headerlink&quot; title=&quot;一、下载&quot;&gt;&lt;/a&gt;一、下载&lt;/h2&gt;&lt;h3 id=&quot;方式1：&quot;&gt;&lt;a href=&quot;#方式1：&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    
+    <category term="安装" scheme="http://example.com/tags/%E5%AE%89%E8%A3%85/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>评CUDA+CUDNN安装</title>
+    <link href="http://example.com/posts/4dd2.html"/>
+    <id>http://example.com/posts/4dd2.html</id>
+    <published>2022-05-13T02:12:39.000Z</published>
+    <updated>2022-05-13T04:40:34.390Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;一、下载&quot;&gt;&lt;a href=&quot;#一、下载&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    
+    <category term="安装" scheme="http://example.com/tags/%E5%AE%89%E8%A3%85/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>评价指标——top-1 error rate</title>
+    <link href="http://example.com/posts/9454.html"/>
+    <id>http://example.com/posts/9454.html</id>
+    <published>2022-05-11T10:09:08.000Z</published>
+    <updated>2022-05-13T02:06:27.713Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;一、Top-1错误率&quot;&gt;&lt;a href=&quot;#一、Top-1错误率&quot; class=&quot;headerlink&quot; title=&quot;一、Top-1错误率&quot;&gt;&lt;/a&gt;一、Top-1错误率&lt;/h2&gt;&lt;p&gt;就是你预测的label取最后概率向量里面</summary>
+        
+      
+    
+    
+    
+    
+    <category term="论文" scheme="http://example.com/tags/%E8%AE%BA%E6%96%87/"/>
+    
+    <category term="扫盲" scheme="http://example.com/tags/%E6%89%AB%E7%9B%B2/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Linux系统删除文件命令</title>
     <link href="http://example.com/posts/9889.html"/>
     <id>http://example.com/posts/9889.html</id>
     <published>2022-04-18T14:54:39.000Z</published>
-    <updated>2022-04-18T15:09:54.671Z</updated>
+    <updated>2022-04-18T15:10:33.818Z</updated>
     
     
       
@@ -418,77 +489,6 @@
         
         
     <summary type="html">&lt;h2 id=&quot;1-YOLO系列&quot;&gt;&lt;a href=&quot;#1-YOLO系列&quot; class=&quot;headerlink&quot; title=&quot;1.YOLO系列&quot;&gt;&lt;/a&gt;1.YOLO系列&lt;/h2&gt;&lt;p&gt;&lt;a</summary>
-        
-      
-    
-    
-    
-    
-    <category term="论文" scheme="http://example.com/tags/%E8%AE%BA%E6%96%87/"/>
-    
-    <category term="整理" scheme="http://example.com/tags/%E6%95%B4%E7%90%86/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>SRS相关总结</title>
-    <link href="http://example.com/posts/44a1.html"/>
-    <id>http://example.com/posts/44a1.html</id>
-    <published>2021-11-25T06:56:18.000Z</published>
-    <updated>2022-04-17T04:45:49.283Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;一、使用软件&quot;&gt;&lt;a href=&quot;#一、使用软件&quot; class=&quot;headerlink&quot; title=&quot;一、使用软件&quot;&gt;&lt;/a&gt;一、使用软件&lt;/h2&gt;&lt;p&gt;使用的推流软件为&lt;code&gt;vmix&lt;/code&gt;，这里个软件是收费的，如果需要破解的版本，可以来&lt;a</summary>
-        
-      
-    
-    
-    
-    
-    <category term="整理" scheme="http://example.com/tags/%E6%95%B4%E7%90%86/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>信息检索大赛</title>
-    <link href="http://example.com/posts/28e9.html"/>
-    <id>http://example.com/posts/28e9.html</id>
-    <published>2021-11-24T02:32:02.000Z</published>
-    <updated>2022-04-17T04:38:41.851Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;单选&quot;&gt;&lt;a href=&quot;#单选&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    
-    <category term="整理" scheme="http://example.com/tags/%E6%95%B4%E7%90%86/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>YOLOv3总结</title>
-    <link href="http://example.com/posts/4a3e.html"/>
-    <id>http://example.com/posts/4a3e.html</id>
-    <published>2021-11-15T00:59:13.000Z</published>
-    <updated>2022-04-17T04:47:30.989Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;一、背景&quot;&gt;&lt;a href=&quot;#一、背景&quot; class=&quot;headerlink&quot; title=&quot;一、背景&quot;&gt;&lt;/a&gt;一、背景&lt;/h2&gt;&lt;p&gt;&lt;code&gt;YOLOv3&lt;/code&gt;出自论文《&lt;code&gt;YOLOv3: An Incremental</summary>
         
       
     

@@ -4,6 +4,65 @@
   
     
     <entry>
+      <title>Visual Studio安装</title>
+      <link href="posts/e253.html"/>
+      <url>posts/e253.html</url>
+      
+        <content type="html"><![CDATA[<h2 id="一、下载"><a href="#一、下载" class="headerlink" title="一、下载"></a>一、下载</h2><h3 id="方式1："><a href="#方式1：" class="headerlink" title="方式1："></a>方式1：</h3><p>链接：<a href="https://pan.baidu.com/s/1eykNF4Sm5rKOOP3yXn6NHA">https://pan.baidu.com/s/1eykNF4Sm5rKOOP3yXn6NHA</a> </p><p>提取码：milu</p><h3 id="方式2："><a href="#方式2：" class="headerlink" title="方式2："></a>方式2：</h3><p><a href="https://visualstudio.microsoft.com/zh-hans/">官网</a></p><h2 id="二、安装"><a href="#二、安装" class="headerlink" title="二、安装"></a>二、安装</h2><h3 id="1-双击运行安装包"><a href="#1-双击运行安装包" class="headerlink" title="1.双击运行安装包"></a>1.双击运行安装包</h3><p><img src="../images/Visual-Studio%E5%AE%89%E8%A3%85/image-20220513115405929.png" alt="安装包"></p><h3 id="2-继续"><a href="#2-继续" class="headerlink" title="2.继续"></a>2.继续</h3><p><img src="../images/Visual-Studio%E5%AE%89%E8%A3%85/image-20220513115439507.png" alt="继续"></p><h3 id="3-等待"><a href="#3-等待" class="headerlink" title="3.等待"></a>3.等待</h3><p><img src="../images/Visual-Studio%E5%AE%89%E8%A3%85/image-20220513115457297.png" alt="等待"></p><h3 id="4-选择自己所需要的"><a href="#4-选择自己所需要的" class="headerlink" title="4.选择自己所需要的"></a>4.选择自己所需要的</h3><p><img src="../images/Visual-Studio%E5%AE%89%E8%A3%85/image-20220513120228103.png" alt="选择需要的"></p><h3 id="5-等待"><a href="#5-等待" class="headerlink" title="5.等待"></a>5.等待</h3><p><img src="../images/Visual-Studio%E5%AE%89%E8%A3%85/image-20220513120816303.png" alt="等待"></p><h3 id="6-安装完毕，点击启动"><a href="#6-安装完毕，点击启动" class="headerlink" title="6.安装完毕，点击启动"></a>6.安装完毕，点击启动</h3><p><img src="../images/Visual-Studio%E5%AE%89%E8%A3%85/image-20220513121446967.png" alt="安装完毕"></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 安装 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>评CUDA+CUDNN安装</title>
+      <link href="posts/4dd2.html"/>
+      <url>posts/4dd2.html</url>
+      
+        <content type="html"><![CDATA[<h2 id="一、下载"><a href="#一、下载" class="headerlink" title="一、下载"></a>一、下载</h2><p><strong>版本推荐CUDA11.0，与CUDA11.0对应的CUDNN是8.0.5.39</strong></p><p><img src="../images/%E8%AF%84CUDA-CUDNN%E5%AE%89%E8%A3%85/image-20220513102158803.png" alt="CUSDA+CUDNN"></p><h3 id="获取方式一：官网"><a href="#获取方式一：官网" class="headerlink" title="获取方式一：官网"></a>获取方式一：官网</h3><p><a href="https://developer.nvidia.com/cuda-11.0-download-archive?target_os=Windows&amp;target_arch=x86_64&amp;target_version=10&amp;target_type=exelocal">CUDA官网</a></p><p><a href="https://developer.nvidia.com/cudnn">CUDNN官网</a></p><h3 id="获取方式二：百度网盘"><a href="#获取方式二：百度网盘" class="headerlink" title="获取方式二：百度网盘"></a>获取方式二：百度网盘</h3><p>链接：<a href="https://pan.baidu.com/s/1K13I-_m4ZPjxdEk9e-jiWA">https://pan.baidu.com/s/1K13I-_m4ZPjxdEk9e-jiWA</a> </p><p>提取码：milu</p><h2 id="二、CUDA安装"><a href="#二、CUDA安装" class="headerlink" title="二、CUDA安装"></a>二、CUDA安装</h2><h3 id="1-双击安装包"><a href="#1-双击安装包" class="headerlink" title="1.双击安装包"></a>1.双击安装包</h3><p><img src="../images/%E8%AF%84CUDA-CUDNN%E5%AE%89%E8%A3%85/image-20220513102933574.png" alt="image-20220513102933574"></p><h3 id="2-选择”是“"><a href="#2-选择”是“" class="headerlink" title="2.选择”是“"></a>2.选择”是“</h3><p><img src="../images/%E8%AF%84CUDA-CUDNN%E5%AE%89%E8%A3%85/image-20220513103014917.png" alt="允许更改"></p><h3 id="3-默认地址，选择“OK”"><a href="#3-默认地址，选择“OK”" class="headerlink" title="3.默认地址，选择“OK”"></a>3.默认地址，选择“OK”</h3><p>请输入您想要临时解压<code>NVIDIA</code> <code>CUDA</code> <code>Toolkit</code>安装程序的文件夹。 如果文件夹不存在，它将为您创建。<span style="color:red">（这只是一个临时的文件夹，无所谓改不改地址了）</span></p><p><img src="../images/%E8%AF%84CUDA-CUDNN%E5%AE%89%E8%A3%85/image-20220513103108514.png" alt="临时文件地址"></p><h3 id="4-等待"><a href="#4-等待" class="headerlink" title="4.等待"></a>4.等待</h3><p>安装程序正在解压缩到您的计算机中，请稍候。 完成后，将启动<code>NVIDIA CUDA Toolkit</code>安装。 </p><p><img src="../images/%E8%AF%84CUDA-CUDNN%E5%AE%89%E8%A3%85/image-20220513103711123.png" alt="等待"></p><h3 id="5-同意并继续"><a href="#5-同意并继续" class="headerlink" title="5.同意并继续"></a>5.同意并继续</h3><p><img src="../images/%E8%AF%84CUDA-CUDNN%E5%AE%89%E8%A3%85/image-20220513111312924.png" alt="同意并继续"></p><h3 id="6-自定义——-gt-下一步"><a href="#6-自定义——-gt-下一步" class="headerlink" title="6.自定义——>下一步"></a>6.自定义——&gt;下一步</h3><p><img src="../images/%E8%AF%84CUDA-CUDNN%E5%AE%89%E8%A3%85/image-20220513111713566.png" alt="自定义"></p><h3 id="7-只选择CUDA就可以了"><a href="#7-只选择CUDA就可以了" class="headerlink" title="7.只选择CUDA就可以了"></a>7.只选择CUDA就可以了</h3><p><img src="../images/%E8%AF%84CUDA-CUDNN%E5%AE%89%E8%A3%85/image-20220513113707029.png" alt="image-20220513113707029"></p><p><strong>1.取消勾选<code>NVIDIA GeForce Experience</code></strong> </p><p>如果电脑上本身就有Visual Studio Integration，要将这个取消勾选，避免冲突了</p><p><strong>2.点开Driver comonents，Display Driver这一行，前面显示的是Cuda本身包含的驱动版本是411.31</strong></p><p>如果你电脑目前安装的驱动版本号新于Cuda本身自带的驱动版本号，那一定要把这个勾去掉。否则会安装失败(相同的话，也不用去勾选)</p><h3 id="8-我的路径都没有改，下一步"><a href="#8-我的路径都没有改，下一步" class="headerlink" title="8.我的路径都没有改，下一步"></a>8.我的路径都没有改，下一步</h3><p><img src="../images/%E8%AF%84CUDA-CUDNN%E5%AE%89%E8%A3%85/image-20220513112042232.png" alt="下一步"></p><h3 id="9-出现问题，next"><a href="#9-出现问题，next" class="headerlink" title="9.出现问题，next"></a>9.出现问题，next</h3><p><img src="../images/%E8%AF%84CUDA-CUDNN%E5%AE%89%E8%A3%85/image-20220513114330156.png" alt="image-20220513114330156"></p><p>CUDA Visual Studio集成</p><p>未找到受支持的Visual Studio版本。 CUDA Toolkit的部分组件无法正常工作。 请首先安装Visual studio以获得完整的功能。  </p><p>我理解，并希望继续安装。</p><h3 id="10-等待"><a href="#10-等待" class="headerlink" title="10.等待"></a>10.等待</h3><p><img src="../images/%E8%AF%84CUDA-CUDNN%E5%AE%89%E8%A3%85/image-20220513122036915.png" alt="等待"></p><p><img src="../images/%E8%AF%84CUDA-CUDNN%E5%AE%89%E8%A3%85/image-20220513122125120.png" alt="正在安装"></p><h3 id="11-下一步"><a href="#11-下一步" class="headerlink" title="11.下一步"></a>11.下一步</h3><p><img src="../images/%E8%AF%84CUDA-CUDNN%E5%AE%89%E8%A3%85/image-20220513122223277.png" alt="下一步"></p><h3 id="12-结束"><a href="#12-结束" class="headerlink" title="12.结束"></a>12.结束</h3><p><img src="../images/%E8%AF%84CUDA-CUDNN%E5%AE%89%E8%A3%85/image-20220513122321628.png" alt="结束"></p><h2 id="三、配置CUDNN"><a href="#三、配置CUDNN" class="headerlink" title="三、配置CUDNN"></a>三、配置CUDNN</h2><h3 id="1-找到CUDNN目录并解压"><a href="#1-找到CUDNN目录并解压" class="headerlink" title="1.找到CUDNN目录并解压"></a>1.找到<code>CUDNN</code>目录并解压</h3><p><img src="../images/%E8%AF%84CUDA-CUDNN%E5%AE%89%E8%A3%85/image-20220513122824986.png" alt="文件夹展示"></p><p><img src="../images/%E8%AF%84CUDA-CUDNN%E5%AE%89%E8%A3%85/image-20220513122857792.png" alt="解压后目录展示"></p><h3 id="2-复制上面四个文件，找到下方目录"><a href="#2-复制上面四个文件，找到下方目录" class="headerlink" title="2.复制上面四个文件，找到下方目录"></a>2.复制上面四个文件，找到下方目录</h3><p>这个目录是刚才安装<code>CUDA</code>的目录</p><p><code>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.0</code></p><p><img src="../images/%E8%AF%84CUDA-CUDNN%E5%AE%89%E8%A3%85/image-20220513122541385.png" alt="找到如下目录"></p><h3 id="3-直接粘贴"><a href="#3-直接粘贴" class="headerlink" title="3.直接粘贴"></a>3.直接粘贴</h3><p><img src="../images/%E8%AF%84CUDA-CUDNN%E5%AE%89%E8%A3%85/image-20220513123202137.png" alt="同意管理员权限"></p><p><img src="../images/%E8%AF%84CUDA-CUDNN%E5%AE%89%E8%A3%85/image-20220513123233473.png" alt="粘贴后展示"></p><h2 id="四、验证"><a href="#四、验证" class="headerlink" title="四、验证"></a>四、验证</h2><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">#打开cmd命令窗口输入nvcc -V<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><p><img src="../images/%E8%AF%84CUDA-CUDNN%E5%AE%89%E8%A3%85/image-20220513123446664.png" alt="版本展示"></p><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">#转换到conda环境（testLetter为我的环境名称）activate testLetternvcc -V<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><p><img src="../images/%E8%AF%84CUDA-CUDNN%E5%AE%89%E8%A3%85/image-20220513123822932.png" alt="conda环境中也好用"></p><p><span style="color:red"><strong>安装成功~</strong></span></p><h2 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h2><p><a href="https://blog.csdn.net/weixin_44791964/article/details/120668551">深度学习环境配置8——（30系显卡）windows下的torch==1.7.1环境配置</a></p><p><a href="https://blog.csdn.net/m0_37605642/article/details/98854753">CUDA、CUDNN在windows下的安装及配置</a></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 安装 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>评价指标——top-1 error rate</title>
+      <link href="posts/9454.html"/>
+      <url>posts/9454.html</url>
+      
+        <content type="html"><![CDATA[<h2 id="一、Top-1错误率"><a href="#一、Top-1错误率" class="headerlink" title="一、Top-1错误率"></a>一、Top-1错误率</h2><p>就是你预测的label取最后概率向量里面 <strong>最大的那一个</strong>作为<strong>预测结果</strong> ，如过你的 预测结果中<strong>概率最大的那个分类</strong>正确，则预测正确。否则预测错误</p><h2 id="二、Top-5错误率"><a href="#二、Top-5错误率" class="headerlink" title="二、Top-5错误率"></a>二、Top-5错误率</h2><p>最后概率向量<strong>最大的前五名中</strong>，<strong>只要出现了正确概率</strong>即为预测正确。否则预测错误。</p><h2 id="三、-拓展概念"><a href="#三、-拓展概念" class="headerlink" title="三、 拓展概念"></a>三、 拓展概念</h2><blockquote><p><code>TP</code>(True Positive): 真实为0，预测也为0</p><p><code>FN</code>(False Negative): 真实为0，预测为1</p><p><code>FP</code>(False Positive): 真实为1，预测为0</p><p><code>TN</code>(True Negative): 真实为1，预测也为1</p><p><code>FN</code>：False Negative,被判定为负样本，但事实上是正样本。</p><p><code>FP</code>：False Positive,被判定为正样本，但事实上是负样本。</p><p><code>TN</code>：True Negative,被判定为负样本，事实上也是负样本。</p><p><code>TP</code>：True Positive,被判定为正样本，事实上也是正样本。</p></blockquote><h3 id="1）正确率（accuracy）"><a href="#1）正确率（accuracy）" class="headerlink" title="1）正确率（accuracy）"></a>1）正确率（accuracy）</h3><p>正确率是我们最常见的评价指标，$$accuracy = (TP+TN)/(P+N)$$，这个很容易理解，就是被分对的样本数除以所有的样本数，通常来说，正确率越高，分类器越好；</p><h3 id="2）错误率（error-rate"><a href="#2）错误率（error-rate" class="headerlink" title="2）错误率（error rate)"></a>2）错误率（error rate)</h3><p>错误率则与正确率相反，描述被分类器错分的比例，$$error rate = (FP+FN)/(P+N)$$，对某一个实例来说，分对与分错是互斥事件，所以$$accuracy =1 - error rate$$；</p><h3 id="3）灵敏度（sensitive）"><a href="#3）灵敏度（sensitive）" class="headerlink" title="3）灵敏度（sensitive）"></a>3）灵敏度（sensitive）</h3><p>$$sensitive = TP/P$$，表示的是所有正例中被分对的比例，衡量了分类器对正例的识别能力；</p><h3 id="4）特效度（specificity"><a href="#4）特效度（specificity" class="headerlink" title="4）特效度（specificity)"></a>4）特效度（specificity)</h3><p>$$specificity = TN/N$$，表示的是所有负例中被分对的比例，衡量了分类器对负例的识别能力；</p><h3 id="5）精度（precision）"><a href="#5）精度（precision）" class="headerlink" title="5）精度（precision）"></a>5）精度（precision）</h3><p>精度是精确性的度量，表示被分为正例的示例中实际为正例的比例，$$precision=TP/(TP+FP)$$；</p><h3 id="6）召回率（recall）"><a href="#6）召回率（recall）" class="headerlink" title="6）召回率（recall）"></a>6）召回率（recall）</h3><p>召回率是覆盖面的度量，度量有多个正例被分为正例，$$recall=TP/(TP+FN)=TP/P=sensitive$$，可以看到召回率与灵敏度是一样的。</p><h2 id="四、reference"><a href="#四、reference" class="headerlink" title="四、reference"></a>四、reference</h2><p><a href="https://blog.csdn.net/ha010/article/details/80742906?ref=myread">top1错误率、top5正确率</a></p><p><a href="https://blog.csdn.net/shanshangyouzhiyangM/article/details/84943011">深度学习：混淆矩阵，准确率，top1，top5，每一类的准确率</a></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 论文 </tag>
+            
+            <tag> 扫盲 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Linux系统删除文件命令</title>
       <link href="posts/9889.html"/>
       <url>posts/9889.html</url>
