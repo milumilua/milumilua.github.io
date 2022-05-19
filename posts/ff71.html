@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="MySQL的下载及配置, mi鹿博">
+    <meta name="keywords" content="度量学习相关知识, mi鹿博">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>MySQL的下载及配置 | mi鹿博</title>
+    <title>度量学习相关知识 | mi鹿博</title>
     <link rel="icon" type="image/png" href="/medias/logo1.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -206,12 +206,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/22.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/55.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">MySQL的下载及配置</h1>
+                    <h1 class="description center-align post-title">度量学习相关知识</h1>
                 </div>
             </div>
         </div>
@@ -327,8 +327,12 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/%E5%AE%89%E8%A3%85/">
-                                <span class="chip bg-color">安装</span>
+                            <a href="/tags/%E6%95%B4%E7%90%86/">
+                                <span class="chip bg-color">整理</span>
+                            </a>
+                        
+                            <a href="/tags/%E6%89%AB%E7%9B%B2/">
+                                <span class="chip bg-color">扫盲</span>
                             </a>
                         
                     </div>
@@ -343,7 +347,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2021-01-30
+                    2022-05-19
                 </div>
                 
 
@@ -372,79 +376,45 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="一、-MySQL的下载"><a href="#一、-MySQL的下载" class="headerlink" title="一、 MySQL的下载"></a>一、 MySQL的下载</h2><p>1.我们可以进入<a target="_blank" rel="noopener" href="https://dev.mysql.com/downloads/mysql/">官网</a>进行下载：</p>
-<p>2.进入官网之后就根据所需要的版本来选择下载。</p>
-<p><img src="/images/MySQL%E7%9A%84%E4%B8%8B%E8%BD%BD%E3%80%81%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AE/image-20210130091115319.png" alt="image-20210130091115319"></p>
-<p>3.点击“Download”之后就会跳转到下面的这页，不用管上面让你登录注册的东西，直接下载就好。</p>
-<p><img src="/images/MySQL%E7%9A%84%E4%B8%8B%E8%BD%BD%E3%80%81%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AE/image-20210130091231356.png" alt="image-20210130091231356"></p>
-<p>4.下载之后是一个压缩包，直接解压到当前文件夹。</p>
-<p><img src="/images/MySQL%E7%9A%84%E4%B8%8B%E8%BD%BD%E3%80%81%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AE/image-20210130091447202.png" alt="image-20210130091447202"></p>
-<h2 id="二、文件配置"><a href="#二、文件配置" class="headerlink" title="二、文件配置"></a>二、文件配置</h2><p>添加 my.ini 文件</p>
-<p>首先要新建一个文本文档（txt格式的那种），然后在文档中添加下面的配置代码。</p>
-<p>注意：需要根据注释中的提示来相应的修改自己的地址，不要以为直接复制粘贴就完成了。</p>
-<pre class="line-numbers language-txt" data-language="txt"><code class="language-txt">[client]
-# 设置mysql客户端默认字符集
-default-character-set=utf8
- 
-[mysqld]
-# 设置3306端口
-port = 3306
-# 设置mysql的安装目录
-basedir=D:\02-install\02-install\02-mysql\mysql-8.0.23-winx64
-# 设置 mysql数据库的数据的存放目录，MySQL 8+ 不需要以下配置，系统自己生成即可，否则有可能报错
-# datadir=D:\02-install\02-install\02-mysql\mysql-8.0.23-winx64
-# 允许最大连接数
-max_connections=20
-# 服务端使用的字符集默认为8比特编码的latin1字符集
-character-set-server=utf8
-# 创建新表时将使用的默认存储引擎
-default-storage-engine=INNODB<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>需要修改的可能只有下面这两个地方。</p>
-<p><img src="/images/MySQL%E7%9A%84%E4%B8%8B%E8%BD%BD%E3%80%81%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AE/image-20210130092015113.png" alt="image-20210130092015113"></p>
-<p>完成保存之后，直接将文件的名字修改成 my.ini 的格式就好。</p>
-<p><img src="/images/MySQL%E7%9A%84%E4%B8%8B%E8%BD%BD%E3%80%81%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AE/image-20210130092220769.png" alt="image-20210130092220769"></p>
-<p>这里有可能会有警告弹出，不用管它，点“是”就行。</p>
-<p><img src="/images/MySQL%E7%9A%84%E4%B8%8B%E8%BD%BD%E3%80%81%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AE/image-20210130092245295.png" alt="image-20210130092245295"></p>
-<p><span style="color:red;"><strong>到这里，我们的文件就基本齐全啦~</strong></span></p>
-<h2 id="三、初始密码的修改"><a href="#三、初始密码的修改" class="headerlink" title="三、初始密码的修改"></a>三、初始密码的修改</h2><h3 id="1-以管理员的身份打开命令提示符。"><a href="#1-以管理员的身份打开命令提示符。" class="headerlink" title="1.以管理员的身份打开命令提示符。"></a>1.以管理员的身份打开命令提示符。</h3><p><img src="/images/MySQL%E7%9A%84%E4%B8%8B%E8%BD%BD%E3%80%81%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AE/image-20210130092514293.png" alt="image-20210130092514293"></p>
-<h3 id="2-切换到相应的目录下"><a href="#2-切换到相应的目录下" class="headerlink" title="2.切换到相应的目录下"></a>2.切换到相应的目录下</h3><p>注意，要切换到相应的bin的目录下。</p>
-<h3 id="3-然后初始化数据库。"><a href="#3-然后初始化数据库。" class="headerlink" title="3.然后初始化数据库。"></a>3.然后初始化数据库。</h3><p><img src="/images/MySQL%E7%9A%84%E4%B8%8B%E8%BD%BD%E3%80%81%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AE/image-20210130092619128.png" alt="image-20210130092619128"></p>
-<p>命令：</p>
-<pre class="line-numbers language-txt" data-language="txt"><code class="language-txt">mysqld --initialize --console<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>在这里会生成初始的密码，像是我的初始密码就是：Y6h_gPKl(_r)</p>
-<p>不用怀疑，确实带着特殊符号，有括号是正常的。</p>
-<p><img src="/images/MySQL%E7%9A%84%E4%B8%8B%E8%BD%BD%E3%80%81%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AE/image-20210130092809753.png" alt="image-20210130092809753"></p>
-<h3 id="4-进行安装"><a href="#4-进行安装" class="headerlink" title="4.进行安装"></a>4.进行安装</h3><p><img src="/images/MySQL%E7%9A%84%E4%B8%8B%E8%BD%BD%E3%80%81%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AE/image-20210130093011228.png" alt="image-20210130093011228"></p>
-<p>命令：</p>
-<pre class="line-numbers language-txt" data-language="txt"><code class="language-txt">mysqld install<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<h3 id="5-启动"><a href="#5-启动" class="headerlink" title="5.启动"></a>5.启动</h3><p><img src="/images/MySQL%E7%9A%84%E4%B8%8B%E8%BD%BD%E3%80%81%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AE/image-20210130093056153.png" alt="image-20210130093056153"></p>
-<p>命令：</p>
-<pre class="line-numbers language-txt" data-language="txt"><code class="language-txt">net start mysql<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<h3 id="6-登录"><a href="#6-登录" class="headerlink" title="6.登录"></a>6.登录</h3><p><img src="/images/MySQL%E7%9A%84%E4%B8%8B%E8%BD%BD%E3%80%81%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AE/image-20210130093148393.png" alt="image-20210130093148393"></p>
-<p>命令：</p>
-<pre class="line-numbers language-txt" data-language="txt"><code class="language-txt">mysql -h 主机名 -u 用户名 -p<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>说明：</p>
-<p>1） 这里的 -h 是客户端所要登录的 MySQL 主机名，登录本机是localhost 或着 127.0.0.1，所以如果是本机登录的话，这个可以省略。</p>
-<p>2） -u 指的是 user ，后面输入用户的名字，这里默认用户名是 root。</p>
-<p>3） -p 指的是 password ，后面写你的密码。</p>
-<p>所以最后我需要输入的命令就可以简化成下面这样（不要忘记修改你自己的密码哦~）</p>
-<pre class="line-numbers language-txt" data-language="txt"><code class="language-txt">mysql -uroot –pY6h_gPKl(_r)<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<h3 id="7-修改密码"><a href="#7-修改密码" class="headerlink" title="7.修改密码"></a>7.修改密码</h3><p>在退出 MySQL 命令环境的情况下输入命令即可修改，我把我的密码修改成 123456 了。</p>
-<p>命令：</p>
-<pre class="line-numbers language-txt" data-language="txt"><code class="language-txt">mysqladmin -uroot –pY6h_gPKl(_r) password 123456<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p><img src="/images/MySQL%E7%9A%84%E4%B8%8B%E8%BD%BD%E3%80%81%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AE/image-20210130094528123.png" alt="image-20210130094528123"></p>
-<h3 id="8-登录验证"><a href="#8-登录验证" class="headerlink" title="8.登录验证"></a>8.登录验证</h3><p><img src="/images/MySQL%E7%9A%84%E4%B8%8B%E8%BD%BD%E3%80%81%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AE/image-20210130094550171.png" alt="image-20210130094550171"></p>
-<p>这样，我们的 <span style="color:red;"><strong>MySQL 就可以用啦！</strong></span></p>
-<h2 id="四、配置环境变量"><a href="#四、配置环境变量" class="headerlink" title="四、配置环境变量"></a>四、配置环境变量</h2><h3 id="1-找到“高级系统配置”"><a href="#1-找到“高级系统配置”" class="headerlink" title="1.找到“高级系统配置”"></a>1.找到“高级系统配置”</h3><p><img src="/images/MySQL%E7%9A%84%E4%B8%8B%E8%BD%BD%E3%80%81%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AE/image-20210130094722227.png" alt="image-20210130094722227"></p>
-<h3 id="2-找到“环境变量”"><a href="#2-找到“环境变量”" class="headerlink" title="2.找到“环境变量”"></a>2.找到“环境变量”</h3><p><img src="/images/MySQL%E7%9A%84%E4%B8%8B%E8%BD%BD%E3%80%81%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AE/image-20210130094744406.png" alt="image-20210130094744406"></p>
-<p>3.添加变量</p>
-<p>在“系统变量”中点击“新建”，然后添加下面的内容，变量值就是 MySQL 的地址。</p>
-<p><img src="/images/MySQL%E7%9A%84%E4%B8%8B%E8%BD%BD%E3%80%81%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AE/image-20210130094833350.png" alt="image-20210130094833350"></p>
-<h3 id="3-编辑Path"><a href="#3-编辑Path" class="headerlink" title="3.编辑Path"></a>3.编辑Path</h3><p><img src="/images/MySQL%E7%9A%84%E4%B8%8B%E8%BD%BD%E3%80%81%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AE/image-20210130095016975.png" alt="image-20210130095016975"></p>
-<h3 id="4-新建路径"><a href="#4-新建路径" class="headerlink" title="4.新建路径"></a>4.新建路径</h3><p><img src="/images/MySQL%E7%9A%84%E4%B8%8B%E8%BD%BD%E3%80%81%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AE/image-20210130095059016.png" alt="image-20210130095059016"></p>
-<h3 id="5-验证"><a href="#5-验证" class="headerlink" title="5.验证"></a>5.验证</h3><p>注意：要在根目录下验证哦~</p>
-<p><img src="/images/MySQL%E7%9A%84%E4%B8%8B%E8%BD%BD%E3%80%81%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AE/image-20210130095120471.png" alt="image-20210130095120471"></p>
-<p>这样，我们的<span style="color:red;"><strong>MySQl就全部配置完成啦！</strong></span></p>
+                <h2 id="一、度量学习简单理解-【1】"><a href="#一、度量学习简单理解-【1】" class="headerlink" title="一、度量学习简单理解 【1】"></a>一、度量学习简单理解 【1】</h2><p>度量学习(<code>Metric Learning</code>)——距离度量学习(<code>Distance Metric Learning，DML</code>)——相似度学习。</p>
+<p>在数学中，一个度量（或距离函数）是一个定义集合中元素之间距离的函数。</p>
+<p>一个具有度量的集合被称为度量空间。</p>
+<p>度量学习(<code>Metric Learning</code>)是人脸识别中常用的传统机器学习方法，由<code>Eric Xing</code>在<code>NIPS 2002</code>提出，可以分为两种：</p>
+<ol>
+<li>通过线性变换的度量学习</li>
+<li>通过非线性变化的度量</li>
+</ol>
+<p>其基本原理是根据不同的任务来自主学习出针对某个特定任务的度量距离函数。后来度量学习又被迁移至文本分类领域，尤其是针对高维数据的文本处理，度量学习有很好的分类效果。</p>
+<p><strong>度量学习根据是否转换原始特征空间后再进行度量，分为两类 【2】：</strong></p>
+<ul>
+<li><strong>直接度量</strong></li>
+</ul>
+<p>此类方法一般根据原始特征空间中对象间的欧式距离(<code>Euclidean Distance</code>)进行度量，例如KNN算法就是直接根据欧氏距离计算对象间的相似性。</p>
+<ul>
+<li><strong>转换后度量</strong></li>
+</ul>
+<p>此类方法一般基于马氏距离(<code>Mahalanobis distance</code>)，其通过投影矩阵W对源向量投影后再进行距离的度量。</p>
+<h2 id="二、与经典识别网络相比"><a href="#二、与经典识别网络相比" class="headerlink" title="二、与经典识别网络相比"></a>二、与经典识别网络相比</h2><p><code>K-means</code>、<code>K近邻方法</code>、<code>SVM</code>等算法，比较依赖于输入时给定的度量。</p>
+<p><strong>比如：</strong>数据之间的相似性，那么将面临的一个基本的问题是如何获取数据之间的相似度。</p>
+<p>为了处理各种各样的特征相似度，我们可以在特定的任务通过选择合适的特征并手动构建距离函数。</p>
+<p>然而这种方法会需要很大的人工投入，也可能对数据的改变非常不鲁棒。</p>
+<p>度量学习作为一个理想的替代，可以根据不同的任务来自主学习出针对某个特定任务的度量距离函数。</p>
+<p><strong>经典识别网络</strong>有一个<code>bug</code>：<strong>必须提前设定好类别数</strong>。 这也就意味着，每增加一个新种类，就要重新定义网络模型，并从头训练一遍。</p>
+<p>​    比如我们要做一个门禁系统，每增加或减少一个员工(等于是一个新类别)，就要修改识别网络并重新训练。很明显，这种做法在某些实际运用中很不科学。</p>
+<p>​    因此，<code>Metric Learning</code>作为经典识别网络的替代方案，可以很好地适应某些特定的图像识别场景。一种较好的做法，是丢弃经典神经网络最后的<code>softmax</code>层，改成直接输出一根<code>feature vector</code>，去特征库里面按照<code>Metric Learning</code>寻找最近邻的类别作为匹配项。</p>
+<p>​    目前，<code>Metric Learning</code>已被广泛运用于人脸识别的日常运用中。</p>
+<h3 id="深度度量学习-【2】"><a href="#深度度量学习-【2】" class="headerlink" title="深度度量学习 【2】"></a>深度度量学习 【2】</h3><p>对于传统度量学习而言，由于其处理原始数据的能力有限，因此需要首先使用特征工程的知识对数据进行预处理，然后再用度量学习的算法进行学习。</p>
+<p>一些传统的度量学习方法只能学习出线性特征，虽然有一些能够提取非线性特征的核方法被提出，但对学习效果也没有明显提升。</p>
+<p>随着深度学习的出现，得益于激活函数学习非线性特征的优秀能力，深度学习方法能够自动地从原始数据中学出高质量的特征。</p>
+<p>因此深度学习的网络结构与传统的度量学习方法相结合能够带来理想的效果。</p>
+<p><strong>深度度量学习主要由三方面组成</strong>：</p>
+<ul>
+<li>样本挖掘</li>
+<li>模型结构</li>
+<li>损失函数</li>
+</ul>
+<h2 id="三、reference"><a href="#三、reference" class="headerlink" title="三、reference"></a>三、reference</h2><p>【1】<a target="_blank" rel="noopener" href="https://www.cnblogs.com/somedayLi/p/12253905.html">度量学习（Metric Learning）基础概念介绍——2020.2.2-Someday&amp;Li-博客园(cnblogs.com)</a></p>
+<p>【2】<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/348998459">度量学习/对比学习入门: 论文阅读笔记-Deep Metric Learning: A Survey - 知乎 (zhihu.com)</a></p>
 
                 
             </div>
@@ -471,7 +441,7 @@ default-storage-engine=INNODB<span aria-hidden="true" class="line-numbers-rows">
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://example.com/posts/24241.html">http://example.com/posts/24241.html</a>
+                    <a href="http://example.com/posts/ff71.html">http://example.com/posts/ff71.html</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -509,8 +479,12 @@ default-storage-engine=INNODB<span aria-hidden="true" class="line-numbers-rows">
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/%E5%AE%89%E8%A3%85/">
-                                    <span class="chip bg-color">安装</span>
+                                <a href="/tags/%E6%95%B4%E7%90%86/">
+                                    <span class="chip bg-color">整理</span>
+                                </a>
+                            
+                                <a href="/tags/%E6%89%AB%E7%9B%B2/">
+                                    <span class="chip bg-color">扫盲</span>
                                 </a>
                             
                         </div>
@@ -558,13 +532,13 @@ default-storage-engine=INNODB<span aria-hidden="true" class="line-numbers-rows">
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/posts/35343.html">
+                <a href="/posts/df46.html">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="idea的下载、安装、破解">
+                        <img src="/medias/featureimages/55.jpg" class="responsive-img" alt="图像语义分割">
                         
-                        <span class="card-title">idea的下载、安装、破解</span>
+                        <span class="card-title">图像语义分割</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -575,7 +549,7 @@ default-storage-engine=INNODB<span aria-hidden="true" class="line-numbers-rows">
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-01-30
+                            <i class="far fa-clock fa-fw icon-date"></i>2022-05-19
                         </span>
                         <span class="publish-author">
                             
@@ -588,8 +562,12 @@ default-storage-engine=INNODB<span aria-hidden="true" class="line-numbers-rows">
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E5%AE%89%E8%A3%85/">
-                        <span class="chip bg-color">安装</span>
+                    <a href="/tags/%E6%95%B4%E7%90%86/">
+                        <span class="chip bg-color">整理</span>
+                    </a>
+                    
+                    <a href="/tags/%E6%89%AB%E7%9B%B2/">
+                        <span class="chip bg-color">扫盲</span>
                     </a>
                     
                 </div>
@@ -603,13 +581,13 @@ default-storage-engine=INNODB<span aria-hidden="true" class="line-numbers-rows">
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/posts/49854.html">
+                <a href="/posts/e253.html">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/48.jpg" class="responsive-img" alt="JDK的安装和环境变量的配置">
+                        <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="Visual Studio安装">
                         
-                        <span class="card-title">JDK的安装和环境变量的配置</span>
+                        <span class="card-title">Visual Studio安装</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -620,7 +598,7 @@ default-storage-engine=INNODB<span aria-hidden="true" class="line-numbers-rows">
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-01-26
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-05-13
                             </span>
                         <span class="publish-author">
                             
