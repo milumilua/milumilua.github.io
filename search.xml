@@ -4,6 +4,27 @@
   
     
     <entry>
+      <title>逻辑回归&amp;&amp;贝叶斯优化</title>
+      <link href="posts/ab41.html"/>
+      <url>posts/ab41.html</url>
+      
+        <content type="html"><![CDATA[<h2 id="一、简介"><a href="#一、简介" class="headerlink" title="一、简介"></a>一、简介</h2><h3 id="（一）逻辑回归"><a href="#（一）逻辑回归" class="headerlink" title="（一）逻辑回归"></a>（一）逻辑回归</h3><h4 id="1-浅浅分析"><a href="#1-浅浅分析" class="headerlink" title="1.浅浅分析"></a>1.浅浅分析</h4><p>逻辑回归中，响应变量描述了结果是正向情况的概率。如果响应变量等于或者超过了一个区分阈值，则被预测为正向类。</p><p>而逻辑函数总是返回一个0-1之间的值。</p><p><span style="color:red"><strong>个人理解：</strong></span>设置一个界限，等于或者超过这个界限的，被定义为<strong>比较好的</strong>，将<strong>比较好的概率</strong>以小数形式输出。</p><h4 id="2-应用"><a href="#2-应用" class="headerlink" title="2.应用"></a>2.应用</h4><p>我们在<code>sklearn</code>库中可以使用<code>LogisticsRegression</code>类来进行逻辑回归训练</p><p>参考文献：<a href="https://blog.csdn.net/Enternalwiser/article/details/108022321">scikit-learn机器学习五（逻辑回归与朴素贝叶斯）</a></p><h3 id="（二）朴素贝叶斯"><a href="#（二）朴素贝叶斯" class="headerlink" title="（二）朴素贝叶斯"></a>（二）朴素贝叶斯</h3><h4 id="1-朴素贝叶斯"><a href="#1-朴素贝叶斯" class="headerlink" title="1.朴素贝叶斯"></a>1.朴素贝叶斯</h4><h5 id="（1）朴素贝叶斯的两个基本假设："><a href="#（1）朴素贝叶斯的两个基本假设：" class="headerlink" title="（1）朴素贝叶斯的两个基本假设："></a>（1）朴素贝叶斯的两个基本假设：</h5><ol><li><p>独立：一个特征出现的可能性和与它和其他特征相邻没有关系</p></li><li><p>每个特征同等重要</p></li></ol><p>参考文献：<a href="http://t.zoukankan.com/jiading-p-11624387.html">机器学习—朴素贝叶斯及其优化</a></p><h5 id="（2）公式"><a href="#（2）公式" class="headerlink" title="（2）公式"></a>（2）公式</h5><p>$$P(C|W)=\frac{P(W|C)P(C)}{P(C)}$$</p><p><strong>注:</strong> </p><p>W：特征值</p><p>C：类别</p><blockquote><p><strong>补充知识：</strong></p><p>条件概率：就是事件A在另外一个事件B已经发生条件下的发生概率，记作：P(A|B)</p><p>特性：P(A1,A2|B)= P(A1|B)P(A2|B)</p><p>注意：此条件概率的成立，是由于A1，A2相互独立的结果</p></blockquote><h5 id="（3）应用"><a href="#（3）应用" class="headerlink" title="（3）应用"></a>（3）应用</h5><p><code>sklearn</code>朴素贝叶斯实现<code>API</code></p><pre class="line-numbers language-python" data-language="python"><code class="language-python">sklearn.naive_bayes.MultinomialNB(alpha = 1.0)<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>参考文献：<a href="https://blog.csdn.net/weixin_44376037/article/details/121167473">机器学习算法基础 DAY 4 朴素贝叶斯算法&amp;算法调优</a></p><h4 id="2-贝叶斯优化"><a href="#2-贝叶斯优化" class="headerlink" title="2.贝叶斯优化"></a>2.贝叶斯优化</h4><h5 id="（1）将原有的概率变为对数"><a href="#（1）将原有的概率变为对数" class="headerlink" title="（1）将原有的概率变为对数"></a>（1）将原有的概率变为对数</h5><p>由于对数化了之后在[0.1]上值的变化更大了，这样就消除了概率计算下溢的风险。</p><p>log和原曲线增减性相同，且在同样的位置取到极值点，所以这样的替换是可行的。</p><p><img src="../images/%E9%80%BB%E8%BE%91%E5%9B%9E%E5%BD%92-%E8%B4%9D%E5%8F%B6%E6%96%AF%E4%BC%98%E5%8C%96/image-20220527213244943.png" alt="image-20220527213244943"></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 整理 </tag>
+            
+            <tag> 论文 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>图像语义分割</title>
       <link href="posts/df46.html"/>
       <url>posts/df46.html</url>

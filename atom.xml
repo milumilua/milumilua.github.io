@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-05-19T10:28:08.577Z</updated>
+  <updated>2022-05-27T15:10:09.387Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -17,11 +17,36 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>逻辑回归&amp;&amp;贝叶斯优化</title>
+    <link href="http://example.com/posts/ab41.html"/>
+    <id>http://example.com/posts/ab41.html</id>
+    <published>2022-05-27T03:38:09.000Z</published>
+    <updated>2022-05-27T15:10:09.387Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;一、简介&quot;&gt;&lt;a href=&quot;#一、简介&quot; class=&quot;headerlink&quot; title=&quot;一、简介&quot;&gt;&lt;/a&gt;一、简介&lt;/h2&gt;&lt;h3 id=&quot;（一）逻辑回归&quot;&gt;&lt;a href=&quot;#（一）逻辑回归&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    
+    <category term="整理" scheme="http://example.com/tags/%E6%95%B4%E7%90%86/"/>
+    
+    <category term="论文" scheme="http://example.com/tags/%E8%AE%BA%E6%96%87/"/>
+    
+  </entry>
+  
+  <entry>
     <title>图像语义分割</title>
     <link href="http://example.com/posts/df46.html"/>
     <id>http://example.com/posts/df46.html</id>
     <published>2022-05-19T10:27:10.000Z</published>
-    <updated>2022-05-19T10:28:08.577Z</updated>
+    <updated>2022-05-19T10:35:02.342Z</updated>
     
     
       
@@ -46,7 +71,7 @@
     <link href="http://example.com/posts/ff71.html"/>
     <id>http://example.com/posts/ff71.html</id>
     <published>2022-05-19T10:24:07.000Z</published>
-    <updated>2022-05-19T10:26:22.631Z</updated>
+    <updated>2022-05-19T10:35:02.343Z</updated>
     
     
       
@@ -472,32 +497,6 @@
     
     
     <category term="安装" scheme="http://example.com/tags/%E5%AE%89%E8%A3%85/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Anaconda安装及简单应用</title>
-    <link href="http://example.com/posts/4b14.html"/>
-    <id>http://example.com/posts/4b14.html</id>
-    <published>2021-12-24T02:07:53.000Z</published>
-    <updated>2022-04-17T04:40:16.128Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;一、下载地址&quot;&gt;&lt;a href=&quot;#一、下载地址&quot; class=&quot;headerlink&quot; title=&quot;一、下载地址&quot;&gt;&lt;/a&gt;一、下载地址&lt;/h2&gt;&lt;p&gt;Anaconda可以从官网上下载：&lt;/p&gt;
-&lt;p&gt;&lt;a</summary>
-        
-      
-    
-    
-    
-    
-    <category term="安装" scheme="http://example.com/tags/%E5%AE%89%E8%A3%85/"/>
-    
-    <category term="整理" scheme="http://example.com/tags/%E6%95%B4%E7%90%86/"/>
     
   </entry>
   
