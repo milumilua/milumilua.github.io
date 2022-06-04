@@ -4,6 +4,27 @@
   
     
     <entry>
+      <title>Jupyter Notebook设置指定环境</title>
+      <link href="posts/37c4.html"/>
+      <url>posts/37c4.html</url>
+      
+        <content type="html"><![CDATA[<h2 id="一、情况描述"><a href="#一、情况描述" class="headerlink" title="一、情况描述"></a>一、情况描述</h2><p>在 <code>Jupyter Notebook</code> 中选择特定的环境运行代码</p><p><img src="../images/Jupyter-Notebook%E8%AE%BE%E7%BD%AE%E6%8C%87%E5%AE%9A%E7%8E%AF%E5%A2%83/image-20220604213400292.png" alt="image-20220604213400292"></p><h2 id="二、操作过程"><a href="#二、操作过程" class="headerlink" title="二、操作过程"></a>二、操作过程</h2><h3 id="1-创建环境"><a href="#1-创建环境" class="headerlink" title="1.创建环境"></a>1.创建环境</h3><p>首先你应该拥有一个创建好的环境</p><p><img src="../images/Jupyter-Notebook%E8%AE%BE%E7%BD%AE%E6%8C%87%E5%AE%9A%E7%8E%AF%E5%A2%83/image-20220604213553254.png" alt="image-20220604213553254"></p><h3 id="2-安装包"><a href="#2-安装包" class="headerlink" title="2.安装包"></a>2.安装包</h3><p>（1）在这里我们需要用到<code>nb_conda</code>包，所以需要安装一下</p><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">conda install nb_conda<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>（2）在虚拟环境中安装<code>ipykernel</code>包，说明：<code>py38</code>是我自己的环境的名字</p><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">conda install -n py38 ipykernel<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>（3）第一个<code>py38</code>是环境的名字，第二个<code>py38</code>是在<code>Jupyter Notebook</code>中显示的名称，可以和第一个不一样</p><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">python -m ipykernel install --user --name py38 --display-name py38<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><h3 id="3-转换环境"><a href="#3-转换环境" class="headerlink" title="3.转换环境"></a>3.转换环境</h3><p>我们来到<code>Jupyter Notebook</code>中，按照顺序找到①②③，然后在④的位置就会得到相应的环境了</p><p><img src="../images/Jupyter-Notebook%E8%AE%BE%E7%BD%AE%E6%8C%87%E5%AE%9A%E7%8E%AF%E5%A2%83/image-20220604215110189.png" alt="image-20220604215110189"></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 整理 </tag>
+            
+            <tag> 论文 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>逻辑回归&amp;&amp;贝叶斯优化</title>
       <link href="posts/ab41.html"/>
       <url>posts/ab41.html</url>

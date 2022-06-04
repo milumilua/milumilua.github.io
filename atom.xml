@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-05-27T15:10:09.387Z</updated>
+  <updated>2022-06-04T13:52:42.010Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -17,11 +17,36 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Jupyter Notebook设置指定环境</title>
+    <link href="http://example.com/posts/37c4.html"/>
+    <id>http://example.com/posts/37c4.html</id>
+    <published>2022-06-04T12:51:46.000Z</published>
+    <updated>2022-06-04T13:52:42.010Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;一、情况描述&quot;&gt;&lt;a href=&quot;#一、情况描述&quot; class=&quot;headerlink&quot; title=&quot;一、情况描述&quot;&gt;&lt;/a&gt;一、情况描述&lt;/h2&gt;&lt;p&gt;在 &lt;code&gt;Jupyter Notebook&lt;/code&gt;</summary>
+        
+      
+    
+    
+    
+    
+    <category term="整理" scheme="http://example.com/tags/%E6%95%B4%E7%90%86/"/>
+    
+    <category term="论文" scheme="http://example.com/tags/%E8%AE%BA%E6%96%87/"/>
+    
+  </entry>
+  
+  <entry>
     <title>逻辑回归&amp;&amp;贝叶斯优化</title>
     <link href="http://example.com/posts/ab41.html"/>
     <id>http://example.com/posts/ab41.html</id>
     <published>2022-05-27T03:38:09.000Z</published>
-    <updated>2022-05-27T15:10:09.387Z</updated>
+    <updated>2022-05-28T10:39:48.213Z</updated>
     
     
       
@@ -473,30 +498,6 @@
     <category term="整理" scheme="http://example.com/tags/%E6%95%B4%E7%90%86/"/>
     
     <category term="论文" scheme="http://example.com/tags/%E8%AE%BA%E6%96%87/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>MobaXterm的安装及简单使用</title>
-    <link href="http://example.com/posts/cae9.html"/>
-    <id>http://example.com/posts/cae9.html</id>
-    <published>2021-12-25T01:19:49.000Z</published>
-    <updated>2022-04-17T04:44:55.078Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;一、下载&quot;&gt;&lt;a href=&quot;#一、下载&quot; class=&quot;headerlink&quot; title=&quot;一、下载&quot;&gt;&lt;/a&gt;一、下载&lt;/h2&gt;&lt;p&gt;官网下载地址：&lt;/p&gt;
-&lt;p&gt;&lt;a</summary>
-        
-      
-    
-    
-    
-    
-    <category term="安装" scheme="http://example.com/tags/%E5%AE%89%E8%A3%85/"/>
     
   </entry>
   
