@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-07-15T01:39:46.065Z</updated>
+  <updated>2022-06-04T13:53:17.259Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,31 +15,6 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>求职中的一些扫盲——外企，央企，国企，民企</title>
-    <link href="http://example.com/posts/1dd6.html"/>
-    <id>http://example.com/posts/1dd6.html</id>
-    <published>2022-07-14T03:30:53.000Z</published>
-    <updated>2022-07-15T01:39:46.065Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;一、外企-央企-国企-民企的区别&quot;&gt;&lt;a href=&quot;#一、外企-央企-国企-民企的区别&quot; class=&quot;headerlink&quot; title=&quot;一、外企 央企 国企 民企的区别&quot;&gt;&lt;/a&gt;一、外企 央企 国企 民企的区别&lt;/h2&gt;&lt;h3 id=&quot;1-称谓&quot;&gt;&lt;a</summary>
-        
-      
-    
-    
-    
-    
-    <category term="整理" scheme="http://example.com/tags/%E6%95%B4%E7%90%86/"/>
-    
-    <category term="扫盲" scheme="http://example.com/tags/%E6%89%AB%E7%9B%B2/"/>
-    
-  </entry>
   
   <entry>
     <title>Jupyter Notebook设置指定环境</title>
@@ -498,6 +473,31 @@
     <category term="论文" scheme="http://example.com/tags/%E8%AE%BA%E6%96%87/"/>
     
     <category term="扫盲" scheme="http://example.com/tags/%E6%89%AB%E7%9B%B2/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>论文思路整理</title>
+    <link href="http://example.com/posts/cd31.html"/>
+    <id>http://example.com/posts/cd31.html</id>
+    <published>2022-01-04T06:58:11.000Z</published>
+    <updated>2022-05-19T10:33:17.996Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;一、需要准备的东西&quot;&gt;&lt;a href=&quot;#一、需要准备的东西&quot; class=&quot;headerlink&quot; title=&quot;一、需要准备的东西&quot;&gt;&lt;/a&gt;一、需要准备的东西&lt;/h2&gt;&lt;h3 id=&quot;1-图像识别&quot;&gt;&lt;a href=&quot;#1-图像识别&quot;</summary>
+        
+      
+    
+    
+    
+    
+    <category term="整理" scheme="http://example.com/tags/%E6%95%B4%E7%90%86/"/>
+    
+    <category term="论文" scheme="http://example.com/tags/%E8%AE%BA%E6%96%87/"/>
     
   </entry>
   
